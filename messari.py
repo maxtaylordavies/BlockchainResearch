@@ -10,8 +10,8 @@ def main():
 def getJsonData(url, outputFile):
     response = urllib.request.urlopen(url)
     data = json.load(response)
-    with open(outputFile, "w+") as dest:
-        json.dump(data, dest)
+    with open(outputFile, "w+", encoding="utf-8") as dest:
+        json.dump(data, dest, ensure_ascii=False, indent=4)
 
 def json2Csv(jsonFile):
     # open json file
