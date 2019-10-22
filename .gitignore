@@ -1,7 +1,6 @@
 .vscode/
 .DS_Store
 test.json
-CrunchbaseData/
-MessariData/
-BigQueryData/
-Blockchain Research-f16cc38382f4.json
+Data/
+Keys/
+__pycache__/

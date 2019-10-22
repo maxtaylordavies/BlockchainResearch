@@ -13,14 +13,14 @@ def main():
     #blockchainOrgsSummaries = getAllOrganizationsInCategory(baseApiUrl, apiKey, blockchainCategoryId)
 
     # export summaries to JSON file
-    #storeOrgsInJson(blockchainOrgsSummaries, "./CrunchbaseData/BlockchainOrganizationsSummary.json")
+    #storeOrgsInJson(blockchainOrgsSummaries, "./Data/CrunchbaseData/BlockchainOrganizationsSummary.json")
 
     # get more detailed data on organizations
-    #blockchainOrgsDetails = fetchDetailedInfo("./CrunchbaseData/BlockchainOrganizationsSummary.json", apiKey)
+    #blockchainOrgsDetails = fetchDetailedInfo("./Data/CrunchbaseData/BlockchainOrganizationsSummary.json", apiKey)
 
     # export detailed data to JSON file
-    #storeOrgsInJson(blockchainOrgsDetails, "./CrunchbaseData/BlockchainOrganizationsDetails.json")
-    json2Csv("./CrunchbaseData/BlockchainOrganizationsSummary.json")
+    #storeOrgsInJson(blockchainOrgsDetails, "./Data/CrunchbaseData/BlockchainOrganizationsDetails.json")
+    json2Csv("./Data/CrunchbaseData/BlockchainOrganizationsSummary.json")
 
 
 def getAllOrganizationsInCategory(baseApiUrl, key, categoryId):

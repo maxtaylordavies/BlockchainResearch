@@ -7,7 +7,7 @@ def main():
     query_job = client.query(QUERY) 
     rows = query_job.result()  
     df = rows.to_dataframe()
-    df.to_csv("./BigQueryData/crypto_bitcoin.csv")
+    df.to_csv("./Data/BigQueryData/crypto_bitcoin.csv")
 
 if __name__== "__main__":
   main()
