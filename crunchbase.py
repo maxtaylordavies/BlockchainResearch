@@ -1,5 +1,6 @@
 import json
 from six.moves import urllib
+from messari import json2Csv
 import sys
 
 
@@ -15,10 +16,11 @@ def main():
     #storeOrgsInJson(blockchainOrgsSummaries, "./CrunchbaseData/BlockchainOrganizationsSummary.json")
 
     # get more detailed data on organizations
-    blockchainOrgsDetails = fetchDetailedInfo("./CrunchbaseData/BlockchainOrganizationsSummary.json", apiKey)
+    #blockchainOrgsDetails = fetchDetailedInfo("./CrunchbaseData/BlockchainOrganizationsSummary.json", apiKey)
 
     # export detailed data to JSON file
-    storeOrgsInJson(blockchainOrgsDetails, "./CrunchbaseData/BlockchainOrganizationsDetails.json")
+    #storeOrgsInJson(blockchainOrgsDetails, "./CrunchbaseData/BlockchainOrganizationsDetails.json")
+    json2Csv("./CrunchbaseData/BlockchainOrganizationsSummary.json")
 
 
 def getAllOrganizationsInCategory(baseApiUrl, key, categoryId):
