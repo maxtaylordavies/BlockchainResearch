@@ -5,7 +5,7 @@ from pandas.io.json import json_normalize
 def main():
     # get asset data
     getJsonData("https://data.messari.io/api/v1/assets", "./Data/MessariData/AssetData.json")
-    json2Csv("./Data/MessariData/AssetData.json", "data")
+    json2Csv("../Data/MessariData/AssetData.json", "data")
 
 def getJsonData(url, outputFile):
     response = urllib.request.urlopen(url)
