@@ -2,6 +2,7 @@ from pycoingecko import CoinGeckoAPI
 from messari import json2Csv
 import json
 import time
+from datetime import date, timedelta
 
 
 def main():
@@ -17,10 +18,34 @@ def main():
     
     # get historical data on coins by id
     for id in ids:
-        getHistoricalDataOnCoin(api, id)
+        getMarketDataOnCoin(api, id)
+        getDevStatsOnCoin(api, id)
 
 
-def getHistoricalDataOnCoin(api, id):
+def getDevStatsOnCoin(api, id):
+    coin = api.get_coin_by_id(id, localization=False, market_data=False)
+    commits = coin["developer_data"]["last_4_weeks_commit_activity_series"]
+    
+    data = []
+    d = date.today()
+
+    for c in commits:
+        data.append({
+            "date": str(d),
+            "commits": c
+        })
+        d -= timedelta(days=1)
+
+    jsonPath = "../Data/CoingeckoData/Developer/JSON/"+id+".json"
+    csvPath = "../Data/CoingeckoData/Developer/CSV/"+id+".csv"
+
+    with open(jsonPath, "w+", encoding="utf-8") as dest:
+        json.dump(data, dest, ensure_ascii=False, indent=4)
+
+    json2Csv(jsonPath, csvPath=csvPath)    
+
+    
+def getMarketDataOnCoin(api, id):
     data = []
     hist = api.get_coin_market_chart_by_id(id=id, vs_currency="usd", days="max")
 
@@ -37,8 +62,8 @@ def getHistoricalDataOnCoin(api, id):
             "Total volume": totalVolumes[i]
         })
 
-    jsonPath = "../Data/CoingeckoData/JSON/"+id+".json"
-    csvPath = "../Data/CoingeckoData/CSV/"+id+".csv"
+    jsonPath = "../Data/CoingeckoData/Market/JSON/"+id+".json"
+    csvPath = "../Data/CoingeckoData/Market/CSV/"+id+".csv"
 
     with open(jsonPath, "w+", encoding="utf-8") as dest:
         json.dump(data, dest, ensure_ascii=False, indent=4)
