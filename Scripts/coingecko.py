@@ -14,12 +14,14 @@ def main():
 
     # find the ids of the coins we're interested in
     allCoins = api.get_coins_list()
-    ids = getDesiredCoinIds(allCoins, symbols)
+    names = getDesiredCoinNames(allCoins, symbols)
+    print(names)
+    # ids = getDesiredCoinIds(allCoins, symbols)
     
-    # get historical data on coins by id
-    for id in ids:
-        getMarketDataOnCoin(api, id)
-        getDevStatsOnCoin(api, id)
+    # # get historical data on coins by id
+    # for id in ids:
+    #     getMarketDataOnCoin(api, id)
+    #     getDevStatsOnCoin(api, id)
 
 
 def getDevStatsOnCoin(api, id):
@@ -74,6 +76,8 @@ def getMarketDataOnCoin(api, id):
 def getDesiredCoinIds(coins, symbols):
     return [c["id"] for c in list(filter(lambda x: x["symbol"] in symbols, coins))]
 
+def getDesiredCoinNames(coins, symbols):
+    return [c["name"] for c in list(filter(lambda x: x["symbol"] in symbols, coins))]
 
 def getDesiredCoinSymbols():
     return [
