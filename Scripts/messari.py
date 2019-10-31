@@ -26,5 +26,5 @@ def json2Csv(jsonFile, key=None, csvPath=None):
         csvPath = jsonFile[:-4] + "csv"
     df.to_csv(csvPath)
 
-if __name__== "__main__":
+if __name__ == "__main__":
   main()
