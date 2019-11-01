@@ -4,14 +4,25 @@ from six.moves import urllib
 import json
 
 def main():
-    transactions = scrapeTransactions()
-    for t in transactions:
-        print(t["Value"])
+    scrapeAllTransactions()
+    
 
-def scrapeTransactions():
+def scrapeAllTransactions():
     transactions = []
 
-    url = "https://etherscan.io/txs"
+    for p in range(1, 11):
+        transactions += scrapePageOfTransactions(p)
+
+    with open("../Data/EtherscanData/Scraping/transactions.json", "w+", encoding="utf-8") as dest:
+        json.dump(transactions, dest, ensure_ascii=False, indent=4)
+
+    json2Csv("../Data/EtherscanData/Scraping/transactions.json")
+
+
+def scrapePageOfTransactions(pageNum):
+    transactions = []
+
+    url = "https://etherscan.io/txs?p=" + str(pageNum)
 
     # make etherscan think we're a browser instead of a python script; otherwise we'll be blocked
     headers = {
@@ -43,12 +54,18 @@ def scrapeTransactions():
 
     return transactions
 
+
+# this needs its own function, since the html is structured differently depending on 
+# whether the value is an integer or not
 def parseValue(row):
-    valueStr = row.findAll("td")[-2].string
-    if valueStr != None:
-        return float(valueStr.split()[0])
+    cont = row.findAll("td")[-2].contents
+    if len(cont) == 1:
+        valueStr = cont[0].split()[0]
+    elif len(cont) == 4:
+        valueStr = cont[0] + cont[1].string + cont[2].string
     else:
-        return 0.0
+        valueStr = "0.0"
+    return float(valueStr)
  
 
 def parseFee(row):
@@ -56,13 +73,15 @@ def parseFee(row):
     feeStr = span.contents[0] + span.contents[1].string + span.contents[2]
     return float(feeStr)
 
-def getEthereumNodeStats(baseApiUrl, key):
-    url = baseApiUrl + "?module=stats&action=chainsize&startdate=2017-01-01&enddate=2019-10-28&clienttype=geth&syncmode=default&sort=asc&apikey=" + key
-    response = urllib.request.urlopen(url)
-    data = json.load(response)
-    with open("../Data/EtherscanData/nodes.json", "w+", encoding="utf-8") as dest:
-        json.dump(data, dest, ensure_ascii=False, indent=4)
-    json2Csv("../Data/EtherscanData/nodes.json", key="result")
+
+# def getEthereumNodeStats(baseApiUrl, key):
+#     url = baseApiUrl + "?module=stats&action=chainsize&startdate=2017-01-01&enddate=2019-10-28&clienttype=geth&syncmode=default&sort=asc&apikey=" + key
+#     response = urllib.request.urlopen(url)
+#     data = json.load(response)
+#     with open("../Data/EtherscanData/nodes.json", "w+", encoding="utf-8") as dest:
+#         json.dump(data, dest, ensure_ascii=False, indent=4)
+#     json2Csv("../Data/EtherscanData/nodes.json", key="result")
+
 
 if __name__== "__main__":
   main()
