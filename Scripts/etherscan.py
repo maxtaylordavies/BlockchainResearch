@@ -6,7 +6,7 @@ import json
 import time
 
 def main():
-    scrapeAllBlocks()
+    scrapeAllForkedBlocks()
     
 def scrapeAllTransactions():
     transactions = []
@@ -28,7 +28,7 @@ def scrapeAllTransactions():
 def scrapeAllBlocks():
     blocks = []
 
-    for p in range(1, 5001):
+    for p in range(1, 88791):
         blocks += scrapePageOfBlocks(p)
 
         stdout.write("\r%d pages of blocks scraped" % p)
@@ -39,6 +39,23 @@ def scrapeAllBlocks():
             with open("../Data/EtherscanData/Scraping/blocks.json", "w+", encoding="utf-8") as dest:
                 json.dump(blocks, dest, ensure_ascii=False, indent=4)
             json2Csv("../Data/EtherscanData/Scraping/blocks.json")
+        
+        time.sleep(0.5)
+
+def scrapeAllForkedBlocks():
+    forkedBlocks = []
+
+    for p in range(1, 1080):
+        forkedBlocks += scrapePageOfForkedBlocks(p)
+
+        stdout.write("\r%d pages of forked blocks scraped" % p)
+        stdout.flush()
+
+        if p % 100 == 0:
+            print("saving")
+            with open("../Data/EtherscanData/Scraping/forked_blocks.json", "w+", encoding="utf-8") as dest:
+                json.dump(forkedBlocks, dest, ensure_ascii=False, indent=4)
+            json2Csv("../Data/EtherscanData/Scraping/forked_blocks.json")
         
         time.sleep(0.5)
 
@@ -92,6 +109,33 @@ def scrapePageOfBlocks(pageNum):
         })
 
     return blocks
+    
+def scrapePageOfForkedBlocks(pageNum):
+    forkedBlocks = []
+    url = "https://etherscan.io/blocks_forked?ps=100&p=" + str(pageNum)
+    soup = getHtml(url)
+
+    # find all the <tr/> html elements - these are table rows
+    # (the first one just contains column headers so we discard it)
+    rows = soup.findAll("tr")[1:]
+
+    # extract the data from each row of the table
+    for row in rows:
+        tds = row.findAll("td")
+        forkedBlocks.append({
+            "Height": tds[0].a.string,
+            "Date": tds[2].span["title"],
+            "Transactions": parseTransactionsNumber(tds[3]),
+            "Uncles": int(tds[4].string),
+            "Miner name": parseMinerName(tds[5]),
+            "Miner address": parseMinerAddress(tds[5]), 
+            "Gas limit": int("".join(tds[6].string.split(","))),
+            "Difficulty (TH)": float("".join(tds[7].string.split()[0].split(","))),
+            "Reward (Ether)": parseReward(tds[8]),
+            "Reorg depth": parseReorgDepth(tds[9]) 
+        })
+
+    return forkedBlocks
 
 def getHtml(url):
     # make etherscan think we're a browser instead of a python script; otherwise we'll be blocked
@@ -130,7 +174,7 @@ def parseAverageGasPrice(str):
     if str == "-":
         avg = 0.0
     else:
-        avg = float(str)
+        avg = float("".join(str.split(",")))
     return avg
 
 def parseReward(td):
@@ -165,6 +209,13 @@ def parseMinerName(td):
         return name
     except:
         return ""
+
+def parseReorgDepth(td):
+    if td.string == "-":
+        return 0
+    else:
+        return int(td.string)
+
 
 # def getEthereumNodeStats(baseApiUrl, key):
 #     url = baseApiUrl + "?module=stats&action=chainsize&startdate=2017-01-01&enddate=2019-10-28&clienttype=geth&syncmode=default&sort=asc&apikey=" + key
