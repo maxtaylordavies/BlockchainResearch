@@ -4,8 +4,12 @@ from six.moves import urllib
 from sys import stdout
 import json
 import time
+import os
+
+baseDir = os.getenv("HOME") + "/BlockchainResearch"
 
 def main():
+    print(baseDir)
     scrapeAllForkedBlocks()
     
 def scrapeAllTransactions():
@@ -19,9 +23,9 @@ def scrapeAllTransactions():
 
         if p % 100 == 0:
             print("saving")
-            with open("../Data/EtherscanData/Scraping/transactions.json", "w+", encoding="utf-8") as dest:
+            with open(baseDir + "/Data/EtherscanData/Scraping/transactions.json", "w+", encoding="utf-8") as dest:
                 json.dump(transactions, dest, ensure_ascii=False, indent=4)
-            json2Csv("../Data/EtherscanData/Scraping/transactions.json")
+            json2Csv(baseDir + "/Data/EtherscanData/Scraping/transactions.json")
         
         time.sleep(0.5)
 
@@ -36,9 +40,9 @@ def scrapeAllBlocks():
 
         if p % 100 == 0:
             print("saving")
-            with open("../Data/EtherscanData/Scraping/blocks.json", "w+", encoding="utf-8") as dest:
+            with open(baseDir + "/Data/EtherscanData/Scraping/blocks.json", "w+", encoding="utf-8") as dest:
                 json.dump(blocks, dest, ensure_ascii=False, indent=4)
-            json2Csv("../Data/EtherscanData/Scraping/blocks.json")
+            json2Csv(baseDir + "/Data/EtherscanData/Scraping/blocks.json")
         
         time.sleep(0.5)
 
@@ -53,9 +57,9 @@ def scrapeAllForkedBlocks():
 
         if p % 100 == 0:
             print("saving")
-            with open("../Data/EtherscanData/Scraping/forked_blocks.json", "w+", encoding="utf-8") as dest:
+            with open(baseDir + "/Data/EtherscanData/Scraping/forked_blocks.json", "w+", encoding="utf-8") as dest:
                 json.dump(forkedBlocks, dest, ensure_ascii=False, indent=4)
-            json2Csv("../Data/EtherscanData/Scraping/forked_blocks.json")
+            json2Csv(baseDir + "/Data/EtherscanData/Scraping/forked_blocks.json")
         
         time.sleep(0.5)
 
