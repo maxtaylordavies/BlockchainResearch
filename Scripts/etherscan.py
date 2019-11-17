@@ -68,10 +68,13 @@ def scrapeAllBlocks():
     blocks = []
 
     for p in range(1, 89338):
-        blocks += scrapePageOfBlocks(p)
+        try: 
+            blocks += scrapePageOfBlocks(p)
+        except:
+            pass
 
-        stdout.write("\r%d pages of blocks scraped" % p)
-        stdout.flush()
+        # stdout.write("\r%d pages of blocks scraped" % p)
+        # stdout.flush()
 
         if p % 100 == 0:
             # we want to save the last 100 pages to disk and then clear the working list to free up RAM
