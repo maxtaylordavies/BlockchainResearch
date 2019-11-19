@@ -8,6 +8,12 @@ import time
 import os
 import re
 
+def isErrorPage(soup):
+    h1 = soup.find("h1")
+    if h1 == None:
+        return False
+    return h1.span.string == "Sorry!"
+
 def getTokenContractIds():
     symbols = getDesiredCoinSymbols()
     contractIds = []
@@ -55,6 +61,9 @@ def scrapePageOfTokenTranfers(contractId, p):
     transfers = []
     url = "https://etherscan.io/token/generic-tokentxns2?contractAddress=" + contractId + "&p=" + str(p)
     soup = getHtml(url)
+
+    if isErrorPage(soup):
+        return transfers
 
     # find all the <tr/> html elements - these are table rows
     # (the first one just contains column headers so we discard it)

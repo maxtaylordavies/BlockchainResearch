@@ -1,0 +1,10 @@
+[Unit]
+Description=Run etherscan_transactions every 24 hours
+Requires=etherscan_transactions.service
+
+[Timer]
+Unit=etherscan_transactions.service
+OnCalendar=daily
+
+[Install]
+WantedBy=timers.target
