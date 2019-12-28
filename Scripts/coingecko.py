@@ -2,8 +2,11 @@ from pycoingecko import CoinGeckoAPI
 from messari import json2Csv
 import json
 import time
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
+from sys import stdout
+import os
 
+baseDir = os.getenv("HOME") + "/Dropbox/SHARED BLOCKCHAIN PROJECT - DATA/Max Taylor-Davies"
 
 def main():
     # initialise an instance of the API client
@@ -15,13 +18,57 @@ def main():
     # find the ids of the coins we're interested in
     allCoins = api.get_coins_list()
     names = getDesiredCoinNames(allCoins, symbols)
-    print(names)
-    # ids = getDesiredCoinIds(allCoins, symbols)
-    
-    # # get historical data on coins by id
-    # for id in ids:
-    #     getMarketDataOnCoin(api, id)
-    #     getDevStatsOnCoin(api, id)
+    ids = getDesiredCoinIds(allCoins, symbols)
+    print(len(ids))
+
+    for i in range(52, len(ids)):
+        id = ids[i]
+
+        data = getHistoricalData(api, id)
+        
+        jsonPath = baseDir + "/Data/CoingeckoData/"+id+".json"
+        with open(jsonPath, "w+", encoding="utf-8") as dest:
+            json.dump(data, dest, ensure_ascii=False, indent=4)
+        json2Csv(jsonPath)
+
+        stdout.write("\r%d coins done" % i)
+        stdout.flush()
+
+
+def getHistoricalData(api, id):
+    data = []
+    d = "01-01-2019"
+
+    while True:
+        datapoint = api.get_coin_history_by_id(id, d)
+        if "market_data" not in datapoint:
+            break
+        data.append({
+            "Date": d,
+            "Current price (usd)": datapoint["market_data"]["current_price"]["usd"],
+            "Market cap (usd)": datapoint["market_data"]["market_cap"]["usd"],
+            "Total volume (usd)": datapoint["market_data"]["total_volume"]["usd"],
+            "Facebook likes": datapoint["community_data"]["facebook_likes"],
+            "Twitter followers": datapoint["community_data"]["twitter_followers"],
+            "Reddit average posts 48h": datapoint["community_data"]["reddit_average_posts_48h"],
+            "Reddit average comments 48h": datapoint["community_data"]["reddit_average_comments_48h"],
+            "Reddit subscribers": datapoint["community_data"]["reddit_subscribers"],
+            "Reddit accounts active 48h": datapoint["community_data"]["facebook_likes"],
+            "Github forks": datapoint["developer_data"]["forks"],
+            "Github stars": datapoint["developer_data"]["stars"],
+            "Github total issues": datapoint["developer_data"]["total_issues"],
+            "Github closed issues": datapoint["developer_data"]["closed_issues"],
+            "Commits (4 weeks)": datapoint["developer_data"]["commit_count_4_weeks"],
+            "Code additions (4 weeks)": datapoint["developer_data"]["code_additions_deletions_4_weeks"]["additions"],
+            "Code deletions (4 weeks)": datapoint["developer_data"]["code_additions_deletions_4_weeks"]["deletions"],
+            "Alexa rank": datapoint["public_interest_stats"]["alexa_rank"],
+            "Bing matches": datapoint["public_interest_stats"]["bing_matches"],
+        })
+        d = datetime.strptime(d, "%d-%m-%Y").date()
+        d -= timedelta(days=1)
+        d = d.strftime("%d-%m-%Y")
+
+    return data
 
 
 def getDevStatsOnCoin(api, id):

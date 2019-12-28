@@ -6,8 +6,12 @@ import calendar
 from messari import json2Csv
 
 def main():
-    #getSubmissionNumbersForSubreddit("bitcoin")
-    json2Csv("../Data/RedditData/bitcoin.json")
+    submissions = getAllSubmissionsFromSubreddit("Tether")
+    stats = getSubmissionNumbersForSubreddit("Tether")
+    with open("test.json", "w+", encoding="utf-8") as dest:
+        json.dump(submissions, dest, ensure_ascii=False, indent=4)
+    with open("test2.json", "w+", encoding="utf-8") as dest:
+        json.dump(stats, dest, ensure_ascii=False, indent=4)
 
 def getSubmissionNumbersForSubreddit(subreddit):
     submissions = getAllSubmissionsFromSubreddit(subreddit)
@@ -17,7 +21,7 @@ def getSubmissionNumbersForSubreddit(subreddit):
     today = date(today.year, today.month, today.day)
     today = calendar.timegm(today.timetuple())
 
-    limit = 1483228800
+    limit = submissions[-1]["created_utc"] - (60 * 60 * 24)
     d = today
 
     while d >= limit:
@@ -35,10 +39,7 @@ def getSubmissionNumbersForSubreddit(subreddit):
             i = submissionNumbers.index(el)
             submissionNumbers[i]["Submissions"] += 1
 
-
-    with open("./test.json", "w+", encoding="utf-8") as dest:
-        json.dump(submissionNumbers, dest, ensure_ascii=False, indent=4)
-
+    return submissionNumbers
 
 def getAllSubmissionsFromSubreddit(subreddit):
     submissions = []
@@ -55,7 +56,6 @@ def getAllSubmissionsFromSubreddit(subreddit):
             break
 
         newBeforeTime = data[len(data)-1]["created_utc"]
-        print(datetime.utcfromtimestamp(newBeforeTime).strftime("%Y-%m-%d"))
         # if (beforeTime - newBeforeTime) > 600000:
         #     print(datetime.utcfromtimestamp(newBeforeTime).strftime("%Y-%m-%d"))
         

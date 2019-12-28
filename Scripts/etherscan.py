@@ -1,38 +1,76 @@
 from messari import json2Csv
 from sys import stdout, argv
-from etherscan_utils import scrapePageOfBlocks, scrapePageOfForkedBlocks, scrapePageOfTokenTranfers, scrapePageOfTransactions, getTokenContractIds, scrapePageOfTokenTopHolders
+from etherscan_utils import scrapePageOfBlocks, scrapePageOfForkedBlocks, scrapePageOfTokenTranfers, scrapePageOfTransactions, getTokenContractIds, scrapePageOfTokenTopHolders, getHtml, getTokenInfo, getTokenAnalytics
 import json
 from datetime import datetime, timedelta
 import time
 import os
 import csv
 
-baseDir = os.getenv("HOME") + "/BlockchainResearch"
+# baseDir = os.getenv("HOME") + "/BlockchainResearch"
+baseDir = os.getenv("HOME") + "/Dropbox/SHARED BLOCKCHAIN PROJECT - DATA/Max Taylor-Davies"
 
 def main():
     if argv[1] == "blocks":
         scrapeAllBlocks()
+    elif argv[1] == "forked":
+        scrapeAllForkedBlocks()
     elif argv[1] == "transactions":
         scrapeLast24HoursTransactions()
+    elif argv[1] == "ids":
+        ids = getTokenContractIds()
+        with open(baseDir + "/Scripts/ids.json", "w+", encoding="utf-8") as dest:
+            json.dump(ids, dest, ensure_ascii=False, indent=4)
+    elif argv[1] == "tokens":
+        getDataForAllTokens()
+    elif argv[1] == "test":
+        getTokenAnalytics("0xdac17f958d2ee523a2206206994597c13d831ec7")
+    
+def getDataForAllTokens():
+    with open("/Users/maxtaylordavies/BlockchainResearch/Scripts/ids.json") as tokens:    
+        tokens = json.load(tokens)
 
+    for i in range(len(tokens)):
+        token = tokens[i]
+        name = token["name"]
+        contract = token["id"]
+
+        stdout.write("\r%d tokens done" % i)
+        stdout.flush()
+    
+        holders = getTopHoldersForToken(contract)
+        # info = getTokenInfo(contract)
+        # analytics = getTokenAnalytics(contract)
+
+        with open(baseDir + "/Data/TokenData/" + name + "/top_holders.json", "w+", encoding="utf-8") as dest:
+            json.dump(holders, dest, ensure_ascii=False, indent=4)
+        # with open(baseDir + "/Data/TokenData/" + name + "/info.json", "w+", encoding="utf-8") as dest:
+        #     json.dump(info, dest, ensure_ascii=False, indent=4)
+        # with open(baseDir + "/Data/TokenData/" + name + "/analytics.json", "w+", encoding="utf-8") as dest:
+        #     json.dump(analytics, dest, ensure_ascii=False, indent=4)
+        json2Csv(baseDir + "/Data/TokenData/" + name + "/top_holders.json")
+        # json2Csv(baseDir + "/Data/TokenData/" + name + "/info.json")
+        # json2Csv(baseDir + "/Data/TokenData/" + name + "/analytics.json")
+    
 
 def getTopHoldersForToken(contractId):
     holders = []
 
+    url = "https://etherscan.io/token/" + contractId
+    soup = getHtml(url)
+    card = soup.find("div", {"class": "card-body"})
+    div = card.find("div", {"class": "col-md-8 font-weight-medium"})
+    sParam = div.span["title"].replace(" ", "").replace(".", "").replace(",", "")
+ 
     for p in range(1, 21):
-        holders += scrapePageOfTokenTopHolders(contractId, p)
+        holders += scrapePageOfTokenTopHolders(contractId, p, sParam)
 
-        stdout.write("\r%d pages of top holders scraped" % p)
-        stdout.flush()
-
-        if p == 20:
-            print("saving")
-            with open(baseDir + "/Data/EtherscanData/Scraping/" + contractId + "_top_holders.json", "w+", encoding="utf-8") as dest:
-                json.dump(holders, dest, ensure_ascii=False, indent=4)
-            json2Csv(baseDir + "/Data/EtherscanData/Scraping/" + contractId + "_top_holders.json")
+        # stdout.write("\r%d pages of top holders scraped" % p)
+        # stdout.flush()
         
-        time.sleep(0.2)
+        time.sleep(0.05)
 
+    return holders
 
 def scrapeAllTransfersForToken(contractId):
     transfers = []
@@ -71,7 +109,6 @@ def scrapeAllTransfersForToken(contractId):
                     # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(transactions)
-
 
 def scrapeLast24HoursTransactions():
     d = datetime.now()
@@ -132,22 +169,20 @@ def scrapeAllTransactions():
 def scrapeAllBlocks():
     blocks = []
 
-    for p in range(1, 89338):
-        try: 
-            blocks += scrapePageOfBlocks(p)
-        except:
-            pass
+    for p in range(72801, 89764):
 
-        # stdout.write("\r%d pages of blocks scraped" % p)
-        # stdout.flush()
+        blocks += scrapePageOfBlocks(p)
+
+        stdout.write("\r%d pages of blocks scraped" % p)
+        stdout.flush()
 
         if p % 100 == 0:
             # we want to save the last 100 pages to disk and then clear the working list to free up RAM
-            with open(baseDir + "/Data/EtherscanData/Scraping/blocks.csv", "a") as dest:
+            with open(baseDir + "/Data/EtherscanData/Scraping/Blockchain/blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
-                if p == 100:
-                    # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
-                    w.writeheader()
+                # if p == 100:
+                #     # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
+                #     w.writeheader()
                 w.writerows(blocks)
 
             with open(baseDir + "/Logs/blocks.txt", "a") as logfile:
@@ -155,7 +190,7 @@ def scrapeAllBlocks():
 
             blocks = []
         
-        time.sleep(0.25)
+        time.sleep(0.05)
 
 
 def scrapeLast24HoursBlocks():
@@ -196,7 +231,7 @@ def scrapeLast24HoursBlocks():
 def scrapeAllForkedBlocks():
     forkedBlocks = []
 
-    for p in range(1, 1080):
+    for p in range(1, 1113):
         forkedBlocks += scrapePageOfForkedBlocks(p)
 
         stdout.write("\r%d pages of forked blocks scraped" % p)
@@ -208,7 +243,7 @@ def scrapeAllForkedBlocks():
                 json.dump(forkedBlocks, dest, ensure_ascii=False, indent=4)
             json2Csv(baseDir + "/Data/EtherscanData/Scraping/forked_blocks.json")
         
-        time.sleep(0.5)
+        time.sleep(0.05)
 
 if __name__== "__main__":
   main()

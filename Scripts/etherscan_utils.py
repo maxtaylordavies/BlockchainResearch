@@ -7,6 +7,32 @@ import json
 import time
 import os
 import re
+import js2xml
+
+def getTokenAnalytics(contract):
+    analytics = []
+    url = "https://etherscan.io/token/token-analytics?m=dark&contractAddress=" + contract + "&a=&lg=en"
+    soup = getHtml(url)
+    script = soup.findAll("script")[6].text
+    parsed = js2xml.parse(script)
+
+    data = parsed.xpath("//var[@name='plotData']/functioncall/arguments/array/array")
+    for point in data:
+        [y, m, d] = point.xpath(".//arguments/number/@value")
+        date = y + "-" + m + "-" + d
+        stats = point.xpath("./number/@value")
+        analytics.append({
+            "Date": date,
+            "Transfer Amount": stats[0],
+            "Transfers Count": stats[1],
+            "Unique Receivers": stats[2],
+            "Unique Senders": stats[3],
+            "Total Uniques": stats[4]
+    })
+    
+    return analytics
+    
+
 
 def isErrorPage(soup):
     h1 = soup.find("h1")
@@ -14,10 +40,24 @@ def isErrorPage(soup):
         return False
     return h1.span.string == "Sorry!"
 
+def getTokenInfo(contract):
+    info = {}
+
+    url = "https://etherscan.io/token/" + contract + "#tokenInfo"
+    soup = getHtml(url)
+    div = soup.find("div", {"id": "tokenInfo"})
+    rows = div.findAll("tr")
+
+    for row in rows:
+        tds = row.findAll("td")
+        if len(tds) == 3:
+            info[tds[0].string] = tds[2].string
+
+    return info
+
 def getTokenContractIds():
-    symbols = getDesiredCoinSymbols()
     contractIds = []
-    
+
     for p in range(1, 11):
         url = "https://etherscan.io/tokens?ps=100&p=" + str(p)
         soup = getHtml(url)
@@ -25,25 +65,27 @@ def getTokenContractIds():
         for row in rows:
             tds = row.findAll("td")
             link = tds[1].div.div.h3.a
+            s = link.string 
 
-            regexResult = re.search("(?<=\().+?(?=\))", link.string.lower())
+            regexResult = re.search("(?<=\().+?(?=\))", s)
             if regexResult != None:
                 symbol = regexResult.group()
+                name = s.replace(" ("+symbol+")", "")
             else:
-                symbol = ""
+                name = s
+                symbol = s
 
             contractId = link["href"][7:]
             
-            if symbol in symbols:
-                contractIds.append(contractId)
+            contractIds.append({"name": name, "symbol": symbol, "id": contractId})
 
     return contractIds
 
-def scrapePageOfTokenTopHolders(contractId, p):
+def scrapePageOfTokenTopHolders(contractId, p, sParam):
     holders = []
-    url = "https://etherscan.io/token/generic-tokenholders2?a=" + contractId + "&s=2.02370978110666E%2b15&p=" + str(p)
+    # https://etherscan.io/token/generic-tokenholders2?m=dark&a=0xdac17f958d2ee523a2206206994597c13d831ec7&s=2023709781106661
+    url = "https://etherscan.io/token/generic-tokenholders2?a=" + contractId + "&s=" + sParam + "&p=" + str(p)
     soup = getHtml(url)
-
     rows = soup.findAll("tr")[1:]
     
     for row in rows:
@@ -63,7 +105,7 @@ def scrapePageOfTokenTranfers(contractId, p):
     soup = getHtml(url)
 
     if isErrorPage(soup):
-        return transfers
+        return
 
     # find all the <tr/> html elements - these are table rows
     # (the first one just contains column headers so we discard it)
@@ -148,7 +190,7 @@ def scrapePageOfForkedBlocks(pageNum):
         forkedBlocks.append({
             "Height": tds[0].a.string,
             "Date": tds[2].span["title"],
-            "Transactions": parseTransactionsNumber(tds[3]),
+            "Transactions": int(tds[3].string),
             "Uncles": int(tds[4].string),
             "Miner name": parseMinerName(tds[5]),
             "Miner address": parseMinerAddress(tds[5]), 
@@ -235,7 +277,7 @@ def parseMinerName(td):
 
 def parseReorgDepth(td):
     if td.string == "-":
-        return 0
+        return td.string
     else:
         return int(td.string)
 

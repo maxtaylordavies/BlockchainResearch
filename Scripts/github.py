@@ -45,8 +45,7 @@ def getHistoricalActivityOnRepo(repoOwner, repoName, token):
             i = activity.index(el)
             activity[i]["Forks"] += 1
 
-    with open("../Data/GithubData/Activity/" + repoName + "_activity.json", "w+", encoding="utf-8") as dest:
-        json.dump(activity, dest, ensure_ascii=False, indent=4)
+    return activity
 
 def getAllCommitsOnRepo(repoOwner, repoName, token):
     commits = []
@@ -61,8 +60,8 @@ def getAllCommitsOnRepo(repoOwner, repoName, token):
         data = json.load(response)
         commits += map(parseCommit, data)
 
-        stdout.write("\r%d pages of commits downloaded" % p)
-        stdout.flush()
+        # stdout.write("\r%d pages of commits downloaded" % p)
+        # stdout.flush()
         p += 1
 
         url = parseLinkHeader(response)
@@ -87,8 +86,8 @@ def getAllForksOnRepo(repoOwner, repoName, token):
         data = json.load(response)
         forks += map(parseFork, data)
 
-        stdout.write("\r%d pages of forks downloaded" % p)
-        stdout.flush()
+        # stdout.write("\r%d pages of forks downloaded" % p)
+        # stdout.flush()
         p += 1
 
         url = parseLinkHeader(response)
@@ -118,6 +117,10 @@ def parseFork(fork):
 
 def parseLinkHeader(response):
     linkHeader = response.info().get("Link")
+    
+    if linkHeader == None:
+        return None
+
     linkArr = linkHeader.split(",")
 
     linkDict = {}
