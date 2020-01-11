@@ -21,7 +21,7 @@ def main():
     ids = getDesiredCoinIds(allCoins, symbols)
     print(len(ids))
 
-    for i in range(52, len(ids)):
+    for i in range(70, len(ids)):
         id = ids[i]
 
         data = getHistoricalData(api, id)

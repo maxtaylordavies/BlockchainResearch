@@ -87,6 +87,9 @@ def scrapePageOfTokenTopHolders(contractId, p, sParam):
     url = "https://etherscan.io/token/generic-tokenholders2?a=" + contractId + "&s=" + sParam + "&p=" + str(p)
     soup = getHtml(url)
     rows = soup.findAll("tr")[1:]
+
+    if len(rows) == 2:
+        return holders
     
     for row in rows:
         tds = row.findAll("td")

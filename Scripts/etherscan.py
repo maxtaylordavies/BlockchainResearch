@@ -30,7 +30,7 @@ def getDataForAllTokens():
     with open("/Users/maxtaylordavies/BlockchainResearch/Scripts/ids.json") as tokens:    
         tokens = json.load(tokens)
 
-    for i in range(len(tokens)):
+    for i in range(975, len(tokens)):
         token = tokens[i]
         name = token["name"]
         contract = token["id"]
@@ -58,16 +58,24 @@ def getTopHoldersForToken(contractId):
 
     url = "https://etherscan.io/token/" + contractId
     soup = getHtml(url)
-    card = soup.find("div", {"class": "card-body"})
-    div = card.find("div", {"class": "col-md-8 font-weight-medium"})
-    sParam = div.span["title"].replace(" ", "").replace(".", "").replace(",", "")
+    cards = soup.findAll("div", {"class": "card-body"})
+
+    div = cards[1].find("div", {"id": "ContentPlaceHolder1_trDecimals"}).find("div", {"class": "col-md-8"})
+    decimals = int(div.text.rstrip()) 
+
+    div = cards[0].find("div", {"class": "col-md-8 font-weight-medium"})
+    sParam = div.span["title"].replace(" ", "").replace(",", "").split(".")
+
+    if len(sParam) == 2:
+        decimals -= len(sParam[1])
+
+    sParam = "".join(sParam) + ("0" * decimals)
  
     for p in range(1, 21):
-        holders += scrapePageOfTokenTopHolders(contractId, p, sParam)
-
-        # stdout.write("\r%d pages of top holders scraped" % p)
-        # stdout.flush()
-        
+        h = scrapePageOfTokenTopHolders(contractId, p, sParam)
+        if len(h) == 0:
+            break
+        holders += h        
         time.sleep(0.05)
 
     return holders
