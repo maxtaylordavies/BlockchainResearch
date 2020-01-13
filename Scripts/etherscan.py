@@ -104,7 +104,7 @@ def scrapeAllTransfersForToken(contractId):
                 if not (os.path.isfile("/Data/EtherscanData/Scraping/" + contractId + "_transfers.csv") and os.path.getsize("/Data/EtherscanData/Scraping/" + contractId + "_transfers.csv") > 0):
                     # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
-                w.writerows(transactions)
+                w.writerows(transfers)
 
             transfers = []
         
@@ -116,7 +116,7 @@ def scrapeAllTransfersForToken(contractId):
                 if not (os.path.isfile("/Data/EtherscanData/Scraping/" + contractId + "_transfers.csv") and os.path.getsize("/Data/EtherscanData/Scraping/" + contractId + "_transfers.csv") > 0):
                     # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
-                w.writerows(transactions)
+                w.writerows(transfers)
 
 def scrapeLast24HoursTransactions():
     d = datetime.now()
