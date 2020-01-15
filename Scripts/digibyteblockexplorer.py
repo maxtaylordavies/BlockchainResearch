@@ -13,7 +13,7 @@ def parseTimestamp(timeString):
 
 def scrapeBlocks():
     blocks = []
-    for p in range(201, 202564):
+    for p in range(68001, 202564):
         blocks += scrapePageOfBlocks(p)
 
         stdout.write("\r%d pages of blocks scraped" % p)
