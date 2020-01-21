@@ -33,7 +33,7 @@ def scrapeBlocks():
     while height > 0:
         blocks += scrapePageOfBlocks(height, headers)
 
-        stdout.write("\r%d pages of blocks scraped" % p)
+        stdout.write("\r%d pages of blocks scraped (height %d)" % (p, height))
         stdout.flush()
 
         if p % 500 == 0:
@@ -45,7 +45,7 @@ def scrapeBlocks():
                 w.writerows(blocks)
 
             with open(baseDir + "/Logs/nem/blocks.txt", "a") as logfile:
-                logfile.write("%d pages of blocks scraped\n" % p)
+                logfile.write("%d pages of blocks scraped (height %d)\n" % (p, height))
 
             blocks = []
 

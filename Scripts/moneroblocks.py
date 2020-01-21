@@ -13,25 +13,25 @@ def parseTimestamp(timeString):
 
 def scrapeBlocks():
     blocks = []
-    p = 1
-    height = 2011347
+    p = 20501
+    height = 986347
 
     while height > 1:
         blocks += scrapePageOfBlocks(height)
 
-        stdout.write("\r%d pages of blocks scraped" % p)
+        stdout.write("\r%d pages of blocks scraped (height %d)" % (p, height))
         stdout.flush()
 
         if p % 500 == 0:
             with open(baseDir + "/Data/OtherChains/xmr/historical_blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
                 if p == 500:
-                    # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
+                    # if this is the first 500 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(blocks)
 
             with open(baseDir + "/Logs/xmr/blocks.txt", "a") as logfile:
-                logfile.write("%d pages of blocks scraped\n" % p)
+                logfile.write("%d pages of blocks scraped (height %d)\n" % (p, height))
 
             blocks = []
 
