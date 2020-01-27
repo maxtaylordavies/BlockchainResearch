@@ -26,8 +26,8 @@ def scrapePageOfBlocks(offset):
             "Timestamp": parseTimestamp(tds[1].string),
             "Transactions": int(tds[4].string),
             "Size (bytes)": int(tds[6].string.replace(",","")),
-            "Weight (wu)": int(tds[7].string.replace(",","")),
-            "Average fee (xpm)": int(tds[5].string.split(" ")[0])
+            "Weight (wu)": int(tds[7].span.string.replace(",","")),
+            "Average fee (xpm)": float(tds[5].span.contents[0].split(" ")[0].replace(",",""))
         })
 
     if offset == 0:
@@ -39,8 +39,8 @@ def scrapePageOfBlocks(offset):
 
 def scrapeBlocks():
     blocks = []
-    offset = 0
-    p = 1
+    offset = 2480000 
+    p = 2481
 
     while offset <= 3525000:
         blocks += scrapePageOfBlocks(offset)
@@ -49,14 +49,14 @@ def scrapeBlocks():
         stdout.flush()
 
         if p % 20 == 0:
-            with open(baseDir + "/Data/OtherChains/xpm/historical_blocks.csv", "a") as dest:
+            with open(baseDir + "/Data/OtherChains/primecoin/historical_blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
                 if p == 20:
                     # if this is the first 500 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(blocks)
 
-            with open(baseDir + "/Logs/xpm/blocks.txt", "a") as logfile:
+            with open(baseDir + "/Logs/primecoin/blocks.txt", "a") as logfile:
                 logfile.write("%d pages of blocks scraped (offset %d)\n" % (p, offset))
 
             blocks = []
