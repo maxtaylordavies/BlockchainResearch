@@ -19,8 +19,7 @@ def scrapePageOfBlocks(p, headers):
     return list(map(lambda b: {
         "Height": b["height"],
         "Hash": b["hash"],
-        "Time": datetime.fromtimestamp(b["time"]),
-        "Miner": b["miner"],
+        "Time": datetime.fromtimestamp(b["timestamp"]),
         "Size": b["size"],
         "Transaction count": b["transaction_count"],
         "Difficulty": b["difficulty"],
@@ -32,7 +31,7 @@ def scrapePageOfBlocks(p, headers):
 
 def scrapeBlocks():
     blocks = []
-    p = 1
+    p = 61
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0"
     }
@@ -43,7 +42,7 @@ def scrapeBlocks():
         if p == 1:
             print(blocks[0])
 
-        stdout.write("\r%d iterations" % p)
+        stdout.write("\r%d pages scraped" % p)
         stdout.flush()
 
         if p % 20 == 0:
