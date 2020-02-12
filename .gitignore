@@ -5,3 +5,6 @@ Data/
 Keys/
 Logs/
 __pycache__/
+anon.session
+anon.session-journal
+maxtaylordavies.session
