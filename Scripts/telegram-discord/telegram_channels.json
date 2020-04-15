@@ -1,0 +1,22 @@
+{
+    "aeternity": ["aeternity"],
+    "bnb": ["binance_announcements"],
+    "bytom": ["BytomInternational"],
+    "cardano": ["CardanoAnnouncements"],
+    "dash": ["dash_chat", "dashnewsbot"],
+    "digibyte": ["DigiByteCoin", "DGBalerts", "DigiByteDevelopers"],
+    "icon": ["hello_iconworld"],
+    "litecoin": ["litecoin"],
+    "monero": ["bitmonero"],
+    "nebulas": ["nebulasen"],
+    "neo": ["NEO_EN"],
+    "pivx": ["PIVXChat"],
+    "qtum": ["qtumofficial"],
+    "stellar": ["StellarLumens"],
+    "tron": ["tronnetworkEN"],
+    "vechain": ["vechain_official_english"],
+    "verge": ["VERGExvg"],
+    "vertcoin": ["VertcoinCrypto"],
+    "waves": ["wavesnews"],
+    "zilliqa": ["zilliqachat"]
+}

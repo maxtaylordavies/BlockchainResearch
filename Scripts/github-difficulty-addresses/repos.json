@@ -1,0 +1,331 @@
+[
+  {
+    "name": "Bitcoin",
+    "symbol": "btc",
+    "org": "bitcoin",
+    "repos": ["bitcoin"],
+    "redo": false
+  },
+  {
+    "name": "Paycoin",
+    "symbol": "xpy",
+    "org": "PaycoinFoundation",
+    "repos": ["paycoin"],
+    "redo": false
+  },
+  {
+    "name": "Litecoin",
+    "symbol": "ltc",
+    "org": "litecoin-project",
+    "repos": ["litecoin"],
+    "redo": false
+  },
+  {
+    "name": "Bitshares",
+    "symbol": "bts",
+    "org": "bitshares",
+    "repos": ["bitshares-core"],
+    "redo": false
+  },
+  {
+    "name": "Maidsafecoin",
+    "symbol": "maid",
+    "org": "maidsafe",
+    "repos": [],
+    "redo": false
+  },
+  {
+    "name": "Stellar",
+    "symbol": "xlm",
+    "org": "stellar",
+    "repos": ["stellar-core"],
+    "redo": false
+  },
+  {
+    "name": "Dogecoin",
+    "symbol": "doge",
+    "org": "dogecoin",
+    "repos": ["dogecoin"],
+    "redo": false
+  },
+  {
+    "name": "Peercoin",
+    "symbol": "ppc",
+    "org": "peercoin",
+    "repos": ["peercoin"],
+    "redo": false
+  },
+  {
+    "name": "Dash",
+    "symbol": "dash",
+    "org": "dashpay",
+    "repos": ["dash"],
+    "redo": false
+  },
+  {
+    "name": "Namecoin",
+    "symbol": "nmc",
+    "org": "namecoin",
+    "repos": ["namecoin"],
+    "redo": false
+  },
+  {
+    "name": "Monero",
+    "symbol": "xmr",
+    "org": "monero-project",
+    "repos": ["monero"],
+    "redo": false
+  },
+  {
+    "name": "Storjcoin X",
+    "symbol": "sjcx",
+    "org": "storj",
+    "repos": ["storj"],
+    "redo": false
+  },
+  {
+    "name": "Blackcoin",
+    "symbol": "blk",
+    "org": "blackcoin",
+    "repos": ["blackcoin"],
+    "redo": false
+  },
+  {
+    "name": "Bytecoin",
+    "symbol": "bcn",
+    "org": "amjuarez",
+    "repos": ["bytecoin"],
+    "redo": true
+  },
+  {
+    "name": "Quark",
+    "symbol": "qrk",
+    "org": "quark-project",
+    "repos": ["quark"],
+    "redo": false
+  },
+  {
+    "name": "Feathercoin",
+    "symbol": "ftc",
+    "org": "FeatherCoin",
+    "repos": ["feathercoin"],
+    "redo": false
+  },
+  {
+    "name": "Primecoin",
+    "symbol": "xpm",
+    "org": "primecoin",
+    "repos": ["primecoin"],
+    "redo": false
+  },
+  {
+    "name": "Clams",
+    "symbol": "clam",
+    "org": "nochowderforyou",
+    "repos": ["clams"],
+    "redo": true
+  },
+  {
+    "name": "Worldcoin",
+    "symbol": "wdc",
+    "org": "worldcoinproject",
+    "repos": ["worldcoin-v0.8"],
+    "redo": true
+  },
+  {
+    "name": "Monacoin",
+    "symbol": "mona",
+    "org": "monacoinproject",
+    "repos": ["monacoin"],
+    "redo": false
+  },
+  {
+    "name": "Shadowcash",
+    "symbol": "sdc",
+    "org": "shadowproject",
+    "repos": ["shadow"],
+    "redo": false
+  },
+  {
+    "name": "Digitalnote",
+    "symbol": "xdn",
+    "org": "DNotesCoin",
+    "repos": ["DNotes2.0"],
+    "redo": false
+  },
+  {
+    "name": "Novacoin",
+    "symbol": "nvc",
+    "org": "novacoin-project",
+    "repos": ["novacoin"],
+    "redo": true
+  },
+  {
+    "name": "Zetacoin",
+    "symbol": "zet",
+    "org": "zetacoin",
+    "repos": ["zetacoin"],
+    "redo": false
+  },
+  {
+    "name": "Anoncoin",
+    "symbol": "anc",
+    "org": "Anoncoin",
+    "repos": ["anoncoin"],
+    "redo": false
+  },
+  {
+    "name": "Vertcoin",
+    "symbol": "vtc",
+    "org": "vertcoin",
+    "repos": ["vertcoin"],
+    "redo": false
+  },
+  {
+    "name": "Startcoin",
+    "symbol": "start",
+    "org": "startcoin-project",
+    "repos": ["startcoin"],
+    "redo": true
+  },
+  {
+    "name": "Digibyte",
+    "symbol": "dgb",
+    "org": "digibyte",
+    "repos": ["digibyte"],
+    "redo": false
+  },
+  {
+    "name": "Omni",
+    "symbol": "omni",
+    "org": "OmniLayer",
+    "repos": ["omnicore"],
+    "redo": false
+  },
+  {
+    "name": "Ixcoin",
+    "symbol": "ixc",
+    "org": "ixcore",
+    "repos": ["ixcoin"],
+    "redo": false
+  },
+  {
+    "name": "Infinitecoin",
+    "symbol": "ifc",
+    "org": "WilliamXuu",
+    "repos": ["infinitecoin"],
+    "redo": false
+  },
+  {
+    "name": "Mintcoin",
+    "symbol": "mint",
+    "org": "mintcoinproject",
+    "repos": ["mintcoin"],
+    "redo": false
+  },
+  {
+    "name": "Digitalcoin",
+    "symbol": "dgc",
+    "org": "lomtax",
+    "repos": ["digitalcoin"],
+    "redo": false
+  },
+  {
+    "name": "Devcoin",
+    "symbol": "dvc",
+    "org": "devcoin",
+    "repos": ["core"],
+    "redo": false
+  },
+  {
+    "name": "Terracoin",
+    "symbol": "trc",
+    "org": "terracoin",
+    "repos": ["terracoin"],
+    "redo": false
+  },
+  {
+    "name": "Freicoin",
+    "symbol": "frc",
+    "org": "freicoin",
+    "repos": ["freicoin"],
+    "redo": false
+  },
+  {
+    "name": "Tickets",
+    "symbol": "tix",
+    "org": "LotteryTickets",
+    "repos": ["LotteryTickets"],
+    "redo": false
+  },
+  {
+    "name": "Bullion",
+    "symbol": "cbx",
+    "org": "elambert2014",
+    "repos": ["CryptoBullion-CBX"],
+    "redo": true
+  },
+  {
+    "name": "Netcoin",
+    "symbol": "net",
+    "org": "netcoinfoundation",
+    "repos": ["netcoin"],
+    "redo": false
+  },
+  {
+    "name": "Copperlark",
+    "symbol": "clr",
+    "org": "copperlark",
+    "repos": ["clr"],
+    "redo": false
+  },
+  {
+    "name": "Earthcoin",
+    "symbol": "eac",
+    "org": "earthcoinproject",
+    "repos": ["earthcoin"],
+    "redo": false
+  },
+  {
+    "name": "DNotes",
+    "symbol": "note",
+    "org": "DNotesCoin",
+    "repos": ["DNotes2.0"],
+    "redo": false
+  },
+  {
+    "name": "Fuelcoin",
+    "symbol": "fc2",
+    "org": "FuelCoinTwo",
+    "repos": ["Fuelcoin"],
+    "redo": false
+  },
+  {
+    "name": "VCash",
+    "symbol": "xvc",
+    "org": "openvcash",
+    "repos": ["vcash"],
+    "redo": false
+  },
+  {
+    "name": "Goldcoin",
+    "symbol": "glc",
+    "org": "goldcoin",
+    "repos": ["goldcoin"],
+    "redo": false
+  },
+  {
+    "name": "Fastcoin",
+    "symbol": "fst",
+    "org": "imharrywu",
+    "repos": ["fastcoin"],
+    "redo": true
+  },
+  {
+    "name": "Sexcoin",
+    "symbol": "sxc",
+    "org": "sexcoin-project",
+    "repos": ["sexcoin"],
+    "redo": false
+  }
+]
