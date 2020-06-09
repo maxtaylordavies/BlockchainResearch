@@ -4,328 +4,328 @@
     "symbol": "btc",
     "org": "bitcoin",
     "repos": ["bitcoin"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Paycoin",
     "symbol": "xpy",
     "org": "PaycoinFoundation",
     "repos": ["paycoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/paycoin/difficulty-chart"
   },
   {
     "name": "Litecoin",
     "symbol": "ltc",
     "org": "litecoin-project",
     "repos": ["litecoin"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Bitshares",
     "symbol": "bts",
     "org": "bitshares",
     "repos": ["bitshares-core"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Maidsafecoin",
     "symbol": "maid",
     "org": "maidsafe",
     "repos": [],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Stellar",
     "symbol": "xlm",
     "org": "stellar",
     "repos": ["stellar-core"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Dogecoin",
     "symbol": "doge",
     "org": "dogecoin",
     "repos": ["dogecoin"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Peercoin",
     "symbol": "ppc",
     "org": "peercoin",
     "repos": ["peercoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/peercoin/difficulty-chart"
   },
   {
     "name": "Dash",
     "symbol": "dash",
     "org": "dashpay",
     "repos": ["dash"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Namecoin",
     "symbol": "nmc",
     "org": "namecoin",
     "repos": ["namecoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/namecoin/difficulty-chart"
   },
   {
     "name": "Monero",
     "symbol": "xmr",
     "org": "monero-project",
     "repos": ["monero"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Storjcoin X",
     "symbol": "sjcx",
     "org": "storj",
     "repos": ["storj"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Blackcoin",
     "symbol": "blk",
     "org": "blackcoin",
     "repos": ["blackcoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/blk/#@diff"
   },
   {
     "name": "Bytecoin",
     "symbol": "bcn",
     "org": "amjuarez",
     "repos": ["bytecoin"],
-    "redo": true
+    "Difficulty data source": "https://www.coinwarz.com/mining/bytecoin/difficulty-chart"
   },
   {
     "name": "Quark",
     "symbol": "qrk",
     "org": "quark-project",
     "repos": ["quark"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/qrk/#@diff"
   },
   {
     "name": "Feathercoin",
     "symbol": "ftc",
     "org": "FeatherCoin",
     "repos": ["feathercoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/ftc/#@diff"
   },
   {
     "name": "Primecoin",
     "symbol": "xpm",
     "org": "primecoin",
     "repos": ["primecoin"],
-    "redo": false
+    "Difficulty data source": "https://www.blockseek.io/xpm"
   },
   {
     "name": "Clams",
     "symbol": "clam",
     "org": "nochowderforyou",
     "repos": ["clams"],
-    "redo": true
+    "Difficulty data source": "null"
   },
   {
     "name": "Worldcoin",
     "symbol": "wdc",
     "org": "worldcoinproject",
     "repos": ["worldcoin-v0.8"],
-    "redo": true
+    "Difficulty data source": "https://chainz.cryptoid.info/wdc/#@diff"
   },
   {
     "name": "Monacoin",
     "symbol": "mona",
     "org": "monacoinproject",
     "repos": ["monacoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/monacoin/difficulty-chart"
   },
   {
     "name": "Shadowcash",
     "symbol": "sdc",
     "org": "shadowproject",
     "repos": ["shadow"],
-    "redo": false
-  },
-  {
-    "name": "Digitalnote",
-    "symbol": "xdn",
-    "org": "DNotesCoin",
-    "repos": ["DNotes2.0"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Novacoin",
     "symbol": "nvc",
     "org": "novacoin-project",
     "repos": ["novacoin"],
-    "redo": true
+    "Difficulty data source": "https://www.coinwarz.com/mining/novacoin/difficulty-chart"
   },
   {
     "name": "Zetacoin",
     "symbol": "zet",
     "org": "zetacoin",
     "repos": ["zetacoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/zet/#@diff"
   },
   {
     "name": "Anoncoin",
     "symbol": "anc",
     "org": "Anoncoin",
     "repos": ["anoncoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/anoncoin/difficulty-chart"
   },
   {
     "name": "Vertcoin",
     "symbol": "vtc",
     "org": "vertcoin",
     "repos": ["vertcoin"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Startcoin",
     "symbol": "start",
     "org": "startcoin-project",
     "repos": ["startcoin"],
-    "redo": true
+    "Difficulty data source": "https://www.coinwarz.com/mining/startcoin/difficulty-chart"
   },
   {
     "name": "Digibyte",
     "symbol": "dgb",
     "org": "digibyte",
     "repos": ["digibyte"],
-    "redo": false
+    "Difficulty data source": "CoinMetrics API (v3)"
   },
   {
     "name": "Omni",
     "symbol": "omni",
     "org": "OmniLayer",
     "repos": ["omnicore"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/omnicoin/difficulty-chart"
   },
   {
     "name": "Ixcoin",
     "symbol": "ixc",
     "org": "ixcore",
     "repos": ["ixcoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/ixc/#@diff"
   },
   {
     "name": "Infinitecoin",
     "symbol": "ifc",
     "org": "WilliamXuu",
     "repos": ["infinitecoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/ifc/#@diff"
   },
   {
     "name": "Mintcoin",
     "symbol": "mint",
     "org": "mintcoinproject",
     "repos": ["mintcoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/mintcoin/difficulty-chart"
   },
   {
     "name": "Digitalcoin",
     "symbol": "dgc",
     "org": "lomtax",
     "repos": ["digitalcoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/dgc/#@diff"
   },
   {
     "name": "Devcoin",
     "symbol": "dvc",
     "org": "devcoin",
     "repos": ["core"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/dvc/#@diff"
   },
   {
     "name": "Terracoin",
     "symbol": "trc",
     "org": "terracoin",
     "repos": ["terracoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/terracoin/difficulty-chart"
   },
   {
     "name": "Freicoin",
     "symbol": "frc",
     "org": "freicoin",
     "repos": ["freicoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/freicoin/difficulty-chart"
   },
   {
     "name": "Tickets",
     "symbol": "tix",
     "org": "LotteryTickets",
     "repos": ["LotteryTickets"],
-    "redo": false
+    "Difficulty data source": "http://explorer.ticketszones.com/"
   },
   {
     "name": "Bullion",
     "symbol": "cbx",
     "org": "elambert2014",
     "repos": ["CryptoBullion-CBX"],
-    "redo": true
+    "Difficulty data source": "https://chainz.cryptoid.info/cbx/#@diff"
   },
   {
     "name": "Netcoin",
     "symbol": "net",
     "org": "netcoinfoundation",
     "repos": ["netcoin"],
-    "redo": false
+    "Difficulty data source": "https://www.coinwarz.com/mining/netcoin/difficulty-chart"
   },
   {
     "name": "Copperlark",
     "symbol": "clr",
     "org": "copperlark",
     "repos": ["clr"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Earthcoin",
     "symbol": "eac",
     "org": "earthcoinproject",
     "repos": ["earthcoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/eac/#@diff"
   },
   {
     "name": "DNotes",
     "symbol": "note",
     "org": "DNotesCoin",
     "repos": ["DNotes2.0"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/note/#@diff"
   },
   {
     "name": "Fuelcoin",
     "symbol": "fc2",
     "org": "FuelCoinTwo",
     "repos": ["Fuelcoin"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "VCash",
     "symbol": "xvc",
     "org": "openvcash",
     "repos": ["vcash"],
-    "redo": false
+    "Difficulty data source": "null"
   },
   {
     "name": "Goldcoin",
     "symbol": "glc",
     "org": "goldcoin",
     "repos": ["goldcoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/glc/#@diff"
   },
   {
     "name": "Fastcoin",
     "symbol": "fst",
     "org": "imharrywu",
     "repos": ["fastcoin"],
-    "redo": true
+    "Difficulty data source": "https://www.coinwarz.com/mining/fastcoin/difficulty-chart"
   },
   {
     "name": "Sexcoin",
     "symbol": "sxc",
     "org": "sexcoin-project",
     "repos": ["sexcoin"],
-    "redo": false
+    "Difficulty data source": "https://chainz.cryptoid.info/sxc/#@diff"
+  },
+  {
+    "name": "Digitalnote",
+    "symbol": "xdn",
+    "org": "DigitalNoteXDN",
+    "repos": ["DigitalNote-2"],
+    "Difficulty data source": "null"
   }
 ]

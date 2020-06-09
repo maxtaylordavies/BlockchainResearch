@@ -32,12 +32,12 @@ def scrapeBlocks():
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0"
     }
 
-    for p in range(45801,160338):
+    for p in range(96201,160338):
         blocks += scrapePageOfBlocks(p, headers)
 
         if p == 1:
             print(blocks[0])
-        stdout.write("\rscraped page %d" % p)
+        stdout.write(f"\rscraped page {p} ({int(100 * (p/160338))}% done)")
         stdout.flush()
 
         if p % 100 == 0:

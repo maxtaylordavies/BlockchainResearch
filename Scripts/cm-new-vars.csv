@@ -1,0 +1,256 @@
+Variable name,Description
+AdrActRecCnt,The sum count of unique addresses that were active in the network (as a recipient of a ledger change) that interval.
+AdrActSentCnt,The sum count of unique addresses that were active in the network (as an originator of a ledger change) that interval.
+AdrBal1in100KCnt,"The sum count of unique addresses holding at least one hundred-thousandth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-thousandth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in100MCnt,"The sum count of unique addresses holding at least one hundred-millionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-millionth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in10BCnt,"The sum count of unique addresses holding at least one ten-billionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one ten-billionth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in10KCnt,"The sum count of unique addresses holding at least one ten-thousandth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-thousandth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in10MCnt,"The sum count of unique addresses holding at least one ten-millionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one ten-millionth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in1BCnt,"The sum count of unique addresses holding at least one one-billionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one one-billionth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in1KCnt,"The sum count of unique addresses holding at least one thousandth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-thousandth ETH but with ERC-20 tokens would not be considered)."
+AdrBal1in1MCnt,"The sum count of unique addresses holding at least one one-millionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one one-millionth ETH but with ERC-20 tokens would not be considered)."
+AdrBalCnt,"The sum count of unique addresses holding any amount of native units as of the end of that interval. Only native units are considered (e.g., a 0 ETH balance address with ERC-20 tokens would not be considered)."
+AdrBalNtv0.001Cnt,"The sum count of unique addresses holding at least 0.001 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv0.01Cnt,"The sum count of unique addresses holding at least 0.01 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv0.1Cnt,"The sum count of unique addresses holding at least 0.1 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv100Cnt,"The sum count of unique addresses holding at least 100 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv100KCnt,"The sum count of unique addresses holding at least 100,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv10Cnt,"The sum count of unique addresses holding at least 10 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv10KCnt,"The sum count of unique addresses holding at least 10,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv1Cnt,"The sum count of unique addresses holding at least 1 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv1KCnt,"The sum count of unique addresses holding at least 1,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalNtv1MCnt,"The sum count of unique addresses holding at least 1,000,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD100Cnt,"The sum count of unique addresses holding at least one hundred dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD100KCnt,"The sum count of unique addresses holding at least one hundred thousands dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD10Cnt,"The sum count of unique addresses holding at least ten dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD10KCnt,"The sum count of unique addresses holding at least ten thousands dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD10MCnt,"The sum count of unique addresses holding at least ten million dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD1Cnt,"The sum count of unique addresses holding at least one dollar's worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD1KCnt,"The sum count of unique addresses holding at least one thousand dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+AdrBalUSD1MCnt,"The sum count of unique addresses holding at least one million dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+BlkCnt,The sum count of blocks created that interval that were included in the main (base) chain.
+BlkHgt,The count of blocks from the genesis (first) block to the last block of that interval on the main chain.
+BlkIntMean,The mean absolute time (in seconds) between all the blocks created that interval.
+BlkSizeByte,The sum of the size (in bytes) of all blocks created that interval.
+BlkSizeMeanByte,The mean size (in bytes) of all blocks created that day.
+BlkUncCnt,The sum count of uncle blocks mined in that interval.
+BlkUncRwd,The sum of native units rewarded to miners for creating and including uncle blocks in that interval. This includes the uncle inclusion reward (for the main chain block miner) and the uncle rewards (for the uncle block miners). 
+BlkUncRwdUSD,The sum USD value rewarded to miners for creating and including uncle blocks in that interval. This includes the uncle inclusion reward (for the main chain block miner) and the uncle rewards (for the uncle block miners). 
+BlkWghtMean,The mean weight of all blocks created that day. Weight is a dimensionless measure of a block’s “size”. It is only applicable for chains that use SegWit (segregated witness).
+CapAct1yrUSD,The sum USD value of all active native units in the last year. 
+CapFutExp10yrUSD,The sum USD value of all native units counting the current supply and including those that will be issued over the next 10 years if the current known issuance schedule is followed.
+CapMVRVCur,"The ratio of the sum USD value of the current supply to the sum ""realized"" USD value of the current supply."
+CapRealUSD,"The sum USD value based on the USD closing price on the day that a native unit last moved (i.e., last transacted) for all native units. "
+ContBalCnt,"The sum count of unique contracts that exist in the ledger and that hold a balance (i.e., own a non-zero amount) of native units at the end of the interval. A contract is a special address that contains and can execute code."
+ContCnt,The sum count of unique contracts that exist in the ledger at the end of the interval. A contract is a special address that contains and can execute code.
+ContERC20Cnt,"The sum count of unique ERC-20 contracts that exist on the ledger at the end of the interval. A contract is a special address that contains and can execute code. Contracts that contain all of the following are considered to be ERC-20 contracts: the balanceOf function, the transfer function, and the Transfer event hash."
+ContERC721Cnt,The sum count of unique contracts implementing the ERC-721 standard that exist in the ledger at the end of the interval. A contract is a special address that contains and can execute code. ERC-165 is used to determine a contract’s compliance with ERC-721
+DiffLast,"The difficulty of the last block in the interval. Difficulty represents how hard it is to find a hash that meets the protocol-designated requirement (i.e., the difficulty of finding a new block) that day. The requirement is unique to each applicable cryptocurrency protocol. Difficulty is adjusted periodically by the protocol as a function of how much hashing power is being deployed by miners."
+DiffMean,"The mean difficulty of finding a hash that meets the protocol-designated requirement (i.e., the difficulty of finding a new block) that interval. The requirement is unique to each applicable cryptocurrency protocol. Difficulty is adjusted periodically by the protocol as a function of how much hashing power is being deployed by miners."
+FeeMeanNtv,The mean fee per transaction in native units that interval. 
+FeeMeanUSD,The USD value of the mean fee per transaction that interval. 
+FeeMedNtv,The median fee per transaction in native units that interval.
+FeeMedUSD,The USD value of the median fee per transaction that interval.
+FeeRevPct,The percentage of miner revenue derived from fees that interval. This is equal to the fees divided by the miner revenue.
+FeeTotNtv,The sum of all fees paid to miners that interval. Fees do not include new issuance. 
+FeeTotUSD,The sum USD value of all fees paid to miners that interval. Fees do not include new issuance. 
+FlowInBFXNtv,The sum in native units sent to Bitfinex that interval.
+FlowInBFXUSD,The sum USD value sent to Bitfinex that interval.
+FlowInBMXNtv,The sum in native units sent to BitMEX that interval.
+FlowInBMXUSD,The sum USD value sent to BitMEX that interval.
+FlowInBNBNtv,The sum in native units sent to Binance that interval.
+FlowInBNBUSD,The sum USD value sent to Binance that interval.
+FlowInBSPNtv,The sum in native units sent to Bitstamp that interval.
+FlowInBSPUSD,The sum USD value sent to Bitstamp that interval.
+FlowInBTXNtv,The sum in native units sent to Bittrex that interval.
+FlowInBTXUSD,The sum USD value sent to Bittrex that interval.
+FlowInExInclNtv,"The sum number of native units sent to exchanges that interval, including exchange to exchange activity."
+FlowInExInclUSD,"The sum USD value sent to exchanges that interval, including exchange to exchange activity."
+FlowInExNtv,"The sum number of native units sent to exchanges that interval, excluding exchange to exchange activity."
+FlowInExUSD,"The sum USD value sent to exchanges that interval, excluding exchange to exchange activity."
+FlowInGEMNtv,The sum in native units sent to Gemini that interval.
+FlowInGEMUSD,The sum USD value sent to Gemini that interval.
+FlowInHUONtv,The sum in native units sent to Huobi that interval.
+FlowInHUOUSD,The sum USD value sent to Huobi that interval.
+FlowInKRKNtv,The sum in native units sent to Kraken that interval.
+FlowInKRKUSD,The sum USD value sent to Kraken that interval.
+FlowInPOLNtv,The sum in native units sent to Poloniex that interval.
+FlowInPOLUSD,The sum USD value sent to Poloniex that interval.
+FlowNetBFXNtv,The net native units value sent or withdrawn to/from Bitfinex that interval
+FlowNetBFXUSD,The net USD value sent or withdrawn to/from Bitfinex that interval
+FlowNetBMXNtv,The net native units value sent or withdrawn to/from BitMEX that interval
+FlowNetBMXUSD,The net USD value sent or withdrawn to/from BitMEX that interval
+FlowNetBNBNtv,The net native units value sent or withdrawn to/from Binance that interval
+FlowNetBNBUSD,The net USD value sent or withdrawn to/from Binance that interval
+FlowNetBSPNtv,The net native units value sent or withdrawn to/from Bitstamp that interval
+FlowNetBSPUSD,The net USD value sent or withdrawn to/from Bitstamp that interval
+FlowNetBTXNtv,The net native units value sent or withdrawn to/from Bittrex that interval
+FlowNetBTXUSD,The net USD value sent or withdrawn to/from Bittrex that interval
+FlowNetGEMNtv,The net native units value sent or withdrawn to/from Gemini that interval
+FlowNetGEMUSD,The net USD value sent or withdrawn to/from Gemini that interval
+FlowNetHUONtv,The net native units value sent or withdrawn to/from Huobi that interval
+FlowNetHUOUSD,The net USD value sent or withdrawn to/from Huobi that interval
+FlowNetKRKNtv,The net native units value sent or withdrawn to/from Kraken that interval
+FlowNetKRKUSD,The net USD value sent or withdrawn to/from Kraken that interval
+FlowNetPOLNtv,The net native units value sent or withdrawn to/from Poloniex that interval
+FlowNetPOLUSD,The net USD value sent or withdrawn to/from Poloniex that interval
+FlowOutBFXNtv,The sum in native units withdrawn from Bitfinex that interval.
+FlowOutBFXUSD,The sum USD value withdrawn from Bitfinex that interval.
+FlowOutBMXNtv,The sum in native units withdrawn from BitMEX that interval.
+FlowOutBMXUSD,The sum USD value withdrawn from BitMEX that interval.
+FlowOutBNBNtv,The sum in native units withdrawn from Binance that interval.
+FlowOutBNBUSD,The sum USD value withdrawn from Binance that interval.
+FlowOutBSPNtv,The sum in native units withdrawn from Bitstamp that interval.
+FlowOutBSPUSD,The sum USD value withdrawn from Bitstamp that interval.
+FlowOutBTXNtv,The sum in native units withdrawn from Bittrex that interval.
+FlowOutBTXUSD,The sum USD value withdrawn from Bittrex that interval.
+FlowOutExInclNtv,"The sum in native units withdrawn from exchanges that interval, including exchange to exchange activity."
+FlowOutExInclUSD,"The sum USD value withdrawn from exchanges that interval, including exchange to exchange activity."
+FlowOutExNtv,"The sum in native units withdrawn from exchanges that interval, excluding exchange to exchange activity."
+FlowOutExUSD,"The sum USD value withdrawn from exchanges that interval, excluding exchange to exchange activity."
+FlowOutGEMNtv,The sum in native units withdrawn from Gemini that interval.
+FlowOutGEMUSD,The sum USD value withdrawn from Gemini that interval.
+FlowOutHUONtv,The sum in native units withdrawn from Huobi that interval.
+FlowOutHUOUSD,The sum USD value withdrawn from Huobi that interval.
+FlowOutKRKNtv,The sum in native units withdrawn from Kraken that interval.
+FlowOutKRKUSD,The sum USD value withdrawn from Kraken that interval.
+FlowOutPOLNtv,The sum in native units withdrawn from Poloniex that interval.
+FlowOutPOLUSD,The sum USD value withdrawn from Poloniex that interval.
+FlowTfrFromExCnt,The sum count of transfers from any address belonging to an exchange in that interval. Transfers between exchanges are not counted.
+FlowTfrFromExInclCnt,The sum count of transfers from any address belonging to an exchange in that interval. Transfers between exchanges are counted.
+FlowTfrInBFXCnt,"The sum count of transfers to any address belonging to Bitfinex in that interval. If the sender address also belongs to Bitfinex, the transfer is not counted."
+FlowTfrInBMXCnt,"The sum count of transfers to any address belonging to BitMEX in that interval. If the sender address also belongs to BitMEX, the transfer is not counted."
+FlowTfrInBNBCnt,"The sum count of transfers to any address belonging to Binance in that interval. If the sender address also belongs to Binance, the transfer is not counted."
+FlowTfrInBSPCnt,"The sum count of transfers to any address belonging to Bitstamp in that interval. If the sender address also belongs to Bitstamp, the transfer is not counted."
+FlowTfrInBTXCnt,"The sum count of transfers to any address belonging to Bittrex in that interval. If the sender address also belongs to Bittrex, the transfer is not counted."
+FlowTfrInGEMCnt,"The sum count of transfers to any address belonging to Gemini in that interval. If the sender address also belongs to Gemini, the transfer is not counted."
+FlowTfrInHUOCnt,"The sum count of transfers to any address belonging to Huobi in that interval. If the sender address also belongs to Huobi, the transfer is not counted."
+FlowTfrInKRKCnt,"The sum count of transfers to any address belonging to Kraken in that interval. If the sender address also belongs to Kraken, the transfer is not counted."
+FlowTfrInPOLCnt,"The sum count of transfers to any address belonging to Poloniex in that interval. If the sender address also belongs to Poloniex, the transfer is not counted."
+FlowTfrOutBFXCnt,"The sum count of transfers from any address belonging to Bitfinex in that interval. If the recipient address also belongs to Bitfinex, the transfer is not counted."
+FlowTfrOutBMXCnt,"The sum count of transfers from any address belonging to BitMEX in that interval. If the recipient address also belongs to BitMEX, the transfer is not counted."
+FlowTfrOutBNBCnt,"The sum count of transfers from any address belonging to Binance in that interval. If the recipient address also belongs to Binance, the transfer is not counted."
+FlowTfrOutBSPCnt,"The sum count of transfers from any address belonging to Bitstamp in that interval. If the recipient address also belongs to Bitstamp, the transfer is not counted."
+FlowTfrOutBTXCnt,"The sum count of transfers from any address belonging to Bittrex in that interval. If the recipient address also belongs to Bittrex, the transfer is not counted."
+FlowTfrOutGEMCnt,"The sum count of transfers from any address belonging to Gemini in that interval. If the recipient address also belongs to Gemini, the transfer is not counted."
+FlowTfrOutHUOCnt,"The sum count of transfers from any address belonging to Huobi in that interval. If the recipient address also belongs to Huobi, the transfer is not counted."
+FlowTfrOutKRKCnt,"The sum count of transfers from any address belonging to Kraken in that interval. If the recipient address also belongs to Kraken, the transfer is not counted."
+FlowTfrOutPOLCnt,"The sum count of transfers from any address belonging to Poloniex in that interval. If the recipient address also belongs to Poloniex, the transfer is not counted."
+FlowTfrToExCnt,The sum count of transfers to any address belonging to an exchange in that interval. Transfers between exchanges are not counted.
+FlowTfrToExInclCnt,The sum count of transfers to any address belonging to an exchange in that interval. Transfers between exchanges are counted.
+GasLmtBlk,The sum gas limit of all blocks that interval.
+GasLmtBlkMean,The mean gas limit per block that interval.
+GasLmtTx,The sum gas limit of all transactions that interval.
+GasLmtTxMean,The mean gas limit per transaction that interval.
+GasUsedTx,"The sum gas used (i.e., paid) across all transactions that interval."
+GasUsedTxMean,"The mean gas used (i.e., paid) per transaction that interval."
+HashRate,The mean rate at which miners are solving hashes that interval. Hash rate is the speed at which computations are being completed across all miners in the network. The unit of measurement varies depending on the protocol. 
+IssContNtv,"The sum of new native units issued that interval. Only those native units that are issued by a protocol-mandated continuous emission schedule are included (i.e., units manually released from escrow or otherwise disbursed are not included). "
+IssContPctAnn,"The percentage of new native units (continuous) issued over that interval, extrapolated to one year (i.e., multiplied by 365), and divided by the current supply at the end of that interval. Also referred to as the annual inflation rate. "
+IssContPctDay,The percentage of new native units (continuous) issued over that interval divided by the current supply at the end of that interval. Also referred to as the daily inflation rate. 
+IssContUSD,"The sum USD value of new native units issued that interval. Only those native units that are issued by a protocol-mandated continuous emission schedule are included (i.e., units manually released from escrow or otherwise disbursed are not included). "
+IssTotNtv,The sum of all new native units issued that interval. 
+IssTotUSD,The sum USD value of all new native units issued that interval.
+RevAllTimeUSD,The sum USD value of all miner revenue (fees plus newly issued native units) for all time from genesis up to the end of that interval. 
+RevNtv,The sum native units of all miner revenue (fees plus newly issued native units) that interval.
+RevUSD,The sum USD value of all miner revenue (fees plus newly issued native units) that interval.
+SOPR,"The ratio of the sum of spent value over the sum of creation value of all spent and created outputs for that interval. There are two versions of this metric. For this version, a spent output’s “spent value” is the market value of the sum of all native units of that output (i.e., price multiplied by the sum of native units). A created output’s “creation value” is the market value of the sum of all native units of that output (i.e., price multiplied by the sum of native units)."
+SOPROut,"The ratio of the sum of spent value over the sum of creation value of all spent and created outputs for that interval. There are two versions of this metric. For this version, a spent output’s “spent value” is the market value of that output (i.e., price multiplied by 1). A created output’s “creation value” is the market value of that output (i.e., price multiplied by 1)."
+SplyAct180d,The sum of unique native units that transacted at least once in the trailing 180 days up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct1d,The sum of unique native units that transacted at least once that interval. Native units that transacted more than once are only counted once. 
+SplyAct1yr,The sum of unique native units that transacted at least once in the trailing 1 year up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct2yr,The sum of unique native units that transacted at least once in the trailing 2 years up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct30d,The sum of unique native units that transacted at least once in the trailing 30 days up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct3yr,The sum of unique native units that transacted at least once in the trailing 3 years up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct4yr,The sum of unique native units that transacted at least once in the trailing 4 years up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct5yr,The sum of unique native units that transacted at least once in the trailing 5 years up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct7d,The sum of unique native units that transacted at least once in the trailing 7 days up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyAct90d,The sum of unique native units that transacted at least once in the trailing 90 days up to the end of that interval. Native units that transacted more than once are only counted once. 
+SplyActEver,The sum of unique native units held by accounts that transacted at least once up to that interval. Native units that transacted more than once are only counted once.
+SplyActPct1yr,The percentage of the current supply that has been active in the trailing 1 year up to the end of that interval. 
+SplyAdrBal1in100K,"The sum of all native units being held in addresses whose balance was at least one in hundred-thousandth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBal1in100M,The sum of all native units being held in addresses whose balance was at least one in hundred-millionth of the current supply of native units as the end of that interval.
+SplyAdrBal1in10B,"The sum of all native units being held in addresses whose balance was at least one in ten-billionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBal1in10K,"The sum of all native units being held in addresses whose balance was at least one in ten-thousandth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBal1in10M,"The sum of all native units being held in addresses whose balance was at least one in ten-millionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBal1in1B,"The sum of all native units being held in addresses whose balance was at least one in one-billionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBal1in1K,"The sum of all native units being held in addresses whose balance was at least one in one-thousandth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBal1in1M,"The sum of all native units being held in addresses whose balance was at least one in one-millionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv0.001,"The sum of all native units being held in addresses whose balance was 0.001 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv0.01,"The sum of all native units being held in addresses whose balance was 0.01 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv0.1,"The sum of all native units being held in addresses whose balance was 0.1 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv1,"The sum of all native units being held in addresses whose balance was 1 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv10,"The sum of all native units being held in addresses whose balance was 10 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv100,"The sum of all native units being held in addresses whose balance was 100 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv100K,"The sum of all native units being held in addresses whose balance was 100,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv10K,"The sum of all native units being held in addresses whose balance was 10,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv1K,"The sum of all native units being held in addresses whose balance was 1,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalNtv1M,"The sum of all native units being held in addresses whose balance was 1,000,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD1,"The sum of all native units being held in addresses whose balance was $1 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD10,"The sum of all native units being held in addresses whose balance was $10 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD100,"The sum of all native units being held in addresses whose balance was $100 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD100K,"The sum of all native units being held in addresses whose balance was $100,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD10K,"The sum of all native units being held in addresses whose balance was $10,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD10M,"The sum of all native units being held in addresses whose balance was $10,000,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD1K,"The sum of all native units being held in addresses whose balance was $1,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyAdrBalUSD1M,"The sum of all native units being held in addresses whose balance was $1,000,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered)."
+SplyBFXNtv,The sum in native units held by Bitfinex at the end of that interval.
+SplyBFXUSD,The sum USD value held by Bitfinex at the end of that interval.
+SplyBMXNtv,The sum in native units held by BitMEX at the end of that interval.
+SplyBMXUSD,The sum USD value held by BitMEX at the end of that interval.
+SplyBNBNtv,The sum in native units held by Binance at the end of that interval.
+SplyBNBUSD,The sum USD value held by Binance at the end of that interval.
+SplyBSPNtv,The sum in native units held by Bitstamp at the end of that interval.
+SplyBSPUSD,The sum USD value held by Bitstamp at the end of that interval.
+SplyBTXNtv,The sum in native units held by Bittrex at the end of that interval.
+SplyBTXUSD,The sum USD value held by Bittrex at the end of that interval.
+SplyExNtv,The sum of all native units held in hot or cold exchange wallets that interval. 
+SplyExUSD,The sum USD value of all native units held in hot or cold exchange wallets that interval.
+SplyExpFut10yr,The sum of all native units counting current supply and including all those expected to be issued over the next 10 years from that interval if the current known continuous issuance schedule is followed. Future expected hard-forks that will change the continuous issuance are not considered until the day they are activated/enforced. 
+SplyGEMNtv,The sum in native units held by Gemini at the end of that interval.
+SplyGEMUSD,The sum USD value held by Gemini at the end of that interval.
+SplyHUONtv,The sum in native units held by Huobi at the end of that interval.
+SplyHUOUSD,The sum USD value held by Huobi at the end of that interval.
+SplyKRKNtv,The sum in native units held by Kraken at the end of that interval.
+SplyKRKUSD,The sum USD value held by Kraken at the end of that interval.
+SplyPOLNtv,The sum in native units held by Poloniex at the end of that interval.
+SplyPOLUSD,The sum USD value held by Poloniex at the end of that interval.
+SplyRvv180d,The sum of all native unit balances last active at least 180 days ago that became active in this interval.
+SplyRvv1yr,The sum of all native unit balances last active at least 1 year ago that became active in this interval.
+SplyRvv2yr,The sum of all native unit balances last active at least 2 years ago that became active in this interval.
+SplyRvv30d,The sum of all native unit balances last active at least 30 days ago that became active in this interval.
+SplyRvv3yr,The sum of all native unit balances last active at least 3 years ago that became active in this interval.
+SplyRvv4yr,The sum of all native unit balances last active at least 4 years ago that became active in this interval.
+SplyRvv5yr,The sum of all native unit balances last active at least 5 years ago that became active in this interval.
+SplyRvv7d,The sum of all native unit balances last active at least 7 days ago that became active in this interval.
+SplyRvv90d,The sum of all native unit balances last active at least 90 days ago that became active in this interval.
+SplyShld,The sum of all native units being held in shielded pool(s). 
+TxCntSec,The sum count of transactions divided by the number of seconds that interval.
+TxContCallCnt,The sum count of contract calls executed across all transactions in that interval. A contract call is the invocation of a contract’s code by another contract or non-contract address. Failed invocations are counted. A single transaction can result in multiple contract calls.
+TxContCallSuccCnt,The sum count of contract calls successfully executed across all transactions in that interval. A contract call is the invocation of a contract’s code by another contract or non-contract address. Only successful executions are taken into account.
+TxContCnt,"The sum count of transactions that invoked a contract in that interval. Failed transactions are counted but internal transactions are not (i.e., only the parent transaction is counted). A contract is a special address that contains and can execute code."
+TxContCreatCnt,The sum count of new contracts successfully created across all transactions in that interval. A contract is a special address that contains and can execute code.
+TxContDestCnt,The sum count of contracts successfully destroyed across all transactions in that interval. A contract is a special address that contains and can execute code.
+TxERC20Cnt,"The sum count of transactions that resulted in any ERC-20 activity in that interval. Contracts that contain all of the following are considered to be ERC-20 contracts: the balanceOf function, the transfer function, and the Transfer event hash. Only Transfer or Approval events are counted as activity. If a transaction results in more than 1 transfer or approval, it’s only counted once."
+TxERC721Cnt,"The sum count of transactions that resulted in any ERC-721 activity in that interval. Only transfers between two distinct addresses are counted. ERC-165 is used to determine a contract’s compliance with ERC-721. Only Transfer or Approval events are counted as activity. If a transaction results in more than 1 transfer or approval, it’s only counted once."
+TxExCnt,"The sum count of transactions that involved any address belonging to an exchange, as a sender or recipient of a non-zero transfer of native units, in that interval. If a transaction involves multiple exchanges, it is only counted once."
+TxMeanByte,The mean size (in bytes) per transaction for all transactions that interval.
+TxOpRetCnt,The sum count of transactions in that interval that included at least one OP_RETURN output. OP_RETURN outputs are used to embed data into the blockchain database.
+TxShldCnt,"The sum count of transactions using opt-in privacy features that interval. All privacy related features are included (including fully shielding, shielding, deshielding or mixed transactions). Transactions represent a bundle of intended actions to alter the ledger initiated by a user (human or machine). Shielding a transaction hides some or all of the activity described by it to a blockchain observer."
+TxShldFullCnt,The sum count of transactions using fully shielding privacy features that interval. Only fully shielding transactions are included (transactions with partial or mixed shielding are not included). Transactions represent a bundle of intended actions to alter the ledger initiated by a user (human or machine). Fully shielding a transaction hides all of the activity of a transaction (except for the miner fee it paid).
+TxTfrCnt,The sum count of transfers that interval. Transfers represent movements of native units from one ledger entity to another distinct ledger entity. Only transfers that are the result of a transaction and that have a positive (non-zero) value are counted. 
+TxTfrERC20Cnt,"The sum count of ERC-20 transfers in that interval. Only non-zero transfers between two distinct addresses are counted. Contracts that contain all of the following are considered to be ERC-20 contracts: the balanceOf function, the transfer function, and the Transfer event hash."
+TxTfrERC721Cnt,The sum count of ERC-721 transfers in that interval. Only transfers between two distinct addresses are counted. ERC-165 is used to determine a contract’s compliance with ERC-721.
+TxTfrMeanByte,The mean size (in bytes) per transfer that interval. 
+TxTfrTknCnt,"The sum count of token (ERC-20 or ERC-721) transfers in that interval. Only non-zero transfers between two distinct addresses are counted. All ERC-20 or ERC-721 contracts are counted, as long as their transfers follow the ERC-20 or ERC-721 specification."
+TxTfrValAdjByte,The mean USD value per byte transferred for all transfers between distinct addresses that interval removing noise and certain artifacts.
+TxTfrValContCallNtv,The sum of all native units transferred by contract calls on that day. A contract call is the invocation of a contract’s code by another contract or non-contract address. Only successful calls are considered.
+TxTfrValContCallUSD,The sum USD value transferred by contract calls on that day. A contract call is the invocation of a contract’s code by another contract or non-contract address. Only successful calls are considered.
+TxTfrValDayDst,The sum of all native units transferred that interval multiplied by the sum of days since those native units were last transferred.
+TxTfrValDayDstMean,The mean per transaction of the sum of all native units transferred multiplied by the sum of days since those native units were last transferred that interval.
+TxTknCnt,"The sum count of transactions that resulted in any token (ERC-20 or ERC-721) activity in that interval. Only Transfer or Approval events are counted as activity. If a transaction results in more than 1 transfer or approval, it’s only counted once."
+UTXOCnt,The sum count of unspent transaction outputs that interval.
+VelAct1yr,"The ratio of the value transferred (i.e., the aggregate ""size"" of all transfers) in the trailing 1 year divided by active supply in the trailing 1 year up to the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit among the active supply has been transferred in the past 1 year. "
+VelActAdj1yr,"The ratio of the adjusted value transferred (i.e., the aggregate ""size"" of all transfers) in the trailing 1 year divided by active supply in the trailing 1 year up to the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit among the active supply has been transferred in the past 1 year. "
+VelCur1yr,"The ratio of the value transferred (i.e., the aggregate ""size"" of all transfers) in the trailing 1 year divided by the current supply up to the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit has been transferred in the past 1 year. "
+VelCurAdj1yr,"The ratio of the adjusted value transferred (i.e., the aggregate ""size"" of all transfers) in the trailing 1 year divided by the current supply at the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit has been transferred in the past 1 year. "

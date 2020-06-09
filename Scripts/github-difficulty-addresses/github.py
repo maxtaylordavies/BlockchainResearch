@@ -14,9 +14,7 @@ from config.config_file import baseDir, githubToken as token
 def main():
     with open("./repos.json") as f:
         coins = json.load(f)
-    for coin in coins[45:]:
-        if not coin["redo"]:
-            continue
+    for coin in coins[46:]:
         dirpath = os.path.join(baseDir, "Data", "GithubData", "Activity", coin["name"])
         if not os.path.exists(dirpath):
             os.makedirs(dirpath)
@@ -68,6 +66,10 @@ def getHistoricalActivityOnRepo(repoOwner, repoName, logFilePath):
             "Additions": 0,
             "Deletions": 0,
             "Changes": 0,
+            "Unique authors": [],
+            "Number of unique authors": 0,
+            "Files changed": [],
+            "Number of files changed": 0
         })
         d -= (60 * 60 * 24)
 
@@ -79,6 +81,13 @@ def getHistoricalActivityOnRepo(repoOwner, repoName, logFilePath):
             activity[i]["Additions"] += commit["Additions"]
             activity[i]["Deletions"] += commit["Deletions"]
             activity[i]["Changes"] += commit["Changes"]
+            if commit["Author name"] not in activity[i]["Unique authors"]:
+                activity[i]["Unique authors"].append(commit["Author name"])
+                activity[i]["Number of unique authors"] += 1
+            for fn in commit["Files changed"]:
+                if fn not in activity[i]["Files changed"]:
+                    activity[i]["Files changed"].append(fn)
+                    activity[i]["Number of files changed"] += 1
 
     return activity
 
@@ -96,7 +105,7 @@ def getAllCommitsOnRepo(repoOwner, repoName, logFilePath):
             lastLineWords = lastLine.split(" ")
             p = int(lastLineWords[0]) + 1
             url = lastLineWords[-1]
-        with open(os.path.join(baseDir, "Data", "GithubData", "Commits", repoName+"_commits.json")) as commitFile:
+        with open(os.path.join(baseDir, "Data", "GithubData", "NewCommits", repoName+"_commits.json")) as commitFile:
             commits = json.load(commitFile)
 
     while True:
@@ -115,16 +124,15 @@ def getAllCommitsOnRepo(repoOwner, repoName, logFilePath):
             break
 
         if p % 5 == 0:
-            with open(os.path.join(baseDir, "Data", "GithubData", "Commits", repoName+"_commits.json"), "w+", encoding="utf-8") as dest:
+            with open(os.path.join(baseDir, "Data", "GithubData", "NewCommits", repoName+"_commits.json"), "w+", encoding="utf-8") as dest:
                 json.dump(commits, dest, ensure_ascii=False, indent=4)
             with open(logFilePath, "a+") as f:
                 f.write("%d pages of commits scraped - next page is at %s\n" % (p, url))
 
         p += 1
 
-    # with open("../Data/GithubData/Commits/" + repoName + "_commits.json", "w+", encoding="utf-8") as dest:
-    #     json.dump(commits, dest, ensure_ascii=False, indent=4)
-    # json2Csv("../Data/GithubData/Commits/" + repoName + "_commits.json")
+    with open(os.path.join(baseDir, "Data", "GithubData", "NewCommits", repoName+"_commits.json"), "w+", encoding="utf-8") as dest:
+        json.dump(commits, dest, ensure_ascii=False, indent=4)
     return commits
 
 def getAllForksOnRepo(repoOwner, repoName):
@@ -148,7 +156,6 @@ def getAllForksOnRepo(repoOwner, repoName):
         if url == None:
             break
 
-        time.sleep()
 
     # with open("../Data/GithubData/Forks/" + repoName + "_forks.json", "w+", encoding="utf-8") as dest:
     #     json.dump(forks, dest, ensure_ascii=False, indent=4)
@@ -157,8 +164,9 @@ def getAllForksOnRepo(repoOwner, repoName):
 
 
 def parseCommit(commit):
+    # time.sleep(0.3)
     url = commit["url"]
-    (additions, deletions) = getAdditionsDeletions(url)
+    (additions, deletions, files) = getAdditionsDeletionsFiles(url)
 
     commit = commit["commit"]
     return {
@@ -167,19 +175,18 @@ def parseCommit(commit):
         "Commit message": commit["message"],
         "Additions": additions,
         "Deletions": deletions,
+        "Files changed": files,
         "Changes": additions + deletions,
         "Date": commit["committer"]["date"][:10]
     }
 
-def getAdditionsDeletions(url):
-    # time.sleep(0.2)
-
+def getAdditionsDeletionsFiles(url):
     headers = {"Authorization": "token %s" % token}
     req = urllib.request.Request(url, headers=headers)
     response = urllib.request.urlopen(req)
     data = json.load(response)
 
-    return (data["stats"]["additions"], data["stats"]["deletions"])
+    return (data["stats"]["additions"], data["stats"]["deletions"], [f["filename"] for f in data["files"]])
 
 def parseFork(fork):
     return {

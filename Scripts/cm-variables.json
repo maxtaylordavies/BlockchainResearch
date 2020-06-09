@@ -1,0 +1,1936 @@
+{
+	"metricsInfo": [
+		{
+			"id": "AdrActCnt",
+			"name": "Addresses, active, count",
+			"description": "The sum count of unique addresses that were active in the network (either as a recipient or originator of a ledger change) that interval. All parties in a ledger change action (recipients and originators) are counted. Individual addresses are not double-counted if previously active.  ",
+			"category": "Addresses",
+			"subcategory": "Active"
+		},
+		{
+			"id": "AdrActRecCnt",
+			"name": "Addresses, active, received, count",
+			"description": "The sum count of unique addresses that were active in the network (as a recipient of a ledger change) that interval.",
+			"category": "Addresses",
+			"subcategory": "Active"
+		},
+		{
+			"id": "AdrActSentCnt",
+			"name": "Addresses, active, sent, count",
+			"description": "The sum count of unique addresses that were active in the network (as an originator of a ledger change) that interval.",
+			"category": "Addresses",
+			"subcategory": "Active"
+		},
+		{
+			"id": "AdrBal1in100KCnt",
+			"name": "Addresses, with balance, greater than 1in100K, count",
+			"description": "The sum count of unique addresses holding at least one hundred-thousandth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-thousandth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in100MCnt",
+			"name": "Addresses, with balance, greater than 1in100M, count",
+			"description": "The sum count of unique addresses holding at least one hundred-millionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-millionth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in10BCnt",
+			"name": "Addresses, with balance, greater than 1in10B, count",
+			"description": "The sum count of unique addresses holding at least one ten-billionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one ten-billionth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in10KCnt",
+			"name": "Addresses, with balance, greater than 1in10K, count",
+			"description": "The sum count of unique addresses holding at least one ten-thousandth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-thousandth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in10MCnt",
+			"name": "Addresses, with balance, greater than 1in10M, count",
+			"description": "The sum count of unique addresses holding at least one ten-millionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one ten-millionth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in1BCnt",
+			"name": "Addresses, with balance, greater than 1in1B, count",
+			"description": "The sum count of unique addresses holding at least one one-billionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one one-billionth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in1KCnt",
+			"name": "Addresses, with balance, greater than 1in1K, count",
+			"description": "The sum count of unique addresses holding at least one thousandth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one hundred-thousandth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBal1in1MCnt",
+			"name": "Addresses, with balance, greater than 1in1M, count",
+			"description": "The sum count of unique addresses holding at least one one-millionth ownership of the current supply of native units as of the end of that interval. Only native units are considered (e.g., an address with less than one one-millionth ETH but with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalCnt",
+			"name": "Addresses, any balance, count",
+			"description": "The sum count of unique addresses holding any amount of native units as of the end of that interval. Only native units are considered (e.g., a 0 ETH balance address with ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv0.001Cnt",
+			"name": "Addresses, with balance, greater than 0.001 native units, count",
+			"description": "The sum count of unique addresses holding at least 0.001 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv0.01Cnt",
+			"name": "Addresses, with balance, greater than 0.01 native units, count",
+			"description": "The sum count of unique addresses holding at least 0.01 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv0.1Cnt",
+			"name": "Addresses, with balance, greater than 0.1 native units, count",
+			"description": "The sum count of unique addresses holding at least 0.1 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv100Cnt",
+			"name": "Addresses, with balance, greater than 100 native units, count",
+			"description": "The sum count of unique addresses holding at least 100 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv100KCnt",
+			"name": "Addresses, with balance, greater than 100K native units, count",
+			"description": "The sum count of unique addresses holding at least 100,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv10Cnt",
+			"name": "Addresses, with balance, greater than 10 native units, count",
+			"description": "The sum count of unique addresses holding at least 10 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv10KCnt",
+			"name": "Addresses, with balance, greater than 10K native units, count",
+			"description": "The sum count of unique addresses holding at least 10,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv1Cnt",
+			"name": "Addresses, with balance, greater than 1 native units, count",
+			"description": "The sum count of unique addresses holding at least 1 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv1KCnt",
+			"name": "Addresses, with balance, greater than 1K native units, count",
+			"description": "The sum count of unique addresses holding at least 1,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalNtv1MCnt",
+			"name": "Addresses, with balance, greater than 1M native units, count",
+			"description": "The sum count of unique addresses holding at least 1,000,000 native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD100Cnt",
+			"name": "Addresses, with balance, greater than $100, count",
+			"description": "The sum count of unique addresses holding at least one hundred dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD100KCnt",
+			"name": "Addresses, with balance, greater than $100K, count",
+			"description": "The sum count of unique addresses holding at least one hundred thousands dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD10Cnt",
+			"name": "Addresses, with balance, greater than $10, count",
+			"description": "The sum count of unique addresses holding at least ten dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD10KCnt",
+			"name": "Addresses, with balance, greater than $10K, count",
+			"description": "The sum count of unique addresses holding at least ten thousands dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD10MCnt",
+			"name": "Addresses, with balance, greater than $10M, count",
+			"description": "The sum count of unique addresses holding at least ten million dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD1Cnt",
+			"name": "Addresses, with balance, greater than $1, count",
+			"description": "The sum count of unique addresses holding at least one dollar's worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD1KCnt",
+			"name": "Addresses, with balance, greater than $1K, count",
+			"description": "The sum count of unique addresses holding at least one thousand dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "AdrBalUSD1MCnt",
+			"name": "Addresses, with balance, greater than $1M, count",
+			"description": "The sum count of unique addresses holding at least one million dollars' worth of native units as of the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Addresses",
+			"subcategory": "Balance"
+		},
+		{
+			"id": "BlkCnt",
+			"name": "Block, count",
+			"description": "The sum count of blocks created that interval that were included in the main (base) chain.",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkHgt",
+			"name": "Block, height",
+			"description": "The count of blocks from the genesis (first) block to the last block of that interval on the main chain.",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkIntMean",
+			"name": "Block, interval, mean",
+			"description": "The mean absolute time (in seconds) between all the blocks created that interval.",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkSizeByte",
+			"name": "Block, size, bytes",
+			"description": "The sum of the size (in bytes) of all blocks created that interval.",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkSizeMeanByte",
+			"name": "Block, size, mean, bytes",
+			"description": "The mean size (in bytes) of all blocks created that day.",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkUncCnt",
+			"name": "Block, uncle, count",
+			"description": "The sum count of uncle blocks mined in that interval.",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkUncRwd",
+			"name": "Block, uncle, reward, native units",
+			"description": "The sum of native units rewarded to miners for creating and including uncle blocks in that interval. This includes the uncle inclusion reward (for the main chain block miner) and the uncle rewards (for the uncle block miners). ",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkUncRwdUSD",
+			"name": "Block, uncle, reward, USD",
+			"description": "The sum USD value rewarded to miners for creating and including uncle blocks in that interval. This includes the uncle inclusion reward (for the main chain block miner) and the uncle rewards (for the uncle block miners). ",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "BlkWghtMean",
+			"name": "Block, weight, mean",
+			"description": "The mean weight of all blocks created that day. Weight is a dimensionless measure of a block’s “size”. It is only applicable for chains that use SegWit (segregated witness).",
+			"category": "Network Usage",
+			"subcategory": "Blocks"
+		},
+		{
+			"id": "CapAct1yrUSD",
+			"name": "Capitalization, active supply, 1yr, USD",
+			"description": "The sum USD value of all active native units in the last year. ",
+			"category": "Market",
+			"subcategory": "Market Capitalization"
+		},
+		{
+			"id": "CapFutExp10yrUSD",
+			"name": "Capitalization, future expected supply, next 10yr, USD",
+			"description": "The sum USD value of all native units counting the current supply and including those that will be issued over the next 10 years if the current known issuance schedule is followed.",
+			"category": "Market",
+			"subcategory": "Market Capitalization"
+		},
+		{
+			"id": "CapMVRVCur",
+			"name": "Capitalization, MVRV, current supply",
+			"description": "The ratio of the sum USD value of the current supply to the sum \"realized\" USD value of the current supply.",
+			"category": "Market",
+			"subcategory": "Market Capitalization"
+		},
+		{
+			"id": "CapMrktCurUSD",
+			"name": "Capitalization, market, current supply, USD",
+			"description": "The sum USD value of the current supply. Also referred to as network value or market capitalization. ",
+			"category": "Market",
+			"subcategory": "Market Capitalization"
+		},
+		{
+			"id": "CapRealUSD",
+			"name": "Capitalization, realized, USD",
+			"description": "The sum USD value based on the USD closing price on the day that a native unit last moved (i.e., last transacted) for all native units. ",
+			"category": "Market",
+			"subcategory": "Market Capitalization"
+		},
+		{
+			"id": "ContBalCnt",
+			"name": "Contracts, with balance, count",
+			"description": "The sum count of unique contracts that exist in the ledger and that hold a balance (i.e., own a non-zero amount) of native units at the end of the interval. A contract is a special address that contains and can execute code.",
+			"category": "Network Usage",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "ContCnt",
+			"name": "Contracts, count",
+			"description": "The sum count of unique contracts that exist in the ledger at the end of the interval. A contract is a special address that contains and can execute code.",
+			"category": "Network Usage",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "ContERC20Cnt",
+			"name": "Contracts, ERC-20, count",
+			"description": "The sum count of unique ERC-20 contracts that exist on the ledger at the end of the interval. A contract is a special address that contains and can execute code. Contracts that contain all of the following are considered to be ERC-20 contracts: the balanceOf function, the transfer function, and the Transfer event hash.",
+			"category": "Network Usage",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "ContERC721Cnt",
+			"name": "Contracts, ERC-721, count",
+			"description": "The sum count of unique contracts implementing the ERC-721 standard that exist in the ledger at the end of the interval. A contract is a special address that contains and can execute code. ERC-165 is used to determine a contract’s compliance with ERC-721",
+			"category": "Network Usage",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "DiffLast",
+			"name": "Difficulty, last",
+			"description": "The difficulty of the last block in the interval. Difficulty represents how hard it is to find a hash that meets the protocol-designated requirement (i.e., the difficulty of finding a new block) that day. The requirement is unique to each applicable cryptocurrency protocol. Difficulty is adjusted periodically by the protocol as a function of how much hashing power is being deployed by miners.",
+			"category": "Mining",
+			"subcategory": "Mining"
+		},
+		{
+			"id": "DiffMean",
+			"name": "Difficulty, mean",
+			"description": "The mean difficulty of finding a hash that meets the protocol-designated requirement (i.e., the difficulty of finding a new block) that interval. The requirement is unique to each applicable cryptocurrency protocol. Difficulty is adjusted periodically by the protocol as a function of how much hashing power is being deployed by miners.",
+			"category": "Mining",
+			"subcategory": "Mining"
+		},
+		{
+			"id": "FeeMeanNtv",
+			"name": "Fees, transaction, mean, native units",
+			"description": "The mean fee per transaction in native units that interval. ",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FeeMeanUSD",
+			"name": "Fees, transaction, mean, USD",
+			"description": "The USD value of the mean fee per transaction that interval. ",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FeeMedNtv",
+			"name": "Fees, transaction, median, native units",
+			"description": "The median fee per transaction in native units that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FeeMedUSD",
+			"name": "Fees, transaction, median, USD",
+			"description": "The USD value of the median fee per transaction that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FeeRevPct",
+			"name": "Fees, revenue, percent",
+			"description": "The percentage of miner revenue derived from fees that interval. This is equal to the fees divided by the miner revenue.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FeeTotNtv",
+			"name": "Fees, total, native units",
+			"description": "The sum of all fees paid to miners that interval. Fees do not include new issuance. ",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FeeTotUSD",
+			"name": "Fees, total, USD",
+			"description": "The sum USD value of all fees paid to miners that interval. Fees do not include new issuance. ",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "FlowInBFXNtv",
+			"name": "Flow, in, to Bitfinex, native units",
+			"description": "The sum in native units sent to Bitfinex that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBFXUSD",
+			"name": "Flow, in, to Bitfinex, USD",
+			"description": "The sum USD value sent to Bitfinex that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBMXNtv",
+			"name": "Flow, in, to BitMEX, native units",
+			"description": "The sum in native units sent to BitMEX that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBMXUSD",
+			"name": "Flow, in, to BitMEX, USD",
+			"description": "The sum USD value sent to BitMEX that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBNBNtv",
+			"name": "Flow, in, to Binance, native units",
+			"description": "The sum in native units sent to Binance that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBNBUSD",
+			"name": "Flow, in, to Binance, USD",
+			"description": "The sum USD value sent to Binance that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBSPNtv",
+			"name": "Flow, in, to Bitstamp, native units",
+			"description": "The sum in native units sent to Bitstamp that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBSPUSD",
+			"name": "Flow, in, to Bitstamp, USD",
+			"description": "The sum USD value sent to Bitstamp that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBTXNtv",
+			"name": "Flow, in, to Bittrex, native units",
+			"description": "The sum in native units sent to Bittrex that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInBTXUSD",
+			"name": "Flow, in, to Bittrex, USD",
+			"description": "The sum USD value sent to Bittrex that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInExInclNtv",
+			"name": "Flow, in, to exchanges, inclusive, native units",
+			"description": "The sum number of native units sent to exchanges that interval, including exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInExInclUSD",
+			"name": "Flow, in, to exchanges, inclusive, USD",
+			"description": "The sum USD value sent to exchanges that interval, including exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInExNtv",
+			"name": "Flow, in, to exchanges, native units",
+			"description": "The sum number of native units sent to exchanges that interval, excluding exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInExUSD",
+			"name": "Flow, in, to exchanges, USD",
+			"description": "The sum USD value sent to exchanges that interval, excluding exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInGEMNtv",
+			"name": "Flow, in, to Gemini, native units",
+			"description": "The sum in native units sent to Gemini that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInGEMUSD",
+			"name": "Flow, in, to Gemini, USD",
+			"description": "The sum USD value sent to Gemini that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInHUONtv",
+			"name": "Flow, in, to Huobi, native units",
+			"description": "The sum in native units sent to Huobi that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInHUOUSD",
+			"name": "Flow, in, to Huobi, USD",
+			"description": "The sum USD value sent to Huobi that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInKRKNtv",
+			"name": "Flow, in, to Kraken, native units",
+			"description": "The sum in native units sent to Kraken that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInKRKUSD",
+			"name": "Flow, in, to Kraken, USD",
+			"description": "The sum USD value sent to Kraken that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInPOLNtv",
+			"name": "Flow, in, to Poloniex, native units",
+			"description": "The sum in native units sent to Poloniex that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowInPOLUSD",
+			"name": "Flow, in, to Poloniex, USD",
+			"description": "The sum USD value sent to Poloniex that interval.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowNetBFXNtv",
+			"name": "Flow, net, Bitfinex, native units",
+			"description": "The net native units value sent or withdrawn to/from Bitfinex that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBFXUSD",
+			"name": "Flow, net, Bitfinex, USD",
+			"description": "The net USD value sent or withdrawn to/from Bitfinex that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBMXNtv",
+			"name": "Flow, net, BitMEX, native units",
+			"description": "The net native units value sent or withdrawn to/from BitMEX that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBMXUSD",
+			"name": "Flow, net, BitMEX, USD",
+			"description": "The net USD value sent or withdrawn to/from BitMEX that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBNBNtv",
+			"name": "Flow, net, Binance, native units",
+			"description": "The net native units value sent or withdrawn to/from Binance that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBNBUSD",
+			"name": "Flow, net, Binance, USD",
+			"description": "The net USD value sent or withdrawn to/from Binance that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBSPNtv",
+			"name": "Flow, net, Bitstamp, native units",
+			"description": "The net native units value sent or withdrawn to/from Bitstamp that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBSPUSD",
+			"name": "Flow, net, Bitstamp, USD",
+			"description": "The net USD value sent or withdrawn to/from Bitstamp that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBTXNtv",
+			"name": "Flow, net, Bittrex, native units",
+			"description": "The net native units value sent or withdrawn to/from Bittrex that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetBTXUSD",
+			"name": "Flow, net, Bittrex, USD",
+			"description": "The net USD value sent or withdrawn to/from Bittrex that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetGEMNtv",
+			"name": "Flow, net, Gemini, native units",
+			"description": "The net native units value sent or withdrawn to/from Gemini that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetGEMUSD",
+			"name": "Flow, net, Gemini, USD",
+			"description": "The net USD value sent or withdrawn to/from Gemini that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetHUONtv",
+			"name": "Flow, net, Huobi, native units",
+			"description": "The net native units value sent or withdrawn to/from Huobi that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetHUOUSD",
+			"name": "Flow, net, Huobi, USD",
+			"description": "The net USD value sent or withdrawn to/from Huobi that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetKRKNtv",
+			"name": "Flow, net, Kraken, native units",
+			"description": "The net native units value sent or withdrawn to/from Kraken that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetKRKUSD",
+			"name": "Flow, net, Kraken, USD",
+			"description": "The net USD value sent or withdrawn to/from Kraken that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetPOLNtv",
+			"name": "Flow, net, Poloniex, native units",
+			"description": "The net native units value sent or withdrawn to/from Poloniex that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowNetPOLUSD",
+			"name": "Flow, net, Poloniex, USD",
+			"description": "The net USD value sent or withdrawn to/from Poloniex that interval",
+			"category": "Exchange",
+			"subcategory": "Net Flows"
+		},
+		{
+			"id": "FlowOutBFXNtv",
+			"name": "Flow, out, from Bitfinex, native units",
+			"description": "The sum in native units withdrawn from Bitfinex that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBFXUSD",
+			"name": "Flow, out, from Bitfinex, USD",
+			"description": "The sum USD value withdrawn from Bitfinex that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBMXNtv",
+			"name": "Flow, out, from BitMEX, native units",
+			"description": "The sum in native units withdrawn from BitMEX that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBMXUSD",
+			"name": "Flow, out, from BitMEX, USD",
+			"description": "The sum USD value withdrawn from BitMEX that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBNBNtv",
+			"name": "Flow, out, from Binance, native units",
+			"description": "The sum in native units withdrawn from Binance that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBNBUSD",
+			"name": "Flow, out, from Binance, USD",
+			"description": "The sum USD value withdrawn from Binance that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBSPNtv",
+			"name": "Flow, out, from Bitstamp, native units",
+			"description": "The sum in native units withdrawn from Bitstamp that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBSPUSD",
+			"name": "Flow, out, from Bitstamp, USD",
+			"description": "The sum USD value withdrawn from Bitstamp that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBTXNtv",
+			"name": "Flow, out, from Bittrex, native units",
+			"description": "The sum in native units withdrawn from Bittrex that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutBTXUSD",
+			"name": "Flow, out, from Bittrex, USD",
+			"description": "The sum USD value withdrawn from Bittrex that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutExInclNtv",
+			"name": "Flow, out, from exchanges, inclusive, native units",
+			"description": "The sum in native units withdrawn from exchanges that interval, including exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutExInclUSD",
+			"name": "Flow, out, from exchanges, inclusive, USD",
+			"description": "The sum USD value withdrawn from exchanges that interval, including exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutExNtv",
+			"name": "Flow, out, from exchanges, native units",
+			"description": "The sum in native units withdrawn from exchanges that interval, excluding exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutExUSD",
+			"name": "Flow, out, from exchanges, USD",
+			"description": "The sum USD value withdrawn from exchanges that interval, excluding exchange to exchange activity.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutGEMNtv",
+			"name": "Flow, out, from Gemini, native units",
+			"description": "The sum in native units withdrawn from Gemini that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutGEMUSD",
+			"name": "Flow, out, from Gemini, USD",
+			"description": "The sum USD value withdrawn from Gemini that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutHUONtv",
+			"name": "Flow, out, from Huobi, native units",
+			"description": "The sum in native units withdrawn from Huobi that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutHUOUSD",
+			"name": "Flow, out, from Huobi, USD",
+			"description": "The sum USD value withdrawn from Huobi that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutKRKNtv",
+			"name": "Flow, out, from Kraken, native units",
+			"description": "The sum in native units withdrawn from Kraken that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutKRKUSD",
+			"name": "Flow, out, from Kraken, USD",
+			"description": "The sum USD value withdrawn from Kraken that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutPOLNtv",
+			"name": "Flow, out, from Poloniex, native units",
+			"description": "The sum in native units withdrawn from Poloniex that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowOutPOLUSD",
+			"name": "Flow, out, from Poloniex, USD",
+			"description": "The sum USD value withdrawn from Poloniex that interval.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrFromExCnt",
+			"name": "Flow, transfers, from exchanges, count",
+			"description": "The sum count of transfers from any address belonging to an exchange in that interval. Transfers between exchanges are not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrFromExInclCnt",
+			"name": "Flow, transfers, from exchanges, inclusive, count",
+			"description": "The sum count of transfers from any address belonging to an exchange in that interval. Transfers between exchanges are counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrInBFXCnt",
+			"name": "Flow, transfers, to Bitfinex, count",
+			"description": "The sum count of transfers to any address belonging to Bitfinex in that interval. If the sender address also belongs to Bitfinex, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInBMXCnt",
+			"name": "Flow, transfers, to BitMEX, count",
+			"description": "The sum count of transfers to any address belonging to BitMEX in that interval. If the sender address also belongs to BitMEX, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInBNBCnt",
+			"name": "Flow, transfers, to Binance, count",
+			"description": "The sum count of transfers to any address belonging to Binance in that interval. If the sender address also belongs to Binance, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInBSPCnt",
+			"name": "Flow, transfers, to Bitstamp, count",
+			"description": "The sum count of transfers to any address belonging to Bitstamp in that interval. If the sender address also belongs to Bitstamp, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInBTXCnt",
+			"name": "Flow, transfers, to Bittrex, count",
+			"description": "The sum count of transfers to any address belonging to Bittrex in that interval. If the sender address also belongs to Bittrex, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInGEMCnt",
+			"name": "Flow, transfers, to Gemini, count",
+			"description": "The sum count of transfers to any address belonging to Gemini in that interval. If the sender address also belongs to Gemini, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInHUOCnt",
+			"name": "Flow, transfers, to Huobi, count",
+			"description": "The sum count of transfers to any address belonging to Huobi in that interval. If the sender address also belongs to Huobi, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInKRKCnt",
+			"name": "Flow, transfers, to Kraken, count",
+			"description": "The sum count of transfers to any address belonging to Kraken in that interval. If the sender address also belongs to Kraken, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrInPOLCnt",
+			"name": "Flow, transfers, to Poloniex, count",
+			"description": "The sum count of transfers to any address belonging to Poloniex in that interval. If the sender address also belongs to Poloniex, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrOutBFXCnt",
+			"name": "Flow, transfers, from Bitfinex, count",
+			"description": "The sum count of transfers from any address belonging to Bitfinex in that interval. If the recipient address also belongs to Bitfinex, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutBMXCnt",
+			"name": "Flow, transfers, from BitMEX, count",
+			"description": "The sum count of transfers from any address belonging to BitMEX in that interval. If the recipient address also belongs to BitMEX, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutBNBCnt",
+			"name": "Flow, transfers, from Binance, count",
+			"description": "The sum count of transfers from any address belonging to Binance in that interval. If the recipient address also belongs to Binance, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutBSPCnt",
+			"name": "Flow, transfers, from Bitstamp, count",
+			"description": "The sum count of transfers from any address belonging to Bitstamp in that interval. If the recipient address also belongs to Bitstamp, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutBTXCnt",
+			"name": "Flow, transfers, from Bittrex, count",
+			"description": "The sum count of transfers from any address belonging to Bittrex in that interval. If the recipient address also belongs to Bittrex, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutGEMCnt",
+			"name": "Flow, transfers, from Gemini, count",
+			"description": "The sum count of transfers from any address belonging to Gemini in that interval. If the recipient address also belongs to Gemini, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutHUOCnt",
+			"name": "Flow, transfers, from Huobi, count",
+			"description": "The sum count of transfers from any address belonging to Huobi in that interval. If the recipient address also belongs to Huobi, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutKRKCnt",
+			"name": "Flow, transfers, from Kraken, count",
+			"description": "The sum count of transfers from any address belonging to Kraken in that interval. If the recipient address also belongs to Kraken, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrOutPOLCnt",
+			"name": "Flow, transfers, from Poloniex, count",
+			"description": "The sum count of transfers from any address belonging to Poloniex in that interval. If the recipient address also belongs to Poloniex, the transfer is not counted.",
+			"category": "Exchange",
+			"subcategory": "Withdrawals"
+		},
+		{
+			"id": "FlowTfrToExCnt",
+			"name": "Flow, transfers, to exchanges, count",
+			"description": "The sum count of transfers to any address belonging to an exchange in that interval. Transfers between exchanges are not counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "FlowTfrToExInclCnt",
+			"name": "Flow, transfers, to exchanges, inclusive, count",
+			"description": "The sum count of transfers to any address belonging to an exchange in that interval. Transfers between exchanges are counted.",
+			"category": "Exchange",
+			"subcategory": "Deposits"
+		},
+		{
+			"id": "GasLmtBlk",
+			"name": "Gas, limit, block",
+			"description": "The sum gas limit of all blocks that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "GasLmtBlkMean",
+			"name": "Gas, limit, block, mean",
+			"description": "The mean gas limit per block that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "GasLmtTx",
+			"name": "Gas, limit, transaction",
+			"description": "The sum gas limit of all transactions that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "GasLmtTxMean",
+			"name": "Gas, limit, transaction, mean ",
+			"description": "The mean gas limit per transaction that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "GasUsedTx",
+			"name": "Gas, used, transaction",
+			"description": "The sum gas used (i.e., paid) across all transactions that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "GasUsedTxMean",
+			"name": "Gas, used, transaction, mean",
+			"description": "The mean gas used (i.e., paid) per transaction that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Fees"
+		},
+		{
+			"id": "HashRate",
+			"name": "Hash rate, mean",
+			"description": "The mean rate at which miners are solving hashes that interval. Hash rate is the speed at which computations are being completed across all miners in the network. The unit of measurement varies depending on the protocol. ",
+			"category": "Mining",
+			"subcategory": "Hash Rate"
+		},
+		{
+			"id": "IssContNtv",
+			"name": "Issuance, continuous, native units",
+			"description": "The sum of new native units issued that interval. Only those native units that are issued by a protocol-mandated continuous emission schedule are included (i.e., units manually released from escrow or otherwise disbursed are not included). ",
+			"category": "Supply",
+			"subcategory": "Issuance"
+		},
+		{
+			"id": "IssContPctAnn",
+			"name": "Issuance, continuous, percent, annualized",
+			"description": "The percentage of new native units (continuous) issued over that interval, extrapolated to one year (i.e., multiplied by 365), and divided by the current supply at the end of that interval. Also referred to as the annual inflation rate. ",
+			"category": "Supply",
+			"subcategory": "Issuance"
+		},
+		{
+			"id": "IssContPctDay",
+			"name": "Issuance, continuous, percent, daily",
+			"description": "The percentage of new native units (continuous) issued over that interval divided by the current supply at the end of that interval. Also referred to as the daily inflation rate. ",
+			"category": "Supply",
+			"subcategory": "Issuance"
+		},
+		{
+			"id": "IssContUSD",
+			"name": "Issuance, continuous, USD",
+			"description": "The sum USD value of new native units issued that interval. Only those native units that are issued by a protocol-mandated continuous emission schedule are included (i.e., units manually released from escrow or otherwise disbursed are not included). ",
+			"category": "Supply",
+			"subcategory": "Issuance"
+		},
+		{
+			"id": "IssTotNtv",
+			"name": "Issuance, total, native units",
+			"description": "The sum of all new native units issued that interval. ",
+			"category": "Supply",
+			"subcategory": "Issuance"
+		},
+		{
+			"id": "IssTotUSD",
+			"name": "Issuance, total, USD",
+			"description": "The sum USD value of all new native units issued that interval.",
+			"category": "Supply",
+			"subcategory": "Issuance"
+		},
+		{
+			"id": "NVTAdj",
+			"name": "NVT, adjusted",
+			"description": "The ratio of the network value (or market capitalization, current supply) divided by the adjusted transfer value. Also referred to as NVT. ",
+			"category": "Economics",
+			"subcategory": "Valuation"
+		},
+		{
+			"id": "NVTAdj90",
+			"name": "NVT, adjusted, 90d MA",
+			"description": "The ratio of the network value (or market capitalization, current supply) to the 90-day moving average of the adjusted transfer value. Also referred to as NVT.",
+			"category": "Economics",
+			"subcategory": "Valuation"
+		},
+		{
+			"id": "PriceBTC",
+			"name": "Price, BTC",
+			"description": "The fixed closing price of the asset as of 00:00 UTC the following day (i.e., midnight UTC of the current day) for end-of-day data or the closest prior hour (nearest to that block) for block-by-block data, denominated in BTC. ",
+			"category": "Market",
+			"subcategory": "Price"
+		},
+		{
+			"id": "PriceUSD",
+			"name": "Price, USD",
+			"description": "The fixed closing price of the asset as of 00:00 UTC the following day (i.e., midnight UTC of the current day) for end-of-day data or the closest prior hour (nearest to that block) for block-by-block data, denominated in USD. ",
+			"category": "Market",
+			"subcategory": "Price"
+		},
+		{
+			"id": "ROI1yr",
+			"name": "ROI, percent, 1yr",
+			"description": "The return on investment for the asset assuming a purchase 12 months prior",
+			"category": "Market",
+			"subcategory": "Returns"
+		},
+		{
+			"id": "ROI30d",
+			"name": "ROI, percent, 30d",
+			"description": "The return on investment for the asset assuming a purchase 30 days prior",
+			"category": "Market",
+			"subcategory": "Returns"
+		},
+		{
+			"id": "RevAllTimeUSD",
+			"name": "Miner revenue, all time, USD",
+			"description": "The sum USD value of all miner revenue (fees plus newly issued native units) for all time from genesis up to the end of that interval. ",
+			"category": "Fees and Revenue",
+			"subcategory": "Revenue"
+		},
+		{
+			"id": "RevNtv",
+			"name": "Miner revenue, native units",
+			"description": "The sum native units of all miner revenue (fees plus newly issued native units) that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Revenue"
+		},
+		{
+			"id": "RevUSD",
+			"name": "Miner revenue, USD",
+			"description": "The sum USD value of all miner revenue (fees plus newly issued native units) that interval.",
+			"category": "Fees and Revenue",
+			"subcategory": "Revenue"
+		},
+		{
+			"id": "SOPR",
+			"name": "Spent output price ratio",
+			"description": "The ratio of the sum of spent value over the sum of creation value of all spent and created outputs for that interval. There are two versions of this metric. For this version, a spent output’s “spent value” is the market value of the sum of all native units of that output (i.e., price multiplied by the sum of native units). A created output’s “creation value” is the market value of the sum of all native units of that output (i.e., price multiplied by the sum of native units).",
+			"category": "Economics",
+			"subcategory": "Valuation"
+		},
+		{
+			"id": "SOPROut",
+			"name": "Spent output price ratio, outputs",
+			"description": "The ratio of the sum of spent value over the sum of creation value of all spent and created outputs for that interval. There are two versions of this metric. For this version, a spent output’s “spent value” is the market value of that output (i.e., price multiplied by 1). A created output’s “creation value” is the market value of that output (i.e., price multiplied by 1).",
+			"category": "Economics",
+			"subcategory": "Valuation"
+		},
+		{
+			"id": "SplyAct180d",
+			"name": "Supply, active, 180d",
+			"description": "The sum of unique native units that transacted at least once in the trailing 180 days up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct1d",
+			"name": "Supply, active, 1d",
+			"description": "The sum of unique native units that transacted at least once that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct1yr",
+			"name": "Supply, active, 1yr",
+			"description": "The sum of unique native units that transacted at least once in the trailing 1 year up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct2yr",
+			"name": "Supply, active, 2yr",
+			"description": "The sum of unique native units that transacted at least once in the trailing 2 years up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct30d",
+			"name": "Supply, active, 30d",
+			"description": "The sum of unique native units that transacted at least once in the trailing 30 days up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct3yr",
+			"name": "Supply, active, 3yr",
+			"description": "The sum of unique native units that transacted at least once in the trailing 3 years up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct4yr",
+			"name": "Supply, active, 4yr",
+			"description": "The sum of unique native units that transacted at least once in the trailing 4 years up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct5yr",
+			"name": "Supply, active, 5yr",
+			"description": "The sum of unique native units that transacted at least once in the trailing 5 years up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct7d",
+			"name": "Supply, active, 7d",
+			"description": "The sum of unique native units that transacted at least once in the trailing 7 days up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAct90d",
+			"name": "Supply, active, 90d",
+			"description": "The sum of unique native units that transacted at least once in the trailing 90 days up to the end of that interval. Native units that transacted more than once are only counted once. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyActEver",
+			"name": "Supply, active, ever",
+			"description": "The sum of unique native units held by accounts that transacted at least once up to that interval. Native units that transacted more than once are only counted once.",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyActPct1yr",
+			"name": "Supply, active, percent, 1yr",
+			"description": "The percentage of the current supply that has been active in the trailing 1 year up to the end of that interval. ",
+			"category": "Supply",
+			"subcategory": "Active"
+		},
+		{
+			"id": "SplyAdrBal1in100K",
+			"name": "Supply, in addresses with balance, greater than 1in100K",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in hundred-thousandth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in100M",
+			"name": "Supply, in addresses with balance, greater than 1in100M",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in hundred-millionth of the current supply of native units as the end of that interval.",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in10B",
+			"name": "Supply, in addresses with balance, greater than 1in10B",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in ten-billionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in10K",
+			"name": "Supply, in addresses with balance, greater than 1in10K",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in ten-thousandth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in10M",
+			"name": "Supply, in addresses with balance, greater than 1in10M",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in ten-millionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in1B",
+			"name": "Supply, in addresses with balance, greater than 1in1B",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in one-billionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in1K",
+			"name": "Supply, in addresses with balance, greater than 1in1K",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in one-thousandth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBal1in1M",
+			"name": "Supply, in addresses with balance, greater than 1in1M",
+			"description": "The sum of all native units being held in addresses whose balance was at least one in one-millionth of the current supply of native units as the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv0.001",
+			"name": "Supply, in addresses with balance, greater than 0.001 native unit",
+			"description": "The sum of all native units being held in addresses whose balance was 0.001 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv0.01",
+			"name": "Supply, in addresses with balance, greater than 0.01 native unit",
+			"description": "The sum of all native units being held in addresses whose balance was 0.01 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv0.1",
+			"name": "Supply, in addresses with balance, greater than 0.1 native unit",
+			"description": "The sum of all native units being held in addresses whose balance was 0.1 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv1",
+			"name": "Supply, in addresses with balance, greater than 1 native unit",
+			"description": "The sum of all native units being held in addresses whose balance was 1 native unit or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv10",
+			"name": "Supply, in addresses with balance, greater than 10 native units",
+			"description": "The sum of all native units being held in addresses whose balance was 10 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv100",
+			"name": "Supply, in addresses with balance, greater than 100 native units",
+			"description": "The sum of all native units being held in addresses whose balance was 100 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv100K",
+			"name": "Supply, in addresses with balance, greater than 100K native units",
+			"description": "The sum of all native units being held in addresses whose balance was 100,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv10K",
+			"name": "Supply, in addresses with balance, greater than 10K native units",
+			"description": "The sum of all native units being held in addresses whose balance was 10,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv1K",
+			"name": "Supply, in addresses with balance, greater than 1K native units",
+			"description": "The sum of all native units being held in addresses whose balance was 1,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalNtv1M",
+			"name": "Supply, in addresses with balance, greater than 1M native units",
+			"description": "The sum of all native units being held in addresses whose balance was 1,000,000 native units or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD1",
+			"name": "Supply, in addresses with balance, greater than $1",
+			"description": "The sum of all native units being held in addresses whose balance was $1 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD10",
+			"name": "Supply, in addresses with balance, greater than $10",
+			"description": "The sum of all native units being held in addresses whose balance was $10 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD100",
+			"name": "Supply, in addresses with balance, greater than $100",
+			"description": "The sum of all native units being held in addresses whose balance was $100 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD100K",
+			"name": "Supply, in addresses with balance, greater than $100K",
+			"description": "The sum of all native units being held in addresses whose balance was $100,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD10K",
+			"name": "Supply, in addresses with balance, greater than $10K",
+			"description": "The sum of all native units being held in addresses whose balance was $10,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD10M",
+			"name": "Supply, in addresses with balance, greater than $10M",
+			"description": "The sum of all native units being held in addresses whose balance was $10,000,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD1K",
+			"name": "Supply, in addresses with balance, greater than $1K",
+			"description": "The sum of all native units being held in addresses whose balance was $1,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyAdrBalUSD1M",
+			"name": "Supply, in addresses with balance, greater than $1M",
+			"description": "The sum of all native units being held in addresses whose balance was $1,000,000 or greater at the end of that interval. Only native units are considered (e.g., an address with less than X ETH but with more than X in ERC-20 tokens would not be considered).",
+			"category": "Supply",
+			"subcategory": "Addresses with Balance"
+		},
+		{
+			"id": "SplyBFXNtv",
+			"name": "Supply, held by Bitfinex, native units",
+			"description": "The sum in native units held by Bitfinex at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBFXUSD",
+			"name": "Supply, held by Bitfinex, USD",
+			"description": "The sum USD value held by Bitfinex at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBMXNtv",
+			"name": "Supply, held by BitMEX, native units",
+			"description": "The sum in native units held by BitMEX at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBMXUSD",
+			"name": "Supply, held by BitMEX, USD",
+			"description": "The sum USD value held by BitMEX at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBNBNtv",
+			"name": "Supply, held by Binance, native units",
+			"description": "The sum in native units held by Binance at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBNBUSD",
+			"name": "Supply, held by Binance, USD",
+			"description": "The sum USD value held by Binance at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBSPNtv",
+			"name": "Supply, held by Bitstamp, native units",
+			"description": "The sum in native units held by Bitstamp at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBSPUSD",
+			"name": "Supply, held by Bitstamp, USD",
+			"description": "The sum USD value held by Bitstamp at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBTXNtv",
+			"name": "Supply, held by Bittrex, native units",
+			"description": "The sum in native units held by Bittrex at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyBTXUSD",
+			"name": "Supply, held by Bittrex, USD",
+			"description": "The sum USD value held by Bittrex at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyCur",
+			"name": "Supply, current",
+			"description": "The sum of all native units ever created and visible on the ledger (i.e., issued) as of that interval. For account-based protocols, only accounts with positive balances are counted. ",
+			"category": "Supply",
+			"subcategory": "Current"
+		},
+		{
+			"id": "SplyExNtv",
+			"name": "Supply, held by exchanges, native units",
+			"description": "The sum of all native units held in hot or cold exchange wallets that interval. ",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyExUSD",
+			"name": "Supply, held by exchanges, USD",
+			"description": "The sum USD value of all native units held in hot or cold exchange wallets that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyExpFut10yr",
+			"name": "Supply, future expected, next 10yr",
+			"description": "The sum of all native units counting current supply and including all those expected to be issued over the next 10 years from that interval if the current known continuous issuance schedule is followed. Future expected hard-forks that will change the continuous issuance are not considered until the day they are activated/enforced. ",
+			"category": "Supply",
+			"subcategory": "Future Expected"
+		},
+		{
+			"id": "SplyGEMNtv",
+			"name": "Supply, held by Gemini, native units",
+			"description": "The sum in native units held by Gemini at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyGEMUSD",
+			"name": "Supply, held by Gemini, USD",
+			"description": "The sum USD value held by Gemini at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyHUONtv",
+			"name": "Supply, held by Huobi, native units",
+			"description": "The sum in native units held by Huobi at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyHUOUSD",
+			"name": "Supply, held by Huobi, USD",
+			"description": "The sum USD value held by Huobi at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyKRKNtv",
+			"name": "Supply, held by Kraken, native units",
+			"description": "The sum in native units held by Kraken at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyKRKUSD",
+			"name": "Supply, held by Kraken, USD",
+			"description": "The sum USD value held by Kraken at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyPOLNtv",
+			"name": "Supply, held by Poloniex, native units",
+			"description": "The sum in native units held by Poloniex at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyPOLUSD",
+			"name": "Supply, held by Poloniex, USD",
+			"description": "The sum USD value held by Poloniex at the end of that interval.",
+			"category": "Exchange",
+			"subcategory": "Exchange Supply"
+		},
+		{
+			"id": "SplyRvv180d",
+			"name": "Supply, revived, at least, 180 days",
+			"description": "The sum of all native unit balances last active at least 180 days ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv1yr",
+			"name": "Supply, revived, at least, 1 year",
+			"description": "The sum of all native unit balances last active at least 1 year ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv2yr",
+			"name": "Supply, revived, at least, 2 years",
+			"description": "The sum of all native unit balances last active at least 2 years ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv30d",
+			"name": "Supply, revived, at least, 30 days",
+			"description": "The sum of all native unit balances last active at least 30 days ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv3yr",
+			"name": "Supply, revived, at least, 3 years",
+			"description": "The sum of all native unit balances last active at least 3 years ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv4yr",
+			"name": "Supply, revived, at least, 4 years",
+			"description": "The sum of all native unit balances last active at least 4 years ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv5yr",
+			"name": "Supply, revived, at least, 5 years",
+			"description": "The sum of all native unit balances last active at least 5 years ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv7d",
+			"name": "Supply, revived, at least, 7 days",
+			"description": "The sum of all native unit balances last active at least 7 days ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyRvv90d",
+			"name": "Supply, revived, at least, 90 days",
+			"description": "The sum of all native unit balances last active at least 90 days ago that became active in this interval.",
+			"category": "Supply",
+			"subcategory": "Revived"
+		},
+		{
+			"id": "SplyShld",
+			"name": "Supply, shielded",
+			"description": "The sum of all native units being held in shielded pool(s). ",
+			"category": "Supply",
+			"subcategory": "Shielded"
+		},
+		{
+			"id": "TxCnt",
+			"name": "Transactions, count",
+			"description": "The sum count of transactions that interval. Transactions represent a bundle of intended actions to alter the ledger initiated by a user (human or machine). Transactions are counted whether they execute or not and whether they result in the transfer of native units or not (a transaction can result in no, one, or many transfers). Changes to the ledger mandated by the protocol (and not by a user) or post-launch new issuance issued by a founder or controlling entity are not included here. ",
+			"category": "Transactions",
+			"subcategory": "Transactions"
+		},
+		{
+			"id": "TxCntSec",
+			"name": "Transactions, count, per second",
+			"description": "The sum count of transactions divided by the number of seconds that interval.",
+			"category": "Transactions",
+			"subcategory": "Transactions"
+		},
+		{
+			"id": "TxContCallCnt",
+			"name": "Transactions, contract calls, count",
+			"description": "The sum count of contract calls executed across all transactions in that interval. A contract call is the invocation of a contract’s code by another contract or non-contract address. Failed invocations are counted. A single transaction can result in multiple contract calls.",
+			"category": "Transactions",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "TxContCallSuccCnt",
+			"name": "Transactions, contract calls, successful, count",
+			"description": "The sum count of contract calls successfully executed across all transactions in that interval. A contract call is the invocation of a contract’s code by another contract or non-contract address. Only successful executions are taken into account.",
+			"category": "Transactions",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "TxContCnt",
+			"name": "Transactions, contracts, count",
+			"description": "The sum count of transactions that invoked a contract in that interval. Failed transactions are counted but internal transactions are not (i.e., only the parent transaction is counted). A contract is a special address that contains and can execute code.",
+			"category": "Transactions",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "TxContCreatCnt",
+			"name": "Transactions, contracts, creation, count",
+			"description": "The sum count of new contracts successfully created across all transactions in that interval. A contract is a special address that contains and can execute code.",
+			"category": "Transactions",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "TxContDestCnt",
+			"name": "Transactions, contracts, destruction, count",
+			"description": "The sum count of contracts successfully destroyed across all transactions in that interval. A contract is a special address that contains and can execute code.",
+			"category": "Transactions",
+			"subcategory": "Contracts"
+		},
+		{
+			"id": "TxERC20Cnt",
+			"name": "Transactions, ERC-20, count",
+			"description": "The sum count of transactions that resulted in any ERC-20 activity in that interval. Contracts that contain all of the following are considered to be ERC-20 contracts: the balanceOf function, the transfer function, and the Transfer event hash. Only Transfer or Approval events are counted as activity. If a transaction results in more than 1 transfer or approval, it’s only counted once.",
+			"category": "Transactions",
+			"subcategory": "Token Transactions"
+		},
+		{
+			"id": "TxERC721Cnt",
+			"name": "Transactions, ERC-721, count",
+			"description": "The sum count of transactions that resulted in any ERC-721 activity in that interval. Only transfers between two distinct addresses are counted. ERC-165 is used to determine a contract’s compliance with ERC-721. Only Transfer or Approval events are counted as activity. If a transaction results in more than 1 transfer or approval, it’s only counted once.",
+			"category": "Transactions",
+			"subcategory": "Token Transactions"
+		},
+		{
+			"id": "TxExCnt",
+			"name": "Transactions, involving exchanges, count",
+			"description": "The sum count of transactions that involved any address belonging to an exchange, as a sender or recipient of a non-zero transfer of native units, in that interval. If a transaction involves multiple exchanges, it is only counted once.",
+			"category": "Exchange",
+			"subcategory": "Transaction Count"
+		},
+		{
+			"id": "TxMeanByte",
+			"name": "Transactions, mean, bytes",
+			"description": "The mean size (in bytes) per transaction for all transactions that interval.",
+			"category": "Transactions",
+			"subcategory": "Transactions"
+		},
+		{
+			"id": "TxOpRetCnt",
+			"name": "Transactions, OP_RETURN, count",
+			"description": "The sum count of transactions in that interval that included at least one OP_RETURN output. OP_RETURN outputs are used to embed data into the blockchain database.",
+			"category": "Transactions",
+			"subcategory": "Transactions"
+		},
+		{
+			"id": "TxShldCnt",
+			"name": "Transactions, shielded, count",
+			"description": "The sum count of transactions using opt-in privacy features that interval. All privacy related features are included (including fully shielding, shielding, deshielding or mixed transactions). Transactions represent a bundle of intended actions to alter the ledger initiated by a user (human or machine). Shielding a transaction hides some or all of the activity described by it to a blockchain observer.",
+			"category": "Transactions",
+			"subcategory": "Transactions"
+		},
+		{
+			"id": "TxShldFullCnt",
+			"name": "Transactions, shielded, fully, count",
+			"description": "The sum count of transactions using fully shielding privacy features that interval. Only fully shielding transactions are included (transactions with partial or mixed shielding are not included). Transactions represent a bundle of intended actions to alter the ledger initiated by a user (human or machine). Fully shielding a transaction hides all of the activity of a transaction (except for the miner fee it paid).",
+			"category": "Transactions",
+			"subcategory": "Transactions"
+		},
+		{
+			"id": "TxTfrCnt",
+			"name": "Transactions, transfers, count",
+			"description": "The sum count of transfers that interval. Transfers represent movements of native units from one ledger entity to another distinct ledger entity. Only transfers that are the result of a transaction and that have a positive (non-zero) value are counted. ",
+			"category": "Transactions",
+			"subcategory": "Transfers"
+		},
+		{
+			"id": "TxTfrERC20Cnt",
+			"name": "Transactions, transfers, ERC-20, count",
+			"description": "The sum count of ERC-20 transfers in that interval. Only non-zero transfers between two distinct addresses are counted. Contracts that contain all of the following are considered to be ERC-20 contracts: the balanceOf function, the transfer function, and the Transfer event hash.",
+			"category": "Transactions",
+			"subcategory": "Transfers"
+		},
+		{
+			"id": "TxTfrERC721Cnt",
+			"name": "Transactions, transfers, ERC-721, count",
+			"description": "The sum count of ERC-721 transfers in that interval. Only transfers between two distinct addresses are counted. ERC-165 is used to determine a contract’s compliance with ERC-721.",
+			"category": "Transactions",
+			"subcategory": "Transfers"
+		},
+		{
+			"id": "TxTfrMeanByte",
+			"name": "Transactions, transfers, mean, bytes",
+			"description": "The mean size (in bytes) per transfer that interval. ",
+			"category": "Transactions",
+			"subcategory": "Transfers"
+		},
+		{
+			"id": "TxTfrTknCnt",
+			"name": "Transactions, transfers, tokens, count",
+			"description": "The sum count of token (ERC-20 or ERC-721) transfers in that interval. Only non-zero transfers between two distinct addresses are counted. All ERC-20 or ERC-721 contracts are counted, as long as their transfers follow the ERC-20 or ERC-721 specification.",
+			"category": "Transactions",
+			"subcategory": "Transfers"
+		},
+		{
+			"id": "TxTfrValAdjByte",
+			"name": "Transactions, transfers, value, adjusted, per byte, USD",
+			"description": "The mean USD value per byte transferred for all transfers between distinct addresses that interval removing noise and certain artifacts.",
+			"category": "Transactions",
+			"subcategory": "Transfers"
+		},
+		{
+			"id": "TxTfrValAdjNtv",
+			"name": "Transactions, transfers, value, adjusted, native units",
+			"description": "The sum of native units transferred between distinct addresses that interval removing noise and certain artifacts. ",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValAdjUSD",
+			"name": "Transactions, transfers, value, adjusted, USD",
+			"description": "The USD value of the sum of native units transferred between distinct addresses that interval removing noise and certain artifacts.",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValContCallNtv",
+			"name": "Transactions, transfers, value, contract calls, native units",
+			"description": "The sum of all native units transferred by contract calls on that day. A contract call is the invocation of a contract’s code by another contract or non-contract address. Only successful calls are considered.",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValContCallUSD",
+			"name": "Transactions, transfers, value, contract calls, USD",
+			"description": "The sum USD value transferred by contract calls on that day. A contract call is the invocation of a contract’s code by another contract or non-contract address. Only successful calls are considered.",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValDayDst",
+			"name": "Transactions, transfers, value, days destroyed",
+			"description": "The sum of all native units transferred that interval multiplied by the sum of days since those native units were last transferred.",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValDayDstMean",
+			"name": "Transactions, transfers, value, days destroyed, mean",
+			"description": "The mean per transaction of the sum of all native units transferred multiplied by the sum of days since those native units were last transferred that interval.",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValMeanNtv",
+			"name": "Transactions, transfers, value, mean, native units",
+			"description": "The mean count of native units transferred per transaction (i.e., the mean \"size\" of a transaction) between distinct addresses that interval. ",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValMeanUSD",
+			"name": "Transactions, transfers, value, mean, USD",
+			"description": "The sum USD value of native units transferred divided by the count of transfers (i.e., the mean \"size\" in USD of a transfer) between distinct addresses that interval. ",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValMedNtv",
+			"name": "Transactions, transfers, value, median, native units",
+			"description": "The median count of native units transferred per transfer (i.e., the median \"size\" of a transfer) between distinct addresses that interval. ",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValMedUSD",
+			"name": "Transactions, transfers, value, median, USD",
+			"description": "The median USD value transferred per transfer (i.e., the median \"size\" in USD of a transfer) between distinct addresses that interval. ",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValNtv",
+			"name": "Transactions, transfers, value, native units",
+			"description": "The sum of native units transferred (i.e., the aggregate \"size\" of all transfers) between distinct addresses that interval.",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTfrValUSD",
+			"name": "Transactions, transfers, value, USD",
+			"description": "The sum USD value of all native units transferred (i.e., the aggregate size in USD of all transfers) between distinct addresses that interval. ",
+			"category": "Transactions",
+			"subcategory": "Transfer Value"
+		},
+		{
+			"id": "TxTknCnt",
+			"name": "Transactions, tokens, count",
+			"description": "The sum count of transactions that resulted in any token (ERC-20 or ERC-721) activity in that interval. Only Transfer or Approval events are counted as activity. If a transaction results in more than 1 transfer or approval, it’s only counted once.",
+			"category": "Transactions",
+			"subcategory": "Token Transactions"
+		},
+		{
+			"id": "UTXOCnt",
+			"name": "UTXO set, count",
+			"description": "The sum count of unspent transaction outputs that interval.",
+			"category": "Network Usage",
+			"subcategory": "UTXOs"
+		},
+		{
+			"id": "VelAct1yr",
+			"name": "Velocity, active supply, 1yr",
+			"description": "The ratio of the value transferred (i.e., the aggregate \"size\" of all transfers) in the trailing 1 year divided by active supply in the trailing 1 year up to the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit among the active supply has been transferred in the past 1 year. ",
+			"category": "Transactions",
+			"subcategory": "Velocity"
+		},
+		{
+			"id": "VelActAdj1yr",
+			"name": "Velocity, active supply, adjusted, 1yr",
+			"description": "The ratio of the adjusted value transferred (i.e., the aggregate \"size\" of all transfers) in the trailing 1 year divided by active supply in the trailing 1 year up to the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit among the active supply has been transferred in the past 1 year. ",
+			"category": "Transactions",
+			"subcategory": "Velocity"
+		},
+		{
+			"id": "VelCur1yr",
+			"name": "Velocity, current supply, 1yr",
+			"description": "The ratio of the value transferred (i.e., the aggregate \"size\" of all transfers) in the trailing 1 year divided by the current supply up to the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit has been transferred in the past 1 year. ",
+			"category": "Transactions",
+			"subcategory": "Velocity"
+		},
+		{
+			"id": "VelCurAdj1yr",
+			"name": "Velocity, current supply, adjusted, 1yr",
+			"description": "The ratio of the adjusted value transferred (i.e., the aggregate \"size\" of all transfers) in the trailing 1 year divided by the current supply at the end of that interval. It can be thought of as a rate of turnover -- the number of times that an average native unit has been transferred in the past 1 year. ",
+			"category": "Transactions",
+			"subcategory": "Velocity"
+		},
+		{
+			"id": "VtyDayRet180d",
+			"name": "Volatility, daily returns, 180d",
+			"description": "The 180D volatility, measured as the standard deviation of the natural log of daily returns over the past 180 days",
+			"category": "Market",
+			"subcategory": "Volatility"
+		},
+		{
+			"id": "VtyDayRet30d",
+			"name": "Volatility, daily returns, 30d",
+			"description": "The 30D volatility, measured as the standard deviation of the natural log of daily returns over the past 30 days",
+			"category": "Market",
+			"subcategory": "Volatility"
+		},
+		{
+			"id": "VtyDayRet60d",
+			"name": "Volatility, daily returns, 60d",
+			"description": "The 60D volatility, measured as the standard deviation of the natural log of daily returns over the past 60 days",
+			"category": "Market",
+			"subcategory": "Volatility"
+		}
+	]
+}

@@ -35,12 +35,12 @@ def scrapePageOfBlocks(url, headers):
 
 def scrapeBlocks():
     blocks = []
-    p = 8501
+    p = 10701
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0"
     }
     # url = "https://horizon.stellar.org/ledgers?order=desc&limit=200"
-    url = "https://horizon.stellar.org/ledgers?cursor=112403863981522944&limit=200&order=desc"
+    url = "https://horizon.stellar.org/ledgers?cursor=112060266597842944&limit=200&order=desc"
 
     while True:
         (newBlocks, url) = scrapePageOfBlocks(url, headers)
@@ -67,7 +67,7 @@ def scrapeBlocks():
             blocks = []
 
         p += 1
-        time.sleep(0.05)
+        time.sleep(0.5)
 
 def main():
     scrapeBlocks()

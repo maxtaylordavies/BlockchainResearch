@@ -9,9 +9,9 @@ import os
 import csv
 from config.config_file import baseDir
 
-def scrapePageOfBlocks(p):
+def scrapePageOfBlocks(hi):
     blocks = []
-    url = f"https://vechainthorscan.com/blocks?page={p}"
+    url = f"https://minergate.com/blockchain/bcn/blocks/{hi}"
     soup = getHtml(url)
    
     # find all the <tr/> html elements - these are table rows
@@ -23,43 +23,44 @@ def scrapePageOfBlocks(p):
         tds = row.findAll("td")
         blocks.append({
             "Height": int(tds[0].a.string),
-            "Date": tds[1].span.string, 
-            "Transactions": tds[2].string,
-            "Clauses": tds[3].string,
-            "% Gas used": float(tds[4].div.div.string[:-1]),
-            "Gas limit": float(tds[5].string.replace(",","")),
-            "VTHO Burned": float(tds[6].string[:-5].replace(",","")),
-            "Signer": tds[7].a["href"][9:]
+            "Date": tds[1].span.text[:19], 
+            "Size": int(tds[2].string.replace(",", "")),
+            "Transactions": int(tds[3].string),
+            "Hash": tds[4].a.string
         })
 
-    if p == 0:
+    if hi == 2045320:
         print("\n", blocks[0])
 
     return blocks
 
 def scrapeAllBlocks():
     blocks = []
-    for p in range(114551, 117595):
-        blocks += scrapePageOfBlocks(p)
+    p = 11301
+    hi = 2045320 - (30 * (p-1))
+    while hi > 0:
+        blocks += scrapePageOfBlocks(hi)
 
-        stdout.write("\r%d pages of blocks scraped" % p)
+        stdout.write(f"\r{p} pages of blocks scraped ({int(100*(p/68177))}% done)")
         stdout.flush()
 
-        if p % 50 == 0 and p != 0:
+        if p % 100 == 0:
             # we want to save the last 5 pages to disk and then clear the working list to free up RAM
-            with open(baseDir + "/Data/OtherChains/vechain/historical_blocks.csv", "a") as dest:
+            with open(baseDir + "/Data/OtherChains/bytecoin/historical_blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
-                if p == 50:
+                if p == 100:
                     # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(blocks)
 
-            with open(baseDir + "/Logs/vechain/blocks.txt", "a") as logfile:
+            with open(baseDir + "/Logs/bytecoin/blocks.txt", "a") as logfile:
                 logfile.write(f"{p} pages of blocks scraped\n")
 
             blocks = []
         
-        time.sleep(0.3)
+        time.sleep(0.05)
+        hi -= 30
+        p += 1
 
 def main():
     scrapeAllBlocks()

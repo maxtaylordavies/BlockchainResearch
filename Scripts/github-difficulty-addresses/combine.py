@@ -51,18 +51,18 @@ def main():
 
     rootDir = os.path.join(baseDir, "Data", "GithubData", "Activity")
 
-    # for coin in os.listdir(rootDir):
-    for coin in ["Bytecoin", "Clams", "Worldcoin", "Novacoin", "Startcoin", "Fastcoin", "Bullion"]:
-        # if coin == ".DS_Store":
-        #     continue
+    for coin in os.listdir(rootDir):
+    # for coin in ["Bytecoin", "Clams", "Worldcoin", "Novacoin", "Startcoin", "Fastcoin", "Bullion"]:
+        if coin == ".DS_Store":
+            continue
         
         # get github data
         fNames = os.listdir(os.path.join(rootDir, coin))
-        # githubFNames = [fn for fn in fNames if fn.endswith("json") and not fn.startswith("difficulty") and not fn.startswith("addresses")]
-        githubFNames = [coin.lower() + ".json"]
+        githubFNames = [fn for fn in fNames if fn.endswith("json") and not fn.startswith("difficulty") and not fn.startswith("addresses")]
+        # githubFNames = [coin.lower() + ".json"]
 
-        # if not githubFNames:
-        #     continue
+        if not githubFNames:
+            continue
 
         githubFPath = os.path.join(rootDir, coin, githubFNames[0])
         with open(githubFPath) as f:

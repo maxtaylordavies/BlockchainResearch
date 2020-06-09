@@ -14,6 +14,90 @@ import codecs
 from io import StringIO
 from statistics import mean
 from misc.messari import json2Csv
+import time
+
+def xpm():
+    # diffData = []
+    # for p in range(3661):
+    #     url = "https://api.blockseek.io/xpm/blocks/%d/high" % p
+    #     headers = {
+    #         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0"
+    #     }
+    #     req = urllib.request.Request(url, headers=headers)
+    #     response = urllib.request.urlopen(req)
+    #     data = json.load(response)
+    #     diffData += [{"Timestamp": d["time"], "Difficulty": d["difficulty"]} for d in data]
+
+    #     if p % 20 == 0 and p != 0:
+    #         with open(baseDir + "/Data/GithubData/Activity/Primecoin/difficulty.csv", "a") as dest:
+    #             w = csv.DictWriter(dest, diffData[0].keys())
+    #             if p == 20:
+    #                 w.writeheader()
+    #             w.writerows(diffData)
+
+    #         with open(baseDir + "/Data/GithubData/Activity/Primecoin/Log.txt", "a") as logfile:
+    #             logfile.write("%d pages scraped\n" % p)
+
+    #         diffData = []
+        
+    #     stdout.write("\rScraped page %d" % p)
+    #     stdout.flush()
+    #     time.sleep(0.2)
+        
+    # with open(baseDir + "/Data/GithubData/Activity/Primecoin/difficulty.csv", "a") as dest:
+    #     w = csv.DictWriter(dest, diffData[0].keys())
+    #     w.writerows(diffData)
+    with open(baseDir + "/Data/GithubData/Activity/Primecoin/difficulty.csv") as f:
+        data = f.read()
+        data = data.replace('\x00','?')
+        r = csv.DictReader(StringIO(data))
+        diffData = [{k: v for k, v in row.items()}
+        for row in r]
+
+    print(diffData[0])
+
+    # dailyData = {}
+    # for point in diffData:
+    #     date = datetime.fromtimestamp(int(point["Timestamp"]))
+    #     dateStr = date.strftime("%Y-%m-%d")
+    #     if dateStr in dailyData:
+    #         dailyData[dateStr].append(float(point["Difficulty"]))
+    #     else:
+    #         dailyData[dateStr] = [float(point["Difficulty"])]
+    
+    # dailyData = [{"Date": k, "Average difficulty": mean(dailyData[k])} for k in dailyData.keys()]
+    # with open(os.path.join(baseDir, "Data", "GithubData", "Activity", "Primecoin", "difficulty_daily.csv"), "w+") as dest:
+    #     w = csv.DictWriter(dest, dailyData[0].keys())
+    #     w.writeheader()
+    #     w.writerows(dailyData)
+
+    with open(os.path.join(baseDir, "Data", "GithubData", "Activity", "Primecoin", "difficulty.json"), "w+") as dest:
+        json.dump(diffData, dest, ensure_ascii=False, indent=4)
+
+def tickets():
+    with open(baseDir + "/Data/OtherChains/tickets/historical_blocks.csv") as f:
+        data = f.read()
+        data = data.replace('\x00','?')
+        r = csv.DictReader(StringIO(data))
+        diffData = [{k: v for k, v in row.items()}
+        for row in r]
+
+    diffData += [{"Date": d["Date"], "Difficulty": d["Difficulty"]} for d in diffData]
+
+    dailyData = {}
+    for point in diffData:
+        dateStr = point["Date"][:10]
+        if dateStr in dailyData:
+            dailyData[dateStr].append(float(point["Difficulty"]))
+        else:
+            dailyData[dateStr] = [float(point["Difficulty"])]
+    
+    dailyData = [{"Date": k, "Average difficulty": mean(dailyData[k])} for k in dailyData.keys()]
+    with open(os.path.join(baseDir, "Data", "GithubData", "Activity", "Tickets", "difficulty.json"), "w+") as dest:
+        json.dump(dailyData, dest, ensure_ascii=False, indent=4)
+        # w = csv.DictWriter(dest, dailyData[0].keys())
+        # w.writeheader()
+        # w.writerows(dailyData)
 
 def parseCoinMetricsObject(obj):
     return {
@@ -48,11 +132,9 @@ def getDifficultyDataFromExistingFile(fn):
     dailyData = [{"Date": k, "Average difficulty": mean(dailyData[k])} for k in dailyData.keys()]
     coin = fn.split("/")[-2].capitalize()
 
-    
-    
-    w = csv.DictWriter(dest, dailyData[0].keys())
-    w.writeheader()
-    w.writerows(dailyData)
+    # w = csv.DictWriter(dest, dailyData[0].keys())
+    # w.writeheader()
+    # w.writerows(dailyData)
 
 
 def existingData():
@@ -133,7 +215,7 @@ def coinwarz():
     #         fp = os.path.join(dirpath, fn)
     #         files.append(fp)
 
-    files = ["./coinwarz/Fastcoin.json"]
+    files = ["../coinwarz/Omni.json"]
     for fp in files:
         with open(fp) as f:
             rawData = json.load(f)
@@ -228,7 +310,7 @@ def main():
     #     json.dump(dailyStats, dest, ensure_ascii=False, indent=4)
     # json2Csv(destfp)
 
-    coinwarz()
+    xpm()
             
 if __name__ == "__main__":
     main()

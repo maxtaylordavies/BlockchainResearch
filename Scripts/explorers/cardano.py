@@ -15,6 +15,7 @@ def scrapePageOfBlocks(p, headers):
     response = json.load(response)
 
     blocks = response["Right"][1]
+    print(blocks[0])
     return list(map(lambda b: {
         "Epoch": b["cbeEpoch"],
         "Slot": b["cbeSlot"],

@@ -1,0 +1,48 @@
+Name,Symbol,Github repos,Difficulty data source
+Bitcoin,btc,['https://github.com/bitcoin/bitcoin'],CoinMetrics API (v3)
+Paycoin,xpy,['https://github.com/PaycoinFoundation/paycoin'],https://www.coinwarz.com/mining/paycoin/difficulty-chart
+Litecoin,ltc,['https://github.com/litecoin-project/litecoin'],CoinMetrics API (v3)
+Bitshares,bts,['https://github.com/bitshares/bitshares-core'],null
+Maidsafecoin,maid,[],null
+Stellar,xlm,['https://github.com/stellar/stellar-core'],null
+Dogecoin,doge,['https://github.com/dogecoin/dogecoin'],CoinMetrics API (v3)
+Peercoin,ppc,['https://github.com/peercoin/peercoin'],https://www.coinwarz.com/mining/peercoin/difficulty-chart
+Dash,dash,['https://github.com/dashpay/dash'],CoinMetrics API (v3)
+Namecoin,nmc,['https://github.com/namecoin/namecoin'],https://www.coinwarz.com/mining/namecoin/difficulty-chart
+Monero,xmr,['https://github.com/monero-project/monero'],CoinMetrics API (v3)
+Storjcoin X,sjcx,['https://github.com/storj/storj'],null
+Blackcoin,blk,['https://github.com/blackcoin/blackcoin'],https://chainz.cryptoid.info/blk/#@diff
+Bytecoin,bcn,['https://github.com/amjuarez/bytecoin'],https://www.coinwarz.com/mining/bytecoin/difficulty-chart
+Quark,qrk,['https://github.com/quark-project/quark'],https://chainz.cryptoid.info/qrk/#@diff
+Feathercoin,ftc,['https://github.com/FeatherCoin/feathercoin'],https://chainz.cryptoid.info/ftc/#@diff
+Primecoin,xpm,['https://github.com/primecoin/primecoin'],https://www.blockseek.io/xpm
+Clams,clam,['https://github.com/nochowderforyou/clams'],null
+Worldcoin,wdc,['https://github.com/worldcoinproject/worldcoin-v0.8'],https://chainz.cryptoid.info/wdc/#@diff
+Monacoin,mona,['https://github.com/monacoinproject/monacoin'],https://www.coinwarz.com/mining/monacoin/difficulty-chart
+Shadowcash,sdc,['https://github.com/shadowproject/shadow'],null
+Digitalnote,xdn,['https://github.com/DNotesCoin/DNotes2.0'],null
+Novacoin,nvc,['https://github.com/novacoin-project/novacoin'],https://www.coinwarz.com/mining/novacoin/difficulty-chart
+Zetacoin,zet,['https://github.com/zetacoin/zetacoin'],https://chainz.cryptoid.info/zet/#@diff
+Anoncoin,anc,['https://github.com/Anoncoin/anoncoin'],https://www.coinwarz.com/mining/anoncoin/difficulty-chart
+Vertcoin,vtc,['https://github.com/vertcoin/vertcoin'],CoinMetrics API (v3)
+Startcoin,start,['https://github.com/startcoin-project/startcoin'],https://www.coinwarz.com/mining/startcoin/difficulty-chart
+Digibyte,dgb,['https://github.com/digibyte/digibyte'],CoinMetrics API (v3)
+Omni,omni,['https://github.com/OmniLayer/omnicore'],https://www.coinwarz.com/mining/omnicoin/difficulty-chart
+Ixcoin,ixc,['https://github.com/ixcore/ixcoin'],https://chainz.cryptoid.info/ixc/#@diff
+Infinitecoin,ifc,['https://github.com/WilliamXuu/infinitecoin'],https://chainz.cryptoid.info/ifc/#@diff
+Mintcoin,mint,['https://github.com/mintcoinproject/mintcoin'],https://www.coinwarz.com/mining/mintcoin/difficulty-chart
+Digitalcoin,dgc,['https://github.com/lomtax/digitalcoin'],https://chainz.cryptoid.info/dgc/#@diff
+Devcoin,dvc,['https://github.com/devcoin/core'],https://chainz.cryptoid.info/dvc/#@diff
+Terracoin,trc,['https://github.com/terracoin/terracoin'],https://www.coinwarz.com/mining/terracoin/difficulty-chart
+Freicoin,frc,['https://github.com/freicoin/freicoin'],https://www.coinwarz.com/mining/freicoin/difficulty-chart
+Tickets,tix,['https://github.com/LotteryTickets/LotteryTickets'],http://explorer.ticketszones.com/
+Bullion,cbx,['https://github.com/elambert2014/CryptoBullion-CBX'],https://chainz.cryptoid.info/cbx/#@diff
+Netcoin,net,['https://github.com/netcoinfoundation/netcoin'],https://www.coinwarz.com/mining/netcoin/difficulty-chart
+Copperlark,clr,['https://github.com/copperlark/clr'],null
+Earthcoin,eac,['https://github.com/earthcoinproject/earthcoin'],https://chainz.cryptoid.info/eac/#@diff
+DNotes,note,['https://github.com/DNotesCoin/DNotes2.0'],https://chainz.cryptoid.info/note/#@diff
+Fuelcoin,fc2,['https://github.com/FuelCoinTwo/Fuelcoin'],null
+VCash,xvc,['https://github.com/openvcash/vcash'],null
+Goldcoin,glc,['https://github.com/goldcoin/goldcoin'],https://chainz.cryptoid.info/glc/#@diff
+Fastcoin,fst,['https://github.com/imharrywu/fastcoin'],https://www.coinwarz.com/mining/fastcoin/difficulty-chart
+Sexcoin,sxc,['https://github.com/sexcoin-project/sexcoin'],https://chainz.cryptoid.info/sxc/#@diff

@@ -9,58 +9,66 @@ import time
 from datetime import datetime
 
 def scrapePageOfBlocks(p, headers):
-    url = f"https://api.viewblock.io/zilliqa/blocks?page={p}&network=mainnet"
+    url = "https://bsv.tokenview.com/api/blocks/bchsv/%d/100" % p
     req = urllib.request.Request(url, headers=headers)
     response = urllib.request.urlopen(req)
     response = json.load(response)
 
-    blocks = response["docs"]
+    if response["code"] == 404:
+        return []
+
+    blocks = response["data"]
     return list(map(lambda b: {
-        "Height": b["height"],
-        "Hash": b["hash"] if "hash" in b else None,
-        "Date": datetime.fromtimestamp(b["timestamp"] / 1000).strftime("%Y-%m-%d %H:%M:%S"),
-        "Miner address": b["miner"]["address"],
-        "Difficulty": float(b["difficulty"]),
+        "Network": b["network"],
+        "Height": b["block_no"],
+        "Date": datetime.fromtimestamp(b["time"]).strftime("%Y-%m-%d %H:%M:%S"),
+        "Size": b["size"],
+        "Transaction count": b["txCnt"],
+        "Sent value": float(b["sentValue"]),
+        "Miner address": b["miner"] if "miner" in b else None,
+        "Fee": float(b["fee"]),
         "Reward": float(b["reward"]),
-        "Transactions": int(b["txCount"])
+        "Difficulty": float(b["miningDifficulty"])
     }, blocks))
 
 def scrapeBlocks():
     blocks = []
+    p = 91
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0",
-        "Origin": "https://viewblock.io"
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0"
     }
 
-    for p in range(22951, 23480):
+    while True:
         newBlocks = scrapePageOfBlocks(p, headers)
+        if not newBlocks:
+            break
         blocks += newBlocks
 
         if p == 1:
             print(blocks[0])
-
         stdout.write("\r%d pages scraped" % p)
         stdout.flush()
 
         if p % 10 == 0:
-            with open(baseDir + "/Data/OtherChains/zilliqa/historical_blocks.csv", "a") as dest:
+            with open(baseDir + "/Data/OtherChains/bitcoinsv/historical_blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
                 if p == 10:
                     # if this is the first 20 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(blocks)
 
-            with open(baseDir + "/Logs/zilliqa/blocks.txt", "a") as logfile:
+            with open(baseDir + "/Logs/bitcoinsv/blocks.txt", "a") as logfile:
                 logfile.write("%d pages scraped\n" % p)
 
             blocks = []
+        p += 1
         time.sleep(0.1)
     
-    with open(baseDir + "/Data/OtherChains/zilliqa/historical_blocks.csv", "a") as dest:
+    with open(baseDir + "/Data/OtherChains/bitcoinsv/historical_blocks.csv", "a") as dest:
         w = csv.DictWriter(dest, blocks[0].keys())
         w.writerows(blocks)
 
-    with open(baseDir + "/Logs/zilliqa/blocks.txt", "a") as logfile:
+    with open(baseDir + "/Logs/bitcoinsv/blocks.txt", "a") as logfile:
         logfile.write("%d pages of blocks scraped\n" % p)
 
 

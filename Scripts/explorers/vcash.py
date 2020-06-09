@@ -3,15 +3,28 @@ import requests
 path.append("..")
 
 from explorers.etherscan_utils import getHtml
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 import os
 import csv
 from config.config_file import baseDir
 
+def getDateFromAge(ageStr):
+    age = [int(x[:-1]) for x in ageStr.split()]
+    if "d" in ageStr:
+        delta = timedelta(days=age[0], hours=age[1], minutes=age[2])
+    elif "h" in ageStr:
+        delta = timedelta(hours=age[0], minutes=age[1], seconds=age[2])
+    else:
+        delta = timedelta(minutes=age[0], seconds=age[1])
+    
+    date = datetime.now() - delta
+    return date.strftime("%Y-%m-%d %H:%M:%S")
+        
+
 def scrapePageOfBlocks(p):
     blocks = []
-    url = f"https://vechainthorscan.com/blocks?page={p}"
+    url = f"https://vcash.tech/?page={p}"
     soup = getHtml(url)
    
     # find all the <tr/> html elements - these are table rows
@@ -23,43 +36,42 @@ def scrapePageOfBlocks(p):
         tds = row.findAll("td")
         blocks.append({
             "Height": int(tds[0].a.string),
-            "Date": tds[1].span.string, 
-            "Transactions": tds[2].string,
-            "Clauses": tds[3].string,
-            "% Gas used": float(tds[4].div.div.string[:-1]),
-            "Gas limit": float(tds[5].string.replace(",","")),
-            "VTHO Burned": float(tds[6].string[:-5].replace(",","")),
-            "Signer": tds[7].a["href"][9:]
+            "Hash": tds[1].a.font.string,
+            "Date": getDateFromAge(tds[2].string), 
+            "Difficulty": float(tds[3].string.replace(",", "")),
+            "Reward": float(tds[4].string),
+            "Kernels": int(tds[5].string),
+            "TokenKernels": int(tds[6].string)
         })
 
-    if p == 0:
+    if p == 1:
         print("\n", blocks[0])
 
     return blocks
 
 def scrapeAllBlocks():
     blocks = []
-    for p in range(114551, 117595):
+    for p in range(601, 3000):
         blocks += scrapePageOfBlocks(p)
 
         stdout.write("\r%d pages of blocks scraped" % p)
         stdout.flush()
 
-        if p % 50 == 0 and p != 0:
+        if p % 100 == 0:
             # we want to save the last 5 pages to disk and then clear the working list to free up RAM
-            with open(baseDir + "/Data/OtherChains/vechain/historical_blocks.csv", "a") as dest:
+            with open(baseDir + "/Data/OtherChains/vcash/historical_blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
-                if p == 50:
+                if p == 100:
                     # if this is the first 100 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(blocks)
 
-            with open(baseDir + "/Logs/vechain/blocks.txt", "a") as logfile:
+            with open(baseDir + "/Logs/vcash/blocks.txt", "a") as logfile:
                 logfile.write(f"{p} pages of blocks scraped\n")
 
             blocks = []
         
-        time.sleep(0.3)
+        time.sleep(0.05)
 
 def main():
     scrapeAllBlocks()

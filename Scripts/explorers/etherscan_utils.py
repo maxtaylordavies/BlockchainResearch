@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from coingecko import getDesiredCoinSymbols
+# from coingecko import getDesiredCoinSymbols
 from misc.messari import json2Csv
 from six.moves import urllib
 from sys import stdout
@@ -8,6 +8,7 @@ import time
 import os
 import re
 import js2xml
+import http
 
 def getTokenAnalytics(contract):
     analytics = []
@@ -215,7 +216,11 @@ def getHtml(url):
     response = urllib.request.urlopen(req)
 
     # load the html into BeautifulSoup
-    return BeautifulSoup(response.read(), "html.parser")
+    try:
+        page = response.read()
+    except (http.client.IncompleteRead) as e:
+        page = e.partial
+    return BeautifulSoup(page, "html.parser")
 
 # this needs its own function, since the html is structured differently depending on 
 # whether the value is an integer or not

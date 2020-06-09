@@ -1,0 +1,5490 @@
+{
+	"status": {
+		"elapsed": 38,
+		"timestamp": "2020-04-22T09:43:58.995615363Z"
+	},
+	"data": [
+		{
+			"id": "1e31218a-e44e-4285-820c-8282ee222035",
+			"symbol": "BTC",
+			"name": "Bitcoin",
+			"slug": "bitcoin",
+			"metrics": {
+				"market_data": {
+					"price_usd": 6960.717392749809,
+					"price_btc": 1,
+					"volume_last_24_hours": 32068143860.2363,
+					"real_volume_last_24_hours": 848504279.8668153,
+					"volume_last_24_hours_overstatement_multiple": 37.79373259645767,
+					"percent_change_usd_last_24_hours": 2.0628680912464086,
+					"percent_change_btc_last_24_hours": 0,
+					"ohlcv_last_1_hour": {
+						"open": 6945.563722599303,
+						"high": 6986.247005780883,
+						"low": 6941.009270152422,
+						"close": 6960.71739274981,
+						"volume": 35001074.35202992
+					},
+					"ohlcv_last_24_hour": {
+						"open": 6874.852244990811,
+						"high": 6986.89060776761,
+						"low": 6773.264271284521,
+						"close": 6960.717392749807,
+						"volume": 856561894.5149095
+					},
+					"last_trade_at": "2020-04-22T09:43:55.732Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 127775076131.03162,
+					"y_2050_marketcap_usd": 146168491235.07635,
+					"y_plus10_marketcap_usd": 142946106964.46304,
+					"liquid_marketcap_usd": 127711669102.57236,
+					"volume_turnover_last_24_hours_percent": 0.6640990826932673
+				},
+				"supply": {
+					"y_2050": 20986335.65,
+					"y_plus10": 20523677.54,
+					"liquid": 18336372.85,
+					"circulating": 18345476.59849307,
+					"y_2050_issued_percent": 87.3729132889381,
+					"annual_inflation_percent": 1.9387398637021076,
+					"stock_to_flow": 51.579895721051344,
+					"y_plus10_issued_percent": 89.34253042254727
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 4134294147.613364,
+					"adjusted_transaction_volume": 1727913077.6631474,
+					"nvt": 34.95973262307845,
+					"adjusted_nvt": 91.08248047263564,
+					"sum_of_fees": 177650.8114211553,
+					"median_tx_value": 5756.939335624378,
+					"median_tx_fee": 0.2878832815131894,
+					"count_of_active_addresses": 844316,
+					"count_of_tx": 287202,
+					"count_of_payments": 718141,
+					"new_issuance": 11047007.720623355,
+					"average_difficulty": 14715214060656.506,
+					"kilobytes_added": 162489.277,
+					"count_of_blocks_added": 127
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 6960.3899775182135,
+							"percent_move": -0.007282278704884958
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 6955.827770311579,
+							"percent_move": -0.07282278704888878
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 6951.910947276404,
+							"percent_move": -0.12909172907448863
+						},
+						{
+							"amount_usd": 5000000,
+							"clearing_price": 6942.278326202605,
+							"percent_move": -0.26747362478143055
+						},
+						{
+							"amount_usd": 10000000,
+							"clearing_price": 6925.690020642359,
+							"percent_move": -0.5057806392903674
+						},
+						{
+							"amount_usd": 20000000,
+							"clearing_price": 6893.178704204931,
+							"percent_move": -0.9728370682800784
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.007282278704884958,
+							"marketcap_usd": 127691671448.94609
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.07282278704888878,
+							"marketcap_usd": 127607975583.3993
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -0.12909172907448863,
+							"marketcap_usd": 127536119598.06706
+						},
+						{
+							"amount_sold_usd": 5000000,
+							"percent_move": -0.26747362478143055,
+							"marketcap_usd": 127359404573.57553
+						},
+						{
+							"amount_sold_usd": 10000000,
+							"percent_move": -0.5057806392903674,
+							"marketcap_usd": 127055084202.11137
+						},
+						{
+							"amount_sold_usd": 20000000,
+							"percent_move": -0.9728370682800784,
+							"marketcap_usd": 126458648607.22234
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 197.4704041479986
+						},
+						{
+							"percent": 0.05,
+							"amount": 1418.9585396496975
+						},
+						{
+							"percent": 1,
+							"amount": 2961.0690327567804
+						},
+						{
+							"percent": 2,
+							"amount": 4526.666030738953
+						},
+						{
+							"percent": 4,
+							"amount": 7289.252337913473
+						},
+						{
+							"percent": 6,
+							"amount": 9704.339873476469
+						},
+						{
+							"percent": 8,
+							"amount": 12484.227543001643
+						},
+						{
+							"percent": 10,
+							"amount": 15182.319519731913
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 1373196.5508663123
+						},
+						{
+							"percent": 0.05,
+							"amount": 9827837.964453412
+						},
+						{
+							"percent": 1,
+							"amount": 20405579.25730931
+						},
+						{
+							"percent": 2,
+							"amount": 30879462.38300231
+						},
+						{
+							"percent": 4,
+							"amount": 48710144.56824259
+						},
+						{
+							"percent": 6,
+							"amount": 63497854.6848992
+						},
+						{
+							"percent": 8,
+							"amount": 79949307.01733586
+						},
+						{
+							"percent": 10,
+							"amount": 95114304.64731166
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 20089,
+					"at": "2017-12-17",
+					"days_since": 856,
+					"percent_down": 65.360421022126,
+					"breakeven_multiple": 2.8868711153757074
+				},
+				"cycle_low": {
+					"price": 3126.679993636258,
+					"at": "2018-12-15",
+					"percent_up": 122.56019276127594,
+					"days_since": 493
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": "SHA-256",
+					"network_hash_rate": "125535 PH/s",
+					"available_on_nicehash_percent": 0.45718367573675905,
+					"1_hour_attack_cost": 2027518.435108753,
+					"24_hours_attack_cost": 48660442.44261007,
+					"attack_appeal": 2625.4083709541837
+				},
+				"developer_activity": {
+					"stars": 42971,
+					"watchers": 3499,
+					"commits_last_3_months": 215,
+					"commits_last_1_year": 215,
+					"lines_added_last_3_months": 33847,
+					"lines_added_last_1_year": 33847,
+					"lines_deleted_last_3_months": 50232,
+					"lines_deleted_last_1_year": 50232
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 5.374355198232643,
+					"percent_change_last_1_month": 7.535475455440597,
+					"percent_change_last_3_months": -16.80393512604499,
+					"percent_change_last_1_year": 26.015887683247467,
+					"percent_change_btc_last_1_week": 0,
+					"percent_change_btc_last_1_month": 0,
+					"percent_change_btc_last_3_months": 0,
+					"percent_change_btc_last_1_year": 0,
+					"percent_change_month_to_date": 4.774052699272553,
+					"percent_change_quarter_to_date": 4.774052699272553,
+					"percent_change_year_to_date": -3.140489728966063
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 84.31304513582634,
+					"2018_usd_percent": -71.97733095391189,
+					"2017_usd_percent": 1288.3583079532318,
+					"2016_usd_percent": 122.7436967497104,
+					"2015_usd_percent": 36.57414623314594,
+					"2014_usd_percent": -57.325668136700024,
+					"2013_usd_percent": 5429.205396499734,
+					"2012_usd_percent": 164.8,
+					"2011_usd_percent": 1420.27027
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 1.3478114284767964,
+						"last_90_days": -0.6036581082653947,
+						"last_1_year": 0.6696630902032659,
+						"last_3_years": 0.9548756767660836
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.5707120788049995,
+						"volatility_last_90_days": 0.8059363626306253,
+						"volatility_last_1_year": 0.6752558635686192,
+						"volatility_last_3_years": 0.749720263101837
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 14601879.41242228,
+					"btc_current_normalized_supply_price_usd": 6958.745020865106,
+					"btc_y2050_normalized_supply_price_usd": 6958.745020865105,
+					"asset_created_at": "2009-01-03",
+					"asset_age_days": 4126,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 3.6643000000000003,
+					"blockfi": 3.2,
+					"celsius": 4.05,
+					"coinlist": 2.92,
+					"poloniex": 2.5915
+				},
+				"borrow_rates": {
+					"coinlist": 3.65
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 5252,
+					"subscribers": 1250282
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "21c795f5-1bfd-40c3-858e-e9d7e820c6d0",
+			"symbol": "ETH",
+			"name": "Ethereum",
+			"slug": "ethereum",
+			"metrics": {
+				"market_data": {
+					"price_usd": 175.4122008660405,
+					"price_btc": 0.02520030493534295,
+					"volume_last_24_hours": 16805575571.6186,
+					"real_volume_last_24_hours": 318288078.0598428,
+					"volume_last_24_hours_overstatement_multiple": 52.79989019399874,
+					"percent_change_usd_last_24_hours": 3.4165069062258904,
+					"percent_change_btc_last_24_hours": 1.3262794200230608,
+					"ohlcv_last_1_hour": {
+						"open": 174.99653947905432,
+						"high": 176.16204479338114,
+						"low": 174.81404513626714,
+						"close": 175.41220086604045,
+						"volume": 13977915.174393453
+					},
+					"ohlcv_last_24_hour": {
+						"open": 172.36347604869252,
+						"high": 176.2609358711361,
+						"low": 168.37596526002773,
+						"close": 175.4122008660405,
+						"volume": 314592164.85731995
+					},
+					"last_trade_at": "2020-04-22T09:43:49.057Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 19234850226.292843,
+					"y_2050_marketcap_usd": 23733816893.4368,
+					"y_plus10_marketcap_usd": 21335823180.168427,
+					"liquid_marketcap_usd": 19338560864.42269,
+					"volume_turnover_last_24_hours_percent": 1.6461768868227933
+				},
+				"supply": {
+					"y_2050": 135135633.79999998,
+					"y_plus10": 121481934.45,
+					"liquid": 110109919.99,
+					"circulating": 109519412.239881,
+					"y_2050_issued_percent": 81.48104011778425,
+					"annual_inflation_percent": 4.378863512422769,
+					"stock_to_flow": 22.836975785224073,
+					"y_plus10_issued_percent": 90.63892544065428
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 348129334.14639133,
+					"adjusted_transaction_volume": 288046036.50924385,
+					"nvt": 60.93679825339725,
+					"adjusted_nvt": 74.3496449781154,
+					"sum_of_fees": 92613.1419448384,
+					"median_tx_value": 805.7094654160234,
+					"median_tx_fee": 0.05120695617993716,
+					"count_of_active_addresses": 384794,
+					"count_of_tx": 785639,
+					"count_of_payments": 432078,
+					"new_issuance": 2376923.0671284515,
+					"average_difficulty": 2242992503408694.8,
+					"kilobytes_added": 160610.878,
+					"count_of_blocks_added": 6445
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 175.44580180133323,
+							"percent_move": -0.020288983591123664
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 175.1837977500988,
+							"percent_move": -0.16959486072581842
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 174.9446523407433,
+							"percent_move": -0.30587449051905824
+						},
+						{
+							"amount_usd": 5000000,
+							"clearing_price": 174.03519952417113,
+							"percent_move": -0.8241361351431035
+						},
+						{
+							"amount_usd": 10000000,
+							"clearing_price": 171.89623642109083,
+							"percent_move": -2.043047677768026
+						},
+						{
+							"amount_usd": 20000000,
+							"clearing_price": 164.6093322101801,
+							"percent_move": -6.195569822675639
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.020288983591123664,
+							"marketcap_usd": 19214721093.23667
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.16959486072581842,
+							"marketcap_usd": 19186026563.541004
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -0.30587449051905824,
+							"marketcap_usd": 19159835498.868526
+						},
+						{
+							"amount_sold_usd": 5000000,
+							"percent_move": -0.8241361351431035,
+							"marketcap_usd": 19060232760.937637
+						},
+						{
+							"amount_sold_usd": 10000000,
+							"percent_move": -2.043047677768026,
+							"marketcap_usd": 18825974779.08549
+						},
+						{
+							"amount_sold_usd": 20000000,
+							"percent_move": -6.195569822675639,
+							"marketcap_usd": 18027917312.858234
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 2811.532560365198
+						},
+						{
+							"percent": 0.05,
+							"amount": 17399.544236547867
+						},
+						{
+							"percent": 1,
+							"amount": 33757.95776789016
+						},
+						{
+							"percent": 2,
+							"amount": 56872.94857805255
+						},
+						{
+							"percent": 4,
+							"amount": 90757.90324427726
+						},
+						{
+							"percent": 6,
+							"amount": 115587.5389632218
+						},
+						{
+							"percent": 8,
+							"amount": 135783.16968124692
+						},
+						{
+							"percent": 10,
+							"amount": 146512.65574692955
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 492878.3127594837
+						},
+						{
+							"percent": 0.05,
+							"amount": 3038029.99001728
+						},
+						{
+							"percent": 1,
+							"amount": 5864654.9269612115
+						},
+						{
+							"percent": 2,
+							"amount": 9780542.035369456
+						},
+						{
+							"percent": 4,
+							"amount": 15289271.418089263
+						},
+						{
+							"percent": 6,
+							"amount": 19066455.93466257
+						},
+						{
+							"percent": 8,
+							"amount": 21921227.704076473
+						},
+						{
+							"percent": 10,
+							"amount": 23139222.03836897
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 1431.77,
+					"at": "2018-01-13",
+					"days_since": 829,
+					"percent_down": 87.75044115904318,
+					"breakeven_multiple": 8.163559300245698
+				},
+				"cycle_low": {
+					"price": 81.1505982131599,
+					"at": "2018-12-15",
+					"percent_up": 116.12349443990406,
+					"days_since": 493
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": 16000000,
+					"sale_start_date": "2014-07-25",
+					"sale_end_date": "2014-08-22",
+					"roi_since_sale_usd_percent": 56294.05421773875,
+					"roi_since_sale_btc_percent": 856.5482826512028,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 4.3,
+					"staking_type": "Proof of Stake",
+					"staking_minimum": 32,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": -0.07555505949092822
+				},
+				"mining_stats": {
+					"mining_algo": "Ethash",
+					"network_hash_rate": "166 TH/s",
+					"available_on_nicehash_percent": 3.49114203113121,
+					"1_hour_attack_cost": 108118.34737856581,
+					"24_hours_attack_cost": 2594840.3370855795,
+					"attack_appeal": 7462.239714440332
+				},
+				"developer_activity": {
+					"stars": 25749,
+					"watchers": 2005,
+					"commits_last_3_months": 95,
+					"commits_last_1_year": 95,
+					"lines_added_last_3_months": 10588,
+					"lines_added_last_1_year": 10588,
+					"lines_deleted_last_3_months": 3951,
+					"lines_deleted_last_1_year": 3951
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 15.238463626120646,
+					"percent_change_last_1_month": 29.027345760417123,
+					"percent_change_last_3_months": 8.375908971816122,
+					"percent_change_last_1_year": 3.2213991676648313,
+					"percent_change_btc_last_1_week": 9.34277308593667,
+					"percent_change_btc_last_1_month": 19.965828696851503,
+					"percent_change_btc_last_3_months": 30.243939138916094,
+					"percent_change_btc_last_1_year": -18.102245712893463,
+					"percent_change_month_to_date": 29.402703657941622,
+					"percent_change_quarter_to_date": 29.402703657941622,
+					"percent_change_year_to_date": 34.75314270574582
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -9.801374571403414,
+					"2018_usd_percent": -82.2772211087198,
+					"2017_usd_percent": 9043.06161613722,
+					"2016_usd_percent": 753.2759376915693,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 5.078470276880369,
+						"last_90_days": 0.8857740691555579,
+						"last_1_year": 0.4346818591259694,
+						"last_3_years": 0.8944293405947205
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.7476077348855232,
+						"volatility_last_90_days": 1.025746441568409,
+						"volatility_last_1_year": 0.7563362264035758,
+						"volatility_last_3_years": 0.9777060072839872
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 2175685.05053763,
+					"btc_current_normalized_supply_price_usd": 1057.912990153411,
+					"btc_y2050_normalized_supply_price_usd": 1036.855399553517,
+					"asset_created_at": "2015-07-30",
+					"asset_age_days": 1727,
+					"categories": [
+						"infrastructure"
+					],
+					"sectors": [
+						"smart_contract_platform",
+						"currency"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 3.3674999999999997,
+					"blockfi": 4.5,
+					"celsius": 3.75,
+					"coinlist": 2.92,
+					"compound": 1.915165002034,
+					"dydx": 0.418109038164,
+					"nuo": 0.3493950559155974,
+					"poloniex": 0.146
+				},
+				"borrow_rates": {
+					"coinlist": 3.65,
+					"compound": 2.121082047104,
+					"dydx": 2.117762062165,
+					"nuo": 2.9438612208183565
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": 0,
+					"outstanding_debt_usd": 3502756.451480926,
+					"repaid_last_24_hours_usd": 0,
+					"collateralized_last_24_hours_usd": 0,
+					"collateral_liquidated_last_24_hours_usd": 0
+				},
+				"reddit": {
+					"active_user_count": 1500,
+					"subscribers": 449649
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "51f8ea5e-f426-4f40-939a-db7e05495374",
+			"symbol": "USDT",
+			"name": "Tether",
+			"slug": "tether",
+			"metrics": {
+				"market_data": {
+					"price_usd": 1.0017523059097162,
+					"price_btc": 0.00014391456804723791,
+					"volume_last_24_hours": 42729588679.5778,
+					"real_volume_last_24_hours": 876372316.2204485,
+					"volume_last_24_hours_overstatement_multiple": 48.75734649384944,
+					"percent_change_usd_last_24_hours": -0.0100536593084513,
+					"percent_change_btc_last_24_hours": -2.0313832190170458,
+					"ohlcv_last_1_hour": {
+						"open": 1.0013271859330375,
+						"high": 1.0019114703547256,
+						"low": 1.0013271859330375,
+						"close": 1.0017523059097162,
+						"volume": 1114207.1226393646
+					},
+					"ohlcv_last_24_hour": {
+						"open": 1.0016507312324636,
+						"high": 1.0026597444836987,
+						"low": 1.0002931298318045,
+						"close": 1.0017523059097162,
+						"volume": 10274067.860595316
+					},
+					"last_trade_at": "2020-04-22T09:43:02Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 7590855949.686765,
+					"y_2050_marketcap_usd": null,
+					"y_plus10_marketcap_usd": null,
+					"liquid_marketcap_usd": null,
+					"volume_turnover_last_24_hours_percent": null
+				},
+				"supply": {
+					"y_2050": null,
+					"y_plus10": null,
+					"liquid": null,
+					"circulating": 7576546772.013151,
+					"y_2050_issued_percent": null,
+					"annual_inflation_percent": null,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": null
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 1.001683971400597,
+							"percent_move": -0.0009145087971160237
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 1.0016015262542886,
+							"percent_move": -0.00914508797120457
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 1.0015099205361684,
+							"percent_move": -0.018290175942386973
+						},
+						{
+							"amount_usd": 5000000,
+							"clearing_price": 1.0012351033818074,
+							"percent_move": -0.04572543985597852
+						},
+						{
+							"amount_usd": 10000000,
+							"clearing_price": 1.000777074791206,
+							"percent_move": -0.09145087971195703
+						},
+						{
+							"amount_usd": 20000000,
+							"clearing_price": 0.9977281800489427,
+							"percent_move": -0.3958250083694748
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.0009145087971160237,
+							"marketcap_usd": 7589305460.092506
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.00914508797120457,
+							"marketcap_usd": 7588680810.585376
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -0.018290175942386973,
+							"marketcap_usd": 7587986755.577455
+						},
+						{
+							"amount_sold_usd": 5000000,
+							"percent_move": -0.04572543985597852,
+							"marketcap_usd": 7585904590.553687
+						},
+						{
+							"amount_sold_usd": 10000000,
+							"percent_move": -0.09145087971195703,
+							"marketcap_usd": 7582434315.514075
+						},
+						{
+							"amount_sold_usd": 20000000,
+							"percent_move": -0.3958250083694748,
+							"marketcap_usd": 7559334221.896373
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 10927276.392141234
+						},
+						{
+							"percent": 0.05,
+							"amount": 25783150.364416923
+						},
+						{
+							"percent": 1,
+							"amount": 32179822.0641655
+						},
+						{
+							"percent": 2,
+							"amount": 33215126.507296592
+						},
+						{
+							"percent": 4,
+							"amount": 33457508.207059197
+						},
+						{
+							"percent": 6,
+							"amount": 33561144.347188145
+						},
+						{
+							"percent": 8,
+							"amount": 33612996.4638432
+						},
+						{
+							"percent": 10,
+							"amount": 33639317.6918347
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 10934831.935458945
+						},
+						{
+							"percent": 0.05,
+							"amount": 25697670.617445104
+						},
+						{
+							"percent": 1,
+							"amount": 31911963.68227108
+						},
+						{
+							"percent": 2,
+							"amount": 32605936.81795463
+						},
+						{
+							"percent": 4,
+							"amount": 32173589.936564837
+						},
+						{
+							"percent": 6,
+							"amount": 31600889.726090223
+						},
+						{
+							"percent": 8,
+							"amount": 30976315.08661703
+						},
+						{
+							"percent": 10,
+							"amount": 30326646.146533895
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": null,
+					"at": null,
+					"days_since": null,
+					"percent_down": null,
+					"breakeven_multiple": null
+				},
+				"cycle_low": {
+					"price": null,
+					"at": null,
+					"percent_up": null,
+					"days_since": null
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": null,
+					"watchers": null,
+					"commits_last_3_months": null,
+					"commits_last_1_year": null,
+					"lines_added_last_3_months": null,
+					"lines_added_last_1_year": null,
+					"lines_deleted_last_3_months": null,
+					"lines_deleted_last_1_year": null
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 0.10001071722307285,
+					"percent_change_last_1_month": -0.21822060698853635,
+					"percent_change_last_3_months": 0.4027374351753826,
+					"percent_change_last_1_year": -0.4875748661840913,
+					"percent_change_btc_last_1_week": -5.021184651821021,
+					"percent_change_btc_last_1_month": -7.225838188160973,
+					"percent_change_btc_last_3_months": 20.66194551861407,
+					"percent_change_btc_last_1_year": -21.04501384557513,
+					"percent_change_month_to_date": -0.14395454700797386,
+					"percent_change_quarter_to_date": -0.14395454700797386,
+					"percent_change_year_to_date": -0.08816498662660685
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -4.033339720252925,
+					"2018_usd_percent": 2.624316488685981,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": null,
+						"last_90_days": null,
+						"last_1_year": null,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": null,
+						"volatility_last_90_days": null,
+						"volatility_last_1_year": null,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": null,
+					"btc_current_normalized_supply_price_usd": null,
+					"btc_y2050_normalized_supply_price_usd": null,
+					"asset_created_at": null,
+					"asset_age_days": null,
+					"categories": null,
+					"sectors": null
+				},
+				"lend_rates": {
+					"bitfinex": 5.9299,
+					"nexo": 8,
+					"poloniex": 6.6065
+				},
+				"borrow_rates": {
+					"nexo": 11.9
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "97775be0-2608-4720-b7af-f85b24c7eb2d",
+			"symbol": "XRP",
+			"name": "XRP",
+			"slug": "xrp",
+			"metrics": {
+				"market_data": {
+					"price_usd": 0.18566464952375916,
+					"price_btc": 0.000026673206086077423,
+					"volume_last_24_hours": 1782820539.92376,
+					"real_volume_last_24_hours": 79329942.55662753,
+					"volume_last_24_hours_overstatement_multiple": 22.473488350897796,
+					"percent_change_usd_last_24_hours": 1.6017284856225036,
+					"percent_change_btc_last_24_hours": -0.451819172092665,
+					"ohlcv_last_1_hour": {
+						"open": 0.18557140004400732,
+						"high": 0.1862939571560257,
+						"low": 0.1854317753155098,
+						"close": 0.1856646495237592,
+						"volume": 3285269.8237972916
+					},
+					"ohlcv_last_24_hour": {
+						"open": 0.1835975721068441,
+						"high": 0.18708496850788356,
+						"low": 0.181465391640802,
+						"close": 0.18566464952375916,
+						"volume": 81074426.06863889
+					},
+					"last_trade_at": "2020-04-22T09:43:44.484Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 5489686443.370878,
+					"y_2050_marketcap_usd": 18580864746.98747,
+					"y_plus10_marketcap_usd": 18316281399.466232,
+					"liquid_marketcap_usd": 5539077956.3943615,
+					"volume_turnover_last_24_hours_percent": 1.4329142594236222
+				},
+				"supply": {
+					"y_2050": 100000000000,
+					"y_plus10": 98576043951,
+					"liquid": 29810657533,
+					"circulating": 29544838295.327057,
+					"y_2050_issued_percent": 29.810657533,
+					"annual_inflation_percent": 21.72035222581818,
+					"stock_to_flow": 4.603976904257276,
+					"y_plus10_issued_percent": 30.241280069849658
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 111268661.17118704,
+					"adjusted_transaction_volume": 111258288.6238479,
+					"nvt": 87.17035710956173,
+					"adjusted_nvt": 87.40638062556268,
+					"sum_of_fees": 116.67914694486036,
+					"median_tx_value": 3266.459052699904,
+					"median_tx_fee": 0.00000222803513999141,
+					"count_of_active_addresses": 5046,
+					"count_of_tx": 975305,
+					"count_of_payments": 34064,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": 22404
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 0.18584767310968545,
+							"percent_move": -0.0691845856553792
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 0.18519622396419633,
+							"percent_move": -0.4194706194831173
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 0.18419184764386054,
+							"percent_move": -0.9595265857193903
+						},
+						{
+							"amount_usd": 5000000,
+							"clearing_price": 0.17439006935534296,
+							"percent_move": -6.2299702802395265
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.0691845856553792,
+							"marketcap_usd": 5490839449.588459
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.4194706194831173,
+							"marketcap_usd": 5471592489.927354
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -0.9595265857193903,
+							"marketcap_usd": 5441918353.955378
+						},
+						{
+							"amount_sold_usd": 5000000,
+							"percent_move": -6.2299702802395265,
+							"marketcap_usd": 5152326399.414478
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 777978.2771817326
+						},
+						{
+							"percent": 0.05,
+							"amount": 6165901.058738928
+						},
+						{
+							"percent": 1,
+							"amount": 11137340.127595292
+						},
+						{
+							"percent": 2,
+							"amount": 15569867.553804416
+						},
+						{
+							"percent": 4,
+							"amount": 22655489.074573997
+						},
+						{
+							"percent": 6,
+							"amount": 27123841.263020072
+						},
+						{
+							"percent": 8,
+							"amount": 31321256.284651205
+						},
+						{
+							"percent": 10,
+							"amount": 33775356.19554464
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 144540.86709156277
+						},
+						{
+							"percent": 0.05,
+							"amount": 1140978.1535771906
+						},
+						{
+							"percent": 1,
+							"amount": 2050568.9374942486
+						},
+						{
+							"percent": 2,
+							"amount": 2837714.443370259
+						},
+						{
+							"percent": 4,
+							"amount": 4044849.5429613004
+						},
+						{
+							"percent": 6,
+							"amount": 4741729.16313144
+						},
+						{
+							"percent": 8,
+							"amount": 5359011.601396224
+						},
+						{
+							"percent": 10,
+							"amount": 5653275.416826581
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 3.84194,
+					"at": "2018-01-04",
+					"days_since": 839,
+					"percent_down": 95.16729581931826,
+					"breakeven_multiple": 20.692348685388218
+				},
+				"cycle_low": {
+					"price": 0.11936358570098458,
+					"at": "2020-03-13",
+					"percent_up": 55.549612479304585,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 3408,
+					"watchers": 474,
+					"commits_last_3_months": 69,
+					"commits_last_1_year": 250,
+					"lines_added_last_3_months": 14623,
+					"lines_added_last_1_year": 46343,
+					"lines_deleted_last_3_months": 9725,
+					"lines_deleted_last_1_year": 44135
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 3.115793022371034,
+					"percent_change_last_1_month": 17.034310128604808,
+					"percent_change_last_3_months": -17.39808452545898,
+					"percent_change_last_1_year": -41.952029401515,
+					"percent_change_btc_last_1_week": -2.15969214409176,
+					"percent_change_btc_last_1_month": 8.815057132250256,
+					"percent_change_btc_last_3_months": -0.7307163197883392,
+					"percent_change_btc_last_1_year": -53.94367378010559,
+					"percent_change_month_to_date": 6.065721259167862,
+					"percent_change_quarter_to_date": 6.065721259167862,
+					"percent_change_year_to_date": -3.4641441416813077
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -48.16012820667165,
+					"2018_usd_percent": -82.53675794767126,
+					"2017_usd_percent": 31404.30701498815,
+					"2016_usd_percent": 9.52286606309704,
+					"2015_usd_percent": -75.42622216786363,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 4.238249584755588,
+						"last_90_days": -0.5383735810022848,
+						"last_1_year": -0.47579292738055745,
+						"last_3_years": 0.5348182969153714
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.5198293994670236,
+						"volatility_last_90_days": 0.8076838218464486,
+						"volatility_last_1_year": 0.6640358600059448,
+						"volatility_last_3_years": 1.2416934153620427
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 1856695.9499928416,
+					"btc_current_normalized_supply_price_usd": 438.3749033069816,
+					"btc_y2050_normalized_supply_price_usd": 884.8363510166647,
+					"asset_created_at": "2013-08-05",
+					"asset_age_days": 2452,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 4.9761,
+					"celsius": 3.1,
+					"coinlist": 3.65,
+					"poloniex": 0.219
+				},
+				"borrow_rates": {
+					"coinlist": 4.5625
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 1143,
+					"subscribers": 208635
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "c8c7e9a1-844d-4cfd-9dbc-ce85a8a9613f",
+			"symbol": "BCH",
+			"name": "Bitcoin Cash",
+			"slug": "bitcoin-cash",
+			"metrics": {
+				"market_data": {
+					"price_usd": 223.3842264402604,
+					"price_btc": 0.03209212698003434,
+					"volume_last_24_hours": 3129746984.87126,
+					"real_volume_last_24_hours": 12474880.318633864,
+					"volume_last_24_hours_overstatement_multiple": 250.88392873768282,
+					"percent_change_usd_last_24_hours": 2.500650344263466,
+					"percent_change_btc_last_24_hours": 0.4289339122095548,
+					"ohlcv_last_1_hour": {
+						"open": 222.9091736705649,
+						"high": 224.00224455162305,
+						"low": 222.67625711745313,
+						"close": 223.3842264402603,
+						"volume": 727722.9829001722
+					},
+					"ohlcv_last_24_hour": {
+						"open": 219.28268690969472,
+						"high": 224.04698812476312,
+						"low": 215.74264419768778,
+						"close": 223.3842264402604,
+						"volume": 12407450.885562904
+					},
+					"last_trade_at": "2020-04-22T09:43:31.87Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 4109074204.8530717,
+					"y_2050_marketcap_usd": 4687981396.746673,
+					"y_plus10_marketcap_usd": 4582584537.877232,
+					"liquid_marketcap_usd": 4108139199.540702,
+					"volume_turnover_last_24_hours_percent": 0.30356890887193416
+				},
+				"supply": {
+					"y_2050": 20982433.29,
+					"y_plus10": 20510698.79,
+					"liquid": 18387179.77,
+					"circulating": 18391364.6600267,
+					"y_2050_issued_percent": 87.63130336634089,
+					"annual_inflation_percent": 1.786734149061945,
+					"stock_to_flow": 55.96803534118442,
+					"y_plus10_issued_percent": 89.6467739020412
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 102212133.61226016,
+					"adjusted_transaction_volume": 42520775.99229023,
+					"nvt": 22.079351705948014,
+					"adjusted_nvt": 59.18248383726506,
+					"sum_of_fees": 281.8870729053166,
+					"median_tx_value": 1934.4070409104527,
+					"median_tx_fee": 0.0006120772543829321,
+					"count_of_active_addresses": 28934,
+					"count_of_tx": 36863,
+					"count_of_payments": 52839,
+					"new_issuance": 205235.75819865652,
+					"average_difficulty": 237478625496.24432,
+					"kilobytes_added": 13126.242,
+					"count_of_blocks_added": 147
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 222.78734124412046,
+							"percent_move": -0.13669108701841343
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 220.7487323057866,
+							"percent_move": -1.0504873243841732
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 214.32900142322114,
+							"percent_move": -3.9280995113412343
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.13669108701841343,
+							"marketcap_usd": 4097363234.4584255
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -1.0504873243841732,
+							"marketcap_usd": 4059870434.074338
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -3.9280995113412343,
+							"marketcap_usd": 3941802822.3938413
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 258.7616354010765
+						},
+						{
+							"percent": 0.05,
+							"amount": 2254.778164376932
+						},
+						{
+							"percent": 1,
+							"amount": 4369.8104332638695
+						},
+						{
+							"percent": 2,
+							"amount": 6409.786177600782
+						},
+						{
+							"percent": 4,
+							"amount": 9232.84851240326
+						},
+						{
+							"percent": 6,
+							"amount": 13204.076927075543
+						},
+						{
+							"percent": 8,
+							"amount": 16418.980903714284
+						},
+						{
+							"percent": 10,
+							"amount": 18731.57576488156
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 57669.99769695478
+						},
+						{
+							"percent": 0.05,
+							"amount": 500508.50268809486
+						},
+						{
+							"percent": 1,
+							"amount": 965122.2998487192
+						},
+						{
+							"percent": 2,
+							"amount": 1401374.3899287635
+						},
+						{
+							"percent": 4,
+							"amount": 1977386.212008279
+						},
+						{
+							"percent": 6,
+							"amount": 2768984.0750676133
+						},
+						{
+							"percent": 8,
+							"amount": 3369912.1829528166
+						},
+						{
+							"percent": 10,
+							"amount": 3760983.0944480677
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 4329.52,
+					"at": "2017-12-20",
+					"days_since": 853,
+					"percent_down": 94.84040126240684,
+					"breakeven_multiple": 19.381352133334232
+				},
+				"cycle_low": {
+					"price": 73.53692042800047,
+					"at": "2018-12-15",
+					"percent_up": 203.77374788567533,
+					"days_since": 493
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": "SHA-256",
+					"network_hash_rate": "1852 PH/s",
+					"available_on_nicehash_percent": 31.136432601405367,
+					"1_hour_attack_cost": 29917.25887342751,
+					"24_hours_attack_cost": 718014.2129622602,
+					"attack_appeal": 5730.081692823792
+				},
+				"developer_activity": {
+					"stars": 0,
+					"watchers": 138,
+					"commits_last_3_months": 137,
+					"commits_last_1_year": 137,
+					"lines_added_last_3_months": 6974,
+					"lines_added_last_1_year": 6974,
+					"lines_deleted_last_3_months": 7134,
+					"lines_deleted_last_1_year": 7134
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 4.064293685267136,
+					"percent_change_last_1_month": 0.7818868976217508,
+					"percent_change_last_3_months": -31.037455615726973,
+					"percent_change_last_1_year": -23.33329908766182,
+					"percent_change_btc_last_1_week": -1.259717521977819,
+					"percent_change_btc_last_1_month": -6.295967664440397,
+					"percent_change_btc_last_3_months": -17.122232063715625,
+					"percent_change_btc_last_1_year": -39.17123112114657,
+					"percent_change_month_to_date": -0.1927341522942204,
+					"percent_change_quarter_to_date": -0.1927341522942204,
+					"percent_change_year_to_date": 8.61437983179876
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 24.378969385641412,
+					"2018_usd_percent": -93.5327820299105,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 0.2807022914993507,
+						"last_90_days": -0.8037125870670503,
+						"last_1_year": 0.14037221240151096,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.8700206280117294,
+						"volatility_last_90_days": 1.0961049095434237,
+						"volatility_last_1_year": 0.8539477200322633,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 468740.2496350827,
+					"btc_current_normalized_supply_price_usd": 223.9659672064339,
+					"btc_y2050_normalized_supply_price_usd": 223.38520858159154,
+					"asset_created_at": "2017-08-01",
+					"asset_age_days": 995,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency"
+					]
+				},
+				"lend_rates": {
+					"celsius": 3.75,
+					"coinlist": 6.569999999999999
+				},
+				"borrow_rates": {
+					"coinlist": 8.2125
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 2894,
+					"subscribers": 47764
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "ecef109b-64d3-4f3d-9789-e901ef7bacfb",
+			"symbol": "BSV",
+			"name": "Bitcoin SV",
+			"slug": "bitcoin-sv",
+			"metrics": {
+				"market_data": {
+					"price_usd": 186.7076252654267,
+					"price_btc": 0.026823043478233853,
+					"volume_last_24_hours": 1968781759.46187,
+					"real_volume_last_24_hours": 2416473.8897304405,
+					"volume_last_24_hours_overstatement_multiple": 814.7333053457859,
+					"percent_change_usd_last_24_hours": 3.0463186479849047,
+					"percent_change_btc_last_24_hours": 0.9635733103828389,
+					"ohlcv_last_1_hour": {
+						"open": 185.52463391881065,
+						"high": 187.1233402262707,
+						"low": 185.48912550372026,
+						"close": 186.7076252654267,
+						"volume": 311240.4995094728
+					},
+					"ohlcv_last_24_hour": {
+						"open": 182.9111047706116,
+						"high": 187.16618882186475,
+						"low": 178.35887980635573,
+						"close": 186.7076252654267,
+						"volume": 2490147.9983484
+					},
+					"last_trade_at": "2020-04-22T09:41:25Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 3433060952.1578803,
+					"y_2050_marketcap_usd": 3918016511.7484827,
+					"y_plus10_marketcap_usd": 3828814659.093454,
+					"liquid_marketcap_usd": 3432991304.803448,
+					"volume_turnover_last_24_hours_percent": 0.07039856269947478
+				},
+				"supply": {
+					"y_2050": 20982141.46,
+					"y_plus10": 20504439.06,
+					"liquid": 18384687.5,
+					"circulating": 18385060.48225738,
+					"y_2050_issued_percent": 87.62064413228867,
+					"annual_inflation_percent": 1.7744046506093725,
+					"stock_to_flow": 56.35693074049239,
+					"y_plus10_issued_percent": 89.6619870760805
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 30224493.938298482,
+					"adjusted_transaction_volume": 19036135.08485936,
+					"nvt": 46.87666915841683,
+					"adjusted_nvt": 95.03499354219046,
+					"sum_of_fees": 182.738546418,
+					"median_tx_value": 44.81161657023331,
+					"median_tx_fee": 0.000158185,
+					"count_of_active_addresses": 29994,
+					"count_of_tx": 452659,
+					"count_of_payments": 674479,
+					"new_issuance": 122128.125,
+					"average_difficulty": 211817804497.77158,
+					"kilobytes_added": 221841.317,
+					"count_of_blocks_added": 105
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 186.1958961049738,
+							"percent_move": -0.26523708763633735
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 184.42762888933555,
+							"percent_move": -1.2123992711570672
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 180.9017897326721,
+							"percent_move": -3.1009947757470457
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.26523708763633735,
+							"marketcap_usd": 3423222811.4380546
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -1.2123992711570672,
+							"marketcap_usd": 3390713111.7297525
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -3.1009947757470457,
+							"marketcap_usd": 3325890345.583784
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 56.016162406485215
+						},
+						{
+							"percent": 0.05,
+							"amount": 1492.4632871361332
+						},
+						{
+							"percent": 1,
+							"amount": 4723.258647041832
+						},
+						{
+							"percent": 2,
+							"amount": 8429.984606054937
+						},
+						{
+							"percent": 4,
+							"amount": 12933.37727150471
+						},
+						{
+							"percent": 6,
+							"amount": 14240.069267995594
+						},
+						{
+							"percent": 8,
+							"amount": 14666.959824752845
+						},
+						{
+							"percent": 10,
+							"amount": 15382.444223301409
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 10447.259583137746
+						},
+						{
+							"percent": 0.05,
+							"amount": 277236.4202633003
+						},
+						{
+							"percent": 1,
+							"amount": 872972.3088862664
+						},
+						{
+							"percent": 2,
+							"amount": 1542326.7897770626
+						},
+						{
+							"percent": 4,
+							"amount": 2317964.2006404917
+						},
+						{
+							"percent": 6,
+							"amount": 2498984.1432362716
+						},
+						{
+							"percent": 8,
+							"amount": 2519135.1903014425
+						},
+						{
+							"percent": 10,
+							"amount": 2584588.4749966105
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 446.54,
+					"at": "2020-01-14",
+					"days_since": 98,
+					"percent_down": 58.32400232901869,
+					"breakeven_multiple": 2.399462654486835
+				},
+				"cycle_low": {
+					"price": 51.15099468191063,
+					"at": "2019-04-25",
+					"percent_up": 263.82479198554785,
+					"days_since": 362
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": "SHA-256",
+					"network_hash_rate": "1374 PH/s",
+					"available_on_nicehash_percent": 41.32967796418757,
+					"1_hour_attack_cost": 22194.260757080552,
+					"24_hours_attack_cost": 532662.2581699332,
+					"attack_appeal": 6441.177088408658
+				},
+				"developer_activity": {
+					"stars": 377,
+					"watchers": 91,
+					"commits_last_3_months": 1,
+					"commits_last_1_year": 1,
+					"lines_added_last_3_months": 0,
+					"lines_added_last_1_year": 0,
+					"lines_deleted_last_3_months": 0,
+					"lines_deleted_last_1_year": 0
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 2.756214974408327,
+					"percent_change_last_1_month": 9.9752950264927,
+					"percent_change_last_3_months": -27.898952276242316,
+					"percent_change_last_1_year": 233.22861411881357,
+					"percent_change_btc_last_1_week": -2.5008738959817296,
+					"percent_change_btc_last_1_month": 2.2517926434889914,
+					"percent_change_btc_last_3_months": -13.350443279536403,
+					"percent_change_btc_last_1_year": 164.38970388501303,
+					"percent_change_month_to_date": 11.08224057677959,
+					"percent_change_quarter_to_date": 11.08224057677959,
+					"percent_change_year_to_date": 91.22852962251692
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 3.8769643389389286,
+					"2018_usd_percent": null,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 1.3282878301833256,
+						"last_90_days": -0.5563291035940103,
+						"last_1_year": 1.5433427558171051,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.8432646690987305,
+						"volatility_last_90_days": 1.257946673551257,
+						"volatility_last_1_year": 1.4205763901486235,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 390501.71190136723,
+					"btc_current_normalized_supply_price_usd": 186.56897260642222,
+					"btc_y2050_normalized_supply_price_usd": 186.0994579246531,
+					"asset_created_at": "2018-11-20",
+					"asset_age_days": 518,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 7.6137
+				},
+				"borrow_rates": {},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 46,
+					"subscribers": 1951
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "c7c3697d-1b9c-42bf-9664-a366634ce2b3",
+			"symbol": "LTC",
+			"name": "Litecoin",
+			"slug": "litecoin",
+			"metrics": {
+				"market_data": {
+					"price_usd": 41.10224271826784,
+					"price_btc": 0.005904886005152198,
+					"volume_last_24_hours": 3776248286.45527,
+					"real_volume_last_24_hours": 29720892.094833553,
+					"volume_last_24_hours_overstatement_multiple": 127.057030266992,
+					"percent_change_usd_last_24_hours": 2.012161506887412,
+					"percent_change_btc_last_24_hours": -0.049681716090573216,
+					"ohlcv_last_1_hour": {
+						"open": 41.01242342642881,
+						"high": 41.1886881804615,
+						"low": 40.97438460278503,
+						"close": 41.102242718267846,
+						"volume": 1800939.4662117206
+					},
+					"ohlcv_last_24_hour": {
+						"open": 40.580432040607626,
+						"high": 41.37689348070578,
+						"low": 40.11561246573357,
+						"close": 41.10224271826784,
+						"volume": 30321230.895372026
+					},
+					"last_trade_at": "2020-04-22T09:43:40.274Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 2667079234.6684422,
+					"y_2050_marketcap_usd": 3449668029.999388,
+					"y_plus10_marketcap_usd": 3312162862.0870194,
+					"liquid_marketcap_usd": 2668261505.2354546,
+					"volume_turnover_last_24_hours_percent": 1.1143155777925695
+				},
+				"supply": {
+					"y_2050": 83880542.21,
+					"y_plus10": 80537029.75,
+					"liquid": 64880220.32,
+					"circulating": 64851472.77231207,
+					"y_2050_issued_percent": 77.348355900667,
+					"annual_inflation_percent": 4.051578658387644,
+					"stock_to_flow": 24.681737276154905,
+					"y_plus10_issued_percent": 80.55948986621276
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 48974077.39672881,
+					"adjusted_transaction_volume": 18168341.824648738,
+					"nvt": 40.00293623689356,
+					"adjusted_nvt": 126.86820947472276,
+					"sum_of_fees": 357.8050444893581,
+					"median_tx_value": 840.5546718134377,
+					"median_tx_fee": 0.0009156267117059348,
+					"count_of_active_addresses": 60136,
+					"count_of_tx": 27255,
+					"count_of_payments": 58264,
+					"new_issuance": 330015.681405222,
+					"average_difficulty": 5325977.768649544,
+					"kilobytes_added": 12636.256,
+					"count_of_blocks_added": 643
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 41.043100638535776,
+							"percent_move": -0.1002306287795367
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 40.8244721511976,
+							"percent_move": -0.6323769608857481
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 40.477434891141975,
+							"percent_move": -1.4770729439720225
+						},
+						{
+							"amount_usd": 5000000,
+							"clearing_price": 38.03189660486575,
+							"percent_move": -7.429564519574396
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.1002306287795367,
+							"marketcap_usd": 2661705523.551267
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.6323769608857481,
+							"marketcap_usd": 2647527144.157403
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -1.4770729439720225,
+							"marketcap_usd": 2625021266.735928
+						},
+						{
+							"amount_sold_usd": 5000000,
+							"percent_move": -7.429564519574396,
+							"marketcap_usd": 2466424507.149839
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 2424.505942572921
+						},
+						{
+							"percent": 0.05,
+							"amount": 19687.632648865256
+						},
+						{
+							"percent": 1,
+							"amount": 38286.19931832969
+						},
+						{
+							"percent": 2,
+							"amount": 57222.90051976079
+						},
+						{
+							"percent": 4,
+							"amount": 84568.21785045267
+						},
+						{
+							"percent": 6,
+							"amount": 111139.472112885
+						},
+						{
+							"percent": 8,
+							"amount": 132092.64904791536
+						},
+						{
+							"percent": 10,
+							"amount": 143236.9152714107
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 99509.47112695442
+						},
+						{
+							"percent": 0.05,
+							"amount": 804807.9447646952
+						},
+						{
+							"percent": 1,
+							"amount": 1557231.311107027
+						},
+						{
+							"percent": 2,
+							"amount": 2303942.4155340423
+						},
+						{
+							"percent": 4,
+							"amount": 3335447.3408577885
+						},
+						{
+							"percent": 6,
+							"amount": 4292120.045421805
+						},
+						{
+							"percent": 8,
+							"amount": 4992776.829014908
+						},
+						{
+							"percent": 10,
+							"amount": 5296306.937519709
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 375.286,
+					"at": "2017-12-19",
+					"days_since": 855,
+					"percent_down": 89.05914587848403,
+					"breakeven_multiple": 9.140054230623814
+				},
+				"cycle_low": {
+					"price": 22.42728791486093,
+					"at": "2018-12-14",
+					"percent_up": 83.07828371555026,
+					"days_since": 494
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": "Scrypt",
+					"network_hash_rate": "172 TH/s",
+					"available_on_nicehash_percent": 5.873469148201942,
+					"1_hour_attack_cost": 14157.350089453388,
+					"24_hours_attack_cost": 339776.40214688133,
+					"attack_appeal": 7854.182364255431
+				},
+				"developer_activity": {
+					"stars": 3443,
+					"watchers": 528,
+					"commits_last_3_months": 0,
+					"commits_last_1_year": 0,
+					"lines_added_last_3_months": 0,
+					"lines_added_last_1_year": 0,
+					"lines_deleted_last_3_months": 0,
+					"lines_deleted_last_1_year": 0
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 4.875720792780995,
+					"percent_change_last_1_month": 5.348988773857308,
+					"percent_change_last_3_months": -24.34244224836309,
+					"percent_change_last_1_year": -44.595540110915984,
+					"percent_change_btc_last_1_week": -0.4898036642183019,
+					"percent_change_btc_last_1_month": -2.049610753844892,
+					"percent_change_btc_last_3_months": -9.076302651673167,
+					"percent_change_btc_last_1_year": -56.041083738501854,
+					"percent_change_month_to_date": 4.628840763376398,
+					"percent_change_quarter_to_date": 4.628840763376398,
+					"percent_change_year_to_date": -0.7957637422423782
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 27.891508229445495,
+					"2018_usd_percent": -86.51565243691748,
+					"2017_usd_percent": 4971.112214995129,
+					"2016_usd_percent": 23.83039463429374,
+					"2015_usd_percent": 26.993596458484646,
+					"2014_usd_percent": -88.52092349597002,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 1.070980070617229,
+						"last_90_days": -0.7585747196674895,
+						"last_1_year": -0.4127819540975352,
+						"last_3_years": 0.5964483863352322
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.6584464883350103,
+						"volatility_last_90_days": 0.933033013331048,
+						"volatility_last_1_year": 0.7657739553374587,
+						"volatility_last_3_years": 1.0817367031355258
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 344421.31525943405,
+					"btc_current_normalized_supply_price_usd": 144.55589916197192,
+					"btc_y2050_normalized_supply_price_usd": 164.13915256706028,
+					"asset_created_at": "2011-10-07",
+					"asset_age_days": 3120,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 0.1386,
+					"blockfi": 3.8,
+					"celsius": 3.65,
+					"coinlist": 5.84,
+					"poloniex": 0.1095
+				},
+				"borrow_rates": {
+					"coinlist": 7.3
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 499,
+					"subscribers": 210388
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "7dc551ba-cfed-4437-a027-386044415e3e",
+			"symbol": "BNB",
+			"name": "BNB",
+			"slug": "binance-coin",
+			"metrics": {
+				"market_data": {
+					"price_usd": 15.387670942495529,
+					"price_btc": 0.002210644402619064,
+					"volume_last_24_hours": 390517367.167911,
+					"real_volume_last_24_hours": 66398305.051675774,
+					"volume_last_24_hours_overstatement_multiple": 5.881435781590859,
+					"percent_change_usd_last_24_hours": 3.0509288345407377,
+					"percent_change_btc_last_24_hours": 0.9680903170494776,
+					"ohlcv_last_1_hour": {
+						"open": 15.246780564108114,
+						"high": 15.40915430345896,
+						"low": 15.22766029474766,
+						"close": 15.38767094249553,
+						"volume": 1466551.5386908485
+					},
+					"ohlcv_last_24_hour": {
+						"open": 15.1894,
+						"high": 15.522068071870098,
+						"low": 14.741982632206375,
+						"close": 15.387670942495527,
+						"volume": 66675659.90631226
+					},
+					"last_trade_at": "2020-04-22T09:43:50.023Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 2395452936.371289,
+					"y_2050_marketcap_usd": 1540120586.4311204,
+					"y_plus10_marketcap_usd": 1668653521.5417566,
+					"liquid_marketcap_usd": 1668653521.5417566,
+					"volume_turnover_last_24_hours_percent": 3.9819185434511435
+				},
+				"supply": {
+					"y_2050": 100000000,
+					"y_plus10": 108345641,
+					"liquid": 108345641,
+					"circulating": 155536713,
+					"y_2050_issued_percent": 108.34564099999999,
+					"annual_inflation_percent": 0,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": 100
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 1163742.0358237473,
+					"adjusted_transaction_volume": null,
+					"nvt": 1233.7608093218114,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": 194.2623147492058,
+					"median_tx_fee": null,
+					"count_of_active_addresses": 179,
+					"count_of_tx": 226,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 15.329558417702051,
+							"percent_move": -0.18207832682123684
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 15.032241026662438,
+							"percent_move": -2.118050860550274
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 14.594173570919887,
+							"percent_move": -4.9705128684828885
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.18207832682123684,
+							"marketcap_usd": 2384309128.030858
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -2.118050860550274,
+							"marketcap_usd": 2338065358.310821
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -4.9705128684828885,
+							"marketcap_usd": 2269929786.172352
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 2103.5033509111518
+						},
+						{
+							"percent": 0.05,
+							"amount": 17221.805857258114
+						},
+						{
+							"percent": 1,
+							"amount": 35712.33305069359
+						},
+						{
+							"percent": 2,
+							"amount": 62182.96235064906
+						},
+						{
+							"percent": 4,
+							"amount": 125449.7294360599
+						},
+						{
+							"percent": 6,
+							"amount": 142908.2612084566
+						},
+						{
+							"percent": 8,
+							"amount": 142908.2612084566
+						},
+						{
+							"percent": 10,
+							"amount": 142908.2612084566
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 32272.292572467697
+						},
+						{
+							"percent": 0.05,
+							"amount": 263161.82620240736
+						},
+						{
+							"percent": 1,
+							"amount": 542968.3805181244
+						},
+						{
+							"percent": 2,
+							"amount": 935876.6353800521
+						},
+						{
+							"percent": 4,
+							"amount": 1849532.9963738013
+						},
+						{
+							"percent": 6,
+							"amount": 2063033.6433928728
+						},
+						{
+							"percent": 8,
+							"amount": 2019139.3105547265
+						},
+						{
+							"percent": 10,
+							"amount": 1975244.97771658
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 39.331823801835824,
+					"at": "2019-06-22",
+					"days_since": 305,
+					"percent_down": 61.06255809778873,
+					"breakeven_multiple": 2.5682221305432233
+				},
+				"cycle_low": {
+					"price": 7.498475245287937,
+					"at": "2020-03-13",
+					"percent_up": 104.23893579623129,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": null,
+					"watchers": null,
+					"commits_last_3_months": null,
+					"commits_last_1_year": null,
+					"lines_added_last_3_months": null,
+					"lines_added_last_1_year": null,
+					"lines_deleted_last_3_months": null,
+					"lines_deleted_last_1_year": null
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 5.573019017506611,
+					"percent_change_last_1_month": 25.896738983815222,
+					"percent_change_last_3_months": -9.549871298161557,
+					"percent_change_last_1_year": -32.17920552178806,
+					"percent_change_btc_last_1_week": 0.17182023426379578,
+					"percent_change_btc_last_1_month": 17.055082652548702,
+					"percent_change_btc_last_3_months": 8.701104973550834,
+					"percent_change_btc_last_1_year": -46.18973578617294,
+					"percent_change_month_to_date": 20.612084903399786,
+					"percent_change_quarter_to_date": 20.612084903399786,
+					"percent_change_year_to_date": 12.840434759088637
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 121.74104185208566,
+					"2018_usd_percent": -26.900624423743142,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 5.805786165354207,
+						"last_90_days": 0.1364597957523771,
+						"last_1_year": -0.1348204351113264,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.5881113056803551,
+						"volatility_last_90_days": 1.0342252906830491,
+						"volatility_last_1_year": 0.7648990463762174,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 153148.06041919926,
+					"btc_current_normalized_supply_price_usd": 129.8860658620159,
+					"btc_y2050_normalized_supply_price_usd": 72.98500917564152,
+					"asset_created_at": "2017-07-25",
+					"asset_age_days": 1002,
+					"categories": [
+						"financial"
+					],
+					"sectors": [
+						"exchange_platform"
+					]
+				},
+				"lend_rates": null,
+				"borrow_rates": null,
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 49,
+					"subscribers": 25816
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "2e9a4c5d-7966-47c4-aebd-cdbc1ecf9d2e",
+			"symbol": "EOS",
+			"name": "EOS",
+			"slug": "eos",
+			"metrics": {
+				"market_data": {
+					"price_usd": 2.548216265045604,
+					"price_btc": 0.00036608529283199925,
+					"volume_last_24_hours": 2597974531.77831,
+					"real_volume_last_24_hours": 28028210.81023064,
+					"volume_last_24_hours_overstatement_multiple": 92.69141542313565,
+					"percent_change_usd_last_24_hours": 1.8251315804601251,
+					"percent_change_btc_last_24_hours": -0.23293144238681127,
+					"ohlcv_last_1_hour": {
+						"open": 2.546476499220197,
+						"high": 2.5607443128589544,
+						"low": 2.544576139589938,
+						"close": 2.548216265045604,
+						"volume": 1747768.8380400848
+					},
+					"ohlcv_last_24_hour": {
+						"open": 2.5274984685443136,
+						"high": 2.5730795815364447,
+						"low": 2.4838544656264157,
+						"close": 2.548216265045605,
+						"volume": 27848974.09963233
+					},
+					"last_trade_at": "2020-04-22T09:43:49.896Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 2346741717.7127037,
+					"y_2050_marketcap_usd": 3485331260.226269,
+					"y_plus10_marketcap_usd": 2863849851.1417274,
+					"liquid_marketcap_usd": 2384860061.720231,
+					"volume_turnover_last_24_hours_percent": 1.1761733416923152
+				},
+				"supply": {
+					"y_2050": 1366411730.19,
+					"y_plus10": 1122762153.13,
+					"liquid": 934975909,
+					"circulating": 920031747.74288,
+					"y_2050_issued_percent": 68.42563543200784,
+					"annual_inflation_percent": 2.1583380240869867,
+					"stock_to_flow": 46.33194563780235,
+					"y_plus10_issued_percent": 83.27461932997157
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": 2716074,
+					"count_of_payments": 60937361,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": 172787
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 2.54647167831088,
+							"percent_move": -0.11922668920609648
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 2.5263849655285084,
+							"percent_move": -0.9070918844341316
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 2.470120722583929,
+							"percent_move": -3.1139556571263354
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.11922668920609648,
+							"marketcap_usd": 2342834788.7741036
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.9070918844341316,
+							"marketcap_usd": 2324354375.306529
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -3.1139556571263354,
+							"marketcap_usd": 2272589485.5347977
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 25690.007595829302
+						},
+						{
+							"percent": 0.05,
+							"amount": 234950.22848640734
+						},
+						{
+							"percent": 1,
+							"amount": 425785.62983196526
+						},
+						{
+							"percent": 2,
+							"amount": 645657.7946700649
+						},
+						{
+							"percent": 4,
+							"amount": 916410.7462565538
+						},
+						{
+							"percent": 6,
+							"amount": 1024873.2550008547
+						},
+						{
+							"percent": 8,
+							"amount": 1129027.7554059366
+						},
+						{
+							"percent": 10,
+							"amount": 1209968.3706011774
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 65431.46965658276
+						},
+						{
+							"percent": 0.05,
+							"amount": 596013.2389921201
+						},
+						{
+							"percent": 1,
+							"amount": 1074689.854057097
+						},
+						{
+							"percent": 2,
+							"amount": 1613189.6548639315
+						},
+						{
+							"percent": 4,
+							"amount": 2242943.638040765
+						},
+						{
+							"percent": 6,
+							"amount": 2456150.4615320885
+						},
+						{
+							"percent": 8,
+							"amount": 2648191.578057023
+						},
+						{
+							"percent": 10,
+							"amount": 2776345.3132469878
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 22.8904,
+					"at": "2018-04-29",
+					"days_since": 724,
+					"percent_down": 88.85429633166588,
+					"breakeven_multiple": 8.972066993321222
+				},
+				"cycle_low": {
+					"price": 1.5418221800136056,
+					"at": "2018-12-07",
+					"percent_up": 65.47278833891494,
+					"days_since": 501
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": 4234275713,
+					"sale_start_date": "2017-06-26",
+					"sale_end_date": "2018-06-01",
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 1.8399999999999999,
+					"staking_type": "Proof of Stake",
+					"staking_minimum": null,
+					"tokens_staked": 439388025.6759,
+					"tokens_staked_percent": 48.13437508335879,
+					"real_staking_yield_percent": -0.3116123756946032
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 10836,
+					"watchers": 1149,
+					"commits_last_3_months": 22,
+					"commits_last_1_year": 22,
+					"lines_added_last_3_months": 117,
+					"lines_added_last_1_year": 117,
+					"lines_deleted_last_3_months": 111,
+					"lines_deleted_last_1_year": 111
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 6.407369268890922,
+					"percent_change_last_1_month": 11.44913119124029,
+					"percent_change_last_3_months": -28.308892830796,
+					"percent_change_last_1_year": -50.372311543287736,
+					"percent_change_btc_last_1_week": 0.9634844698031991,
+					"percent_change_btc_last_1_month": 3.622122133143388,
+					"percent_change_btc_last_3_months": -13.843101409414233,
+					"percent_change_btc_last_1_year": -60.62448031281765,
+					"percent_change_month_to_date": 13.012851234686304,
+					"percent_change_quarter_to_date": 13.012851234686304,
+					"percent_change_year_to_date": -1.8292430749444255
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -4.863530262149759,
+					"2018_usd_percent": -66.03603118728435,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 2.187965297846153,
+						"last_90_days": -0.8957407230626094,
+						"last_1_year": -0.43332663943453203,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.7111298074455336,
+						"volatility_last_90_days": 1.002520184402016,
+						"volatility_last_1_year": 0.8180683984136468,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 441424.86153733113,
+					"btc_current_normalized_supply_price_usd": 128.2653601122814,
+					"btc_y2050_normalized_supply_price_usd": 210.36764998180476,
+					"asset_created_at": "2017-07-01",
+					"asset_age_days": 1026,
+					"categories": [
+						"infrastructure"
+					],
+					"sectors": [
+						"smart_contract_platform"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 0.0359,
+					"celsius": 4.25,
+					"coinlist": 4.38,
+					"poloniex": 0.0365
+				},
+				"borrow_rates": {
+					"coinlist": 5.475
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "6d667f96-24f2-420b-9a22-73f5cd594bcf",
+			"symbol": "XTZ",
+			"name": "Tezos",
+			"slug": "tezos",
+			"metrics": {
+				"market_data": {
+					"price_usd": 2.2491840345740837,
+					"price_btc": 0.0003231198872666579,
+					"volume_last_24_hours": 208924179.793896,
+					"real_volume_last_24_hours": 37496964.486117184,
+					"volume_last_24_hours_overstatement_multiple": 5.571762478833393,
+					"percent_change_usd_last_24_hours": 6.303345559174842,
+					"percent_change_btc_last_24_hours": 4.153018897453713,
+					"ohlcv_last_1_hour": {
+						"open": 2.2386797022077816,
+						"high": 2.256746983130175,
+						"low": 2.234693797766989,
+						"close": 2.249184034574084,
+						"volume": 1876446.830883408
+					},
+					"ohlcv_last_24_hour": {
+						"open": 2.136453686659313,
+						"high": 2.256948829077671,
+						"low": 2.084173008438865,
+						"close": 2.2491840345740837,
+						"volume": 37669498.653373115
+					},
+					"last_trade_at": "2020-04-22T09:43:42.047Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 1593414559.3506024,
+					"y_2050_marketcap_usd": 4330175904.4792,
+					"y_plus10_marketcap_usd": 2694846679.369721,
+					"liquid_marketcap_usd": 1686275656.875032,
+					"volume_turnover_last_24_hours_percent": 2.223753457653326
+				},
+				"supply": {
+					"y_2050": 1923800541.46,
+					"y_plus10": 1197260253.46,
+					"liquid": 749174650.94,
+					"circulating": 707918537.1841425,
+					"y_2050_issued_percent": 38.94242853115327,
+					"annual_inflation_percent": 9.98978414527187,
+					"stock_to_flow": 10.010226301769459,
+					"y_plus10_issued_percent": 62.57408518949299
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 2.242796963738253,
+							"percent_move": -0.22849341742821852
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 2.19037929527288,
+							"percent_move": -2.56030937709454
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 2.102089092336297,
+							"percent_move": -6.487925967399464
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.22849341742821852,
+							"marketcap_usd": 1587717545.7706203
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -2.56030937709454,
+							"marketcap_usd": 1550610106.58801
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -6.487925967399464,
+							"marketcap_usd": 1488107835.2774532
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 11450.201129824854
+						},
+						{
+							"percent": 0.05,
+							"amount": 126014.30301339163
+						},
+						{
+							"percent": 1,
+							"amount": 291931.59605515987
+						},
+						{
+							"percent": 2,
+							"amount": 394752.7669604461
+						},
+						{
+							"percent": 4,
+							"amount": 593676.230816626
+						},
+						{
+							"percent": 6,
+							"amount": 856473.8257367363
+						},
+						{
+							"percent": 8,
+							"amount": 1125389.1367123534
+						},
+						{
+							"percent": 10,
+							"amount": 1489459.7856157199
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 25713.549620104408
+						},
+						{
+							"percent": 0.05,
+							"amount": 281855.39472871827
+						},
+						{
+							"percent": 1,
+							"amount": 649680.3410929797
+						},
+						{
+							"percent": 2,
+							"amount": 869630.3491265515
+						},
+						{
+							"percent": 4,
+							"amount": 1281162.810691303
+						},
+						{
+							"percent": 6,
+							"amount": 1809778.3064308579
+						},
+						{
+							"percent": 8,
+							"amount": 2327415.7835967853
+						},
+						{
+							"percent": 10,
+							"amount": 3013385.684240463
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 3.5416614953308843,
+					"at": "2020-02-19",
+					"days_since": 62,
+					"percent_down": 36.71521262765637,
+					"breakeven_multiple": 1.5801585839522225
+				},
+				"cycle_low": {
+					"price": 0.31174583309139864,
+					"at": "2018-12-07",
+					"percent_up": 618.9616376079018,
+					"days_since": 502
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": 230607347,
+					"sale_start_date": "2017-07-01",
+					"sale_end_date": "2017-07-13",
+					"roi_since_sale_usd_percent": 489.8244596758727,
+					"roi_since_sale_btc_percent": -56.74489296647411,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 6.9399999999999995,
+					"staking_type": "Proof of Stake",
+					"staking_minimum": null,
+					"tokens_staked": 577273652.692702,
+					"tokens_staked_percent": 79.73272110437159,
+					"real_staking_yield_percent": -2.772788553929517
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 1322,
+					"watchers": 258,
+					"commits_last_3_months": 0,
+					"commits_last_1_year": 1,
+					"lines_added_last_3_months": 0,
+					"lines_added_last_1_year": 11,
+					"lines_deleted_last_3_months": 0,
+					"lines_deleted_last_1_year": 0
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 18.551863534632023,
+					"percent_change_last_1_month": 33.82049915887419,
+					"percent_change_last_3_months": 44.911921846607044,
+					"percent_change_last_1_year": 53.10870450826685,
+					"percent_change_btc_last_1_week": 12.48665684609124,
+					"percent_change_btc_last_1_month": 24.42236165990836,
+					"percent_change_btc_last_3_months": 74.15216821296637,
+					"percent_change_btc_last_1_year": 21.479258779155273,
+					"percent_change_month_to_date": 39.65294303801241,
+					"percent_change_quarter_to_date": 39.65294303801241,
+					"percent_change_year_to_date": 64.46204341605541
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 174.08665968286607,
+					"2018_usd_percent": null,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 5.497517710722259,
+						"last_90_days": 2.332634416963746,
+						"last_1_year": 1.030338873824783,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.7565172591391561,
+						"volatility_last_90_days": 1.3080326794220836,
+						"volatility_last_1_year": 0.9973418118818933,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 424869.6917145504,
+					"btc_current_normalized_supply_price_usd": 86.42043163421224,
+					"btc_y2050_normalized_supply_price_usd": 202.47803506854612,
+					"asset_created_at": "2017-10-03",
+					"asset_age_days": 932,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"smart_contract_platform",
+						"governance"
+					]
+				},
+				"lend_rates": {
+					"coinlist": 11.68
+				},
+				"borrow_rates": {
+					"coinlist": 14.6
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "a9c04b71-33e4-4fed-8126-cf1612c7e198",
+			"symbol": "LINK",
+			"name": "Chainlink",
+			"slug": "chainlink",
+			"metrics": {
+				"market_data": {
+					"price_usd": 3.610300450795059,
+					"price_btc": 0.0005186659684552265,
+					"volume_last_24_hours": 411857163.418708,
+					"real_volume_last_24_hours": 72539814.59302709,
+					"volume_last_24_hours_overstatement_multiple": 5.677670472820562,
+					"percent_change_usd_last_24_hours": 4.724261928080823,
+					"percent_change_btc_last_24_hours": 2.607226626025152,
+					"ohlcv_last_1_hour": {
+						"open": 3.596650162990922,
+						"high": 3.6278126294679525,
+						"low": 3.5862119530651504,
+						"close": 3.6103004507950587,
+						"volume": 3224668.3875995576
+					},
+					"ohlcv_last_24_hour": {
+						"open": 3.5129151545356736,
+						"high": 3.6393655416558035,
+						"low": 3.3917693132023934,
+						"close": 3.6103004507950587,
+						"volume": 71455659.85499656
+					},
+					"last_trade_at": "2020-04-22T09:43:54.079Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 1264754978.6227868,
+					"y_2050_marketcap_usd": 3613585653.207962,
+					"y_plus10_marketcap_usd": 3613585653.207962,
+					"liquid_marketcap_usd": 3613585653.207962,
+					"volume_turnover_last_24_hours_percent": 2.0071909986849015
+				},
+				"supply": {
+					"y_2050": 1000000000,
+					"y_plus10": 1000000000,
+					"liquid": 1000000000,
+					"circulating": 350000000,
+					"y_2050_issued_percent": 100,
+					"annual_inflation_percent": 0,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": 100
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 3.602573255549802,
+							"percent_move": -0.13031726435750177
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 3.5773133996941535,
+							"percent_move": -0.8305650070967835
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 3.528350480503267,
+							"percent_move": -2.1879034589580395
+						},
+						{
+							"amount_usd": 5000000,
+							"clearing_price": 3.2940025558122095,
+							"percent_move": -8.684441135908164
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.13031726435750177,
+							"marketcap_usd": 1260900639.4424307
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -0.8305650070967835,
+							"marketcap_usd": 1252059689.8929536
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -2.1879034589580395,
+							"marketcap_usd": 1234922668.1761434
+						},
+						{
+							"amount_sold_usd": 5000000,
+							"percent_move": -8.684441135908164,
+							"marketcap_usd": 1152900894.5342734
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 16749.28430973423
+						},
+						{
+							"percent": 0.05,
+							"amount": 139853.71626570652
+						},
+						{
+							"percent": 1,
+							"amount": 346383.5360267916
+						},
+						{
+							"percent": 2,
+							"amount": 531505.7047586933
+						},
+						{
+							"percent": 4,
+							"amount": 843260.7529007695
+						},
+						{
+							"percent": 6,
+							"amount": 1121047.0210246337
+						},
+						{
+							"percent": 8,
+							"amount": 1376109.9785307338
+						},
+						{
+							"percent": 10,
+							"amount": 1586206.3383977478
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 60358.841170756226
+						},
+						{
+							"percent": 0.05,
+							"amount": 501968.2429006357
+						},
+						{
+							"percent": 1,
+							"amount": 1237005.3739856952
+						},
+						{
+							"percent": 2,
+							"amount": 1878941.0569774443
+						},
+						{
+							"percent": 4,
+							"amount": 2920197.812323746
+						},
+						{
+							"percent": 6,
+							"amount": 3801288.5103847636
+						},
+						{
+							"percent": 8,
+							"amount": 4566885.485152622
+						},
+						{
+							"percent": 10,
+							"amount": 5149693.018310046
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 4.916969914487514,
+					"at": "2020-03-04",
+					"days_since": 48,
+					"percent_down": 26.606468367200343,
+					"breakeven_multiple": 1.3625178919079277
+				},
+				"cycle_low": {
+					"price": 0.164702,
+					"at": "2018-06-28",
+					"percent_up": 2091.0710674822626,
+					"days_since": 663
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": 32000000,
+					"sale_start_date": "2017-09-19",
+					"sale_end_date": "2017-09-19",
+					"roi_since_sale_usd_percent": 3909.7087439607067,
+					"roi_since_sale_btc_percent": 1245.772062875458,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 846,
+					"watchers": 146,
+					"commits_last_3_months": 23,
+					"commits_last_1_year": 23,
+					"lines_added_last_3_months": 268,
+					"lines_added_last_1_year": 268,
+					"lines_deleted_last_3_months": 80,
+					"lines_deleted_last_1_year": 80
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 15.991120007881978,
+					"percent_change_last_1_month": 60.59494353424068,
+					"percent_change_last_3_months": 47.032390350552824,
+					"percent_change_last_1_year": 657.7232081391414,
+					"percent_change_btc_last_1_week": 10.056922974550409,
+					"percent_change_btc_last_1_month": 49.316452044072285,
+					"percent_change_btc_last_3_months": 76.70050366310522,
+					"percent_change_btc_last_1_year": 501.1915127891146,
+					"percent_change_month_to_date": 58.78765177849399,
+					"percent_change_quarter_to_date": 58.78765177849399,
+					"percent_change_year_to_date": 100.44919958593593
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 485.1575810862941,
+					"2018_usd_percent": -60.95959727822719,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 7.221061278987275,
+						"last_90_days": 1.942205768070349,
+						"last_1_year": 2.3242662539569223,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.9784573615754645,
+						"volatility_last_90_days": 1.2865067652071092,
+						"volatility_last_1_year": 1.1948253098218857,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 360873.7869564636,
+					"btc_current_normalized_supply_price_usd": 68.87181470811763,
+					"btc_y2050_normalized_supply_price_usd": 171.97982514549764,
+					"asset_created_at": "2017-09-21",
+					"asset_age_days": 944,
+					"categories": [
+						"financial"
+					],
+					"sectors": [
+						"interoperability"
+					]
+				},
+				"lend_rates": {
+					"nuo": 0.9108529836115521
+				},
+				"borrow_rates": {
+					"nuo": 5.249520969544152
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 106,
+					"subscribers": 12205
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "28681c70-d3a1-4139-942e-c4bdcc49ad64",
+			"symbol": "LEO",
+			"name": "Unus Sed Leo",
+			"slug": "unus-sed-leo",
+			"metrics": {
+				"market_data": {
+					"price_usd": 1.0459244994126244,
+					"price_btc": 0.00015028708892720388,
+					"volume_last_24_hours": 6406186.21790124,
+					"real_volume_last_24_hours": 455474.48863143666,
+					"volume_last_24_hours_overstatement_multiple": 14.064862857961366,
+					"percent_change_usd_last_24_hours": 0.31221370878534066,
+					"percent_change_btc_last_24_hours": -1.6982194814796192,
+					"ohlcv_last_1_hour": {
+						"open": 1.0454514953476872,
+						"high": 1.0509282476524373,
+						"low": 1.0449502105194914,
+						"close": 1.0459244994126244,
+						"volume": 291169.2900967343
+					},
+					"ohlcv_last_24_hour": {
+						"open": 1.0497,
+						"high": 1.0509282476524373,
+						"low": 1.042241300458904,
+						"close": 1.0459244994126244,
+						"volume": 424576.55207014206
+					},
+					"last_trade_at": "2020-04-22T09:40:13Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 1045400382.5702233,
+					"y_2050_marketcap_usd": 145786171.550797,
+					"y_plus10_marketcap_usd": 726029503.9313736,
+					"liquid_marketcap_usd": 1020385051.2787057,
+					"volume_turnover_last_24_hours_percent": 0.044637510914203836
+				},
+				"supply": {
+					"y_2050": 139384985.85,
+					"y_plus10": 694150968.2,
+					"liquid": 975581939.09,
+					"circulating": 999498896.1032126,
+					"y_2050_issued_percent": 699.9189569383595,
+					"annual_inflation_percent": -2.8847497029569094,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": 140.5431935966001
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 1.0403946251031937,
+							"percent_move": -0.5620451465182111
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 0.9978761428751661,
+							"percent_move": -4.625840570115113
+						},
+						{
+							"amount_usd": 2000000,
+							"clearing_price": 0.9643286881915866,
+							"percent_move": -7.832210733690433
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.5620451465182111,
+							"marketcap_usd": 1039873279.3023578
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -4.625840570115113,
+							"marketcap_usd": 997376103.2514602
+						},
+						{
+							"amount_sold_usd": 2000000,
+							"percent_move": -7.832210733690433,
+							"marketcap_usd": 963845459.3281499
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 0
+						},
+						{
+							"percent": 0.05,
+							"amount": 69424.89857803928
+						},
+						{
+							"percent": 1,
+							"amount": 165942.67372181732
+						},
+						{
+							"percent": 2,
+							"amount": 381091.04089732096
+						},
+						{
+							"percent": 4,
+							"amount": 853099.689503171
+						},
+						{
+							"percent": 6,
+							"amount": 1281756.5602774243
+						},
+						{
+							"percent": 8,
+							"amount": 2087294.9068543566
+						},
+						{
+							"percent": 10,
+							"amount": 2585029.067589232
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 0
+						},
+						{
+							"percent": 0.05,
+							"amount": 72274.35940147491
+						},
+						{
+							"percent": 1,
+							"amount": 171885.4811617163
+						},
+						{
+							"percent": 2,
+							"amount": 390751.5694430614
+						},
+						{
+							"percent": 4,
+							"amount": 856873.9367441003
+						},
+						{
+							"percent": 6,
+							"amount": 1260605.8518502354
+						},
+						{
+							"percent": 8,
+							"amount": 2009174.0350780808
+						},
+						{
+							"percent": 10,
+							"amount": 2434186.5401961943
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": null,
+					"at": null,
+					"days_since": null,
+					"percent_down": null,
+					"breakeven_multiple": null
+				},
+				"cycle_low": {
+					"price": null,
+					"at": null,
+					"percent_up": null,
+					"days_since": null
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": null,
+					"watchers": null,
+					"commits_last_3_months": null,
+					"commits_last_1_year": null,
+					"lines_added_last_3_months": null,
+					"lines_added_last_1_year": null,
+					"lines_deleted_last_3_months": null,
+					"lines_deleted_last_1_year": null
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 1.0920014771625712,
+					"percent_change_last_1_month": 2.39532101641388,
+					"percent_change_last_3_months": 15.22435462475137,
+					"percent_change_last_1_year": null,
+					"percent_change_btc_last_1_week": -4.079944920273401,
+					"percent_change_btc_last_1_month": -4.795844105609111,
+					"percent_change_btc_last_3_months": 38.47426031711294,
+					"percent_change_btc_last_1_year": null,
+					"percent_change_month_to_date": -0.9587700742757874,
+					"percent_change_quarter_to_date": -0.9587700742757874,
+					"percent_change_year_to_date": 27.31443581620271
+				},
+				"roi_by_year": {
+					"2019_usd_percent": null,
+					"2018_usd_percent": null,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": null,
+						"last_90_days": null,
+						"last_1_year": null,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": null,
+						"volatility_last_90_days": null,
+						"volatility_last_1_year": null,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": null,
+					"btc_current_normalized_supply_price_usd": null,
+					"btc_y2050_normalized_supply_price_usd": null,
+					"asset_created_at": null,
+					"asset_age_days": null,
+					"categories": null,
+					"sectors": null
+				},
+				"lend_rates": null,
+				"borrow_rates": null,
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "362f0140-ecdd-4205-b8a0-36f0fd5d8167",
+			"symbol": "ADA",
+			"name": "Cardano",
+			"slug": "cardano",
+			"metrics": {
+				"market_data": {
+					"price_usd": 0.03526939056926908,
+					"price_btc": 0.000005066918907813326,
+					"volume_last_24_hours": 81949326.7294351,
+					"real_volume_last_24_hours": 7976487.2018396,
+					"volume_last_24_hours_overstatement_multiple": 10.273861745874212,
+					"percent_change_usd_last_24_hours": 3.5279377343351097,
+					"percent_change_btc_last_24_hours": 1.4354580372745336,
+					"ohlcv_last_1_hour": {
+						"open": 0.03506536879639972,
+						"high": 0.03534801654919394,
+						"low": 0.035047151514846296,
+						"close": 0.03529284860632285,
+						"volume": 585688.4035438886
+					},
+					"ohlcv_last_24_hour": {
+						"open": 0.034354046228066724,
+						"high": 0.03535903320755707,
+						"low": 0.033774841146446015,
+						"close": 0.03526939056926909,
+						"volume": 7968972.10599749
+					},
+					"last_trade_at": "2020-04-22T09:43:26.568Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 1021172293.4689863,
+					"y_2050_marketcap_usd": 1482555481.9308088,
+					"y_plus10_marketcap_usd": 1298754183.654843,
+					"liquid_marketcap_usd": 1105223606.1353009,
+					"volume_turnover_last_24_hours_percent": 0.7222440612552098
+				},
+				"supply": {
+					"y_2050": 42014022058.74,
+					"y_plus10": 36805291664.29,
+					"liquid": 31320843998.05,
+					"circulating": 28938920523.705856,
+					"y_2050_issued_percent": 74.54854942062006,
+					"annual_inflation_percent": 2.17933823616789,
+					"stock_to_flow": 45.885488695797044,
+					"y_plus10_issued_percent": 85.0987523308741
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 67721610.19293892,
+					"adjusted_transaction_volume": 13685994.343446208,
+					"nvt": 14.368365207161167,
+					"adjusted_nvt": 64.58917946909048,
+					"sum_of_fees": 22.186273116813794,
+					"median_tx_value": 9957.59597014239,
+					"median_tx_fee": 0.006630708731221851,
+					"count_of_active_addresses": 5476,
+					"count_of_tx": 2125,
+					"count_of_payments": 6801,
+					"new_issuance": 0,
+					"average_difficulty": null,
+					"kilobytes_added": 4359.23,
+					"count_of_blocks_added": 4320
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 0.035151424692299316,
+							"percent_move": -0.33188394681872024
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 0.032523388933616844,
+							"percent_move": -7.783399078313709
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.33188394681872024,
+							"marketcap_usd": 1017244285.4654815
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -7.783399078313709,
+							"marketcap_usd": 941191767.5115124
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 521315.249102129
+						},
+						{
+							"percent": 0.05,
+							"amount": 4823095.3668098785
+						},
+						{
+							"percent": 1,
+							"amount": 8883911.995178256
+						},
+						{
+							"percent": 2,
+							"amount": 14940528.072363678
+						},
+						{
+							"percent": 4,
+							"amount": 20689968.55323261
+						},
+						{
+							"percent": 6,
+							"amount": 25532782.556088552
+						},
+						{
+							"percent": 8,
+							"amount": 29793831.933518272
+						},
+						{
+							"percent": 10,
+							"amount": 33848954.71093709
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 18367.607888035986
+						},
+						{
+							"percent": 0.05,
+							"amount": 169252.70275233602
+						},
+						{
+							"percent": 1,
+							"amount": 310188.80869770376
+						},
+						{
+							"percent": 2,
+							"amount": 516391.04944682086
+						},
+						{
+							"percent": 4,
+							"amount": 700515.4950988078
+						},
+						{
+							"percent": 6,
+							"amount": 846472.1674509466
+						},
+						{
+							"percent": 8,
+							"amount": 966720.3780911126
+						},
+						{
+							"percent": 10,
+							"amount": 1074420.914728346
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 1.32721,
+					"at": "2018-01-04",
+					"days_since": 839,
+					"percent_down": 97.34737759372405,
+					"breakeven_multiple": 37.69854305814727
+				},
+				"cycle_low": {
+					"price": 0.020051631480266112,
+					"at": "2020-03-13",
+					"percent_up": 75.57608652933294,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": 62200000,
+					"sale_start_date": "2016-10-01",
+					"sale_end_date": "2017-01-01",
+					"roi_since_sale_usd_percent": 1366.911243263958,
+					"roi_since_sale_btc_percent": -84.66685564835907,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 3.7,
+					"staking_type": "Proof of Stake",
+					"staking_minimum": 10000,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": 1.4882282368255062
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 3394,
+					"watchers": 405,
+					"commits_last_3_months": 6,
+					"commits_last_1_year": 152,
+					"lines_added_last_3_months": 276,
+					"lines_added_last_1_year": 22036,
+					"lines_deleted_last_3_months": 1288,
+					"lines_deleted_last_1_year": 17423
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 10.846194220807922,
+					"percent_change_last_1_month": 20.505952792263198,
+					"percent_change_last_3_months": -18.029434333982724,
+					"percent_change_last_1_year": -52.308000712470545,
+					"percent_change_btc_last_1_week": 5.175215641960543,
+					"percent_change_btc_last_1_month": 12.042888307344382,
+					"percent_change_btc_last_3_months": -1.489459538801305,
+					"percent_change_btc_last_1_year": -62.16029165845196,
+					"percent_change_month_to_date": 13.749551320537021,
+					"percent_change_quarter_to_date": 13.749551320537021,
+					"percent_change_year_to_date": 5.707436810906337
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -24.393098989802308,
+					"2018_usd_percent": -94.18310952803505,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 4.322159999859676,
+						"last_90_days": -0.3619811814285282,
+						"last_1_year": -0.5863214669957366,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.6113406184526717,
+						"volatility_last_90_days": 1.0167029632466504,
+						"volatility_last_1_year": 0.7789040059611239,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 147988.78773236924,
+					"btc_current_normalized_supply_price_usd": 49.77218116247852,
+					"btc_y2050_normalized_supply_price_usd": 70.52628026090875,
+					"asset_created_at": "2017-10-01",
+					"asset_age_days": 934,
+					"categories": [
+						"infrastructure"
+					],
+					"sectors": [
+						"smart_contract_platform"
+					]
+				},
+				"lend_rates": null,
+				"borrow_rates": null,
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 451,
+					"subscribers": 76131
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "cd738ecc-ef84-47b5-be73-d064eff3e36e",
+			"symbol": "XMR",
+			"name": "Monero",
+			"slug": "monero",
+			"metrics": {
+				"market_data": {
+					"price_usd": 56.398116540776655,
+					"price_btc": 0.008102314839800243,
+					"volume_last_24_hours": 103772239.963025,
+					"real_volume_last_24_hours": 8682754.216496535,
+					"volume_last_24_hours_overstatement_multiple": 11.951534890376845,
+					"percent_change_usd_last_24_hours": 3.317044608731015,
+					"percent_change_btc_last_24_hours": 1.2284815270044986,
+					"ohlcv_last_1_hour": {
+						"open": 56.11280387818016,
+						"high": 56.573096652757016,
+						"low": 56.097309824503476,
+						"close": 56.398116540776655,
+						"volume": 748643.2462076602
+					},
+					"ohlcv_last_24_hour": {
+						"open": 54.607073739255874,
+						"high": 56.5785902878223,
+						"low": 54.207191486596145,
+						"close": 56.398116540776655,
+						"volume": 9002830.256572317
+					},
+					"last_trade_at": "2020-04-22T09:43:24.13Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 989099941.9541774,
+					"y_2050_marketcap_usd": 1267441964.5406773,
+					"y_plus10_marketcap_usd": 1092697000.6619506,
+					"liquid_marketcap_usd": 989145976.6463989,
+					"volume_turnover_last_24_hours_percent": 0.8768321207000985
+				},
+				"supply": {
+					"y_2050": 22466083.47,
+					"y_plus10": 19368635.97,
+					"liquid": 17533138.95,
+					"circulating": 17532322.9605765,
+					"y_2050_issued_percent": 78.04270367557751,
+					"annual_inflation_percent": 2.050580167221,
+					"stock_to_flow": 48.7666864229564,
+					"y_plus10_issued_percent": 90.5233542370098
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": 254.0175294461094,
+					"median_tx_value": null,
+					"median_tx_fee": 0.0017164745419064116,
+					"count_of_active_addresses": null,
+					"count_of_tx": 12460,
+					"count_of_payments": 28115,
+					"new_issuance": 66959.55671856456,
+					"average_difficulty": 154174343602.00443,
+					"kilobytes_added": 36725.143,
+					"count_of_blocks_added": 677
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 56.13864952172985,
+							"percent_move": -0.4358075912332873
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.4358075912332873,
+							"marketcap_usd": 984240933.9855813
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 250.74141393831744
+						},
+						{
+							"percent": 0.05,
+							"amount": 2012.5489767950216
+						},
+						{
+							"percent": 1,
+							"amount": 4240.973302737215
+						},
+						{
+							"percent": 2,
+							"amount": 8398.808386615123
+						},
+						{
+							"percent": 4,
+							"amount": 10087.960337883853
+						},
+						{
+							"percent": 6,
+							"amount": 11341.972365144264
+						},
+						{
+							"percent": 8,
+							"amount": 12548.524054732747
+						},
+						{
+							"percent": 10,
+							"amount": 13585.815741406695
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 14123.76049370771
+						},
+						{
+							"percent": 0.05,
+							"amount": 112908.93847037853
+						},
+						{
+							"percent": 1,
+							"amount": 236733.39082283372
+						},
+						{
+							"percent": 2,
+							"amount": 464090.3461668005
+						},
+						{
+							"percent": 4,
+							"amount": 546051.2236905358
+						},
+						{
+							"percent": 6,
+							"amount": 601139.4421251393
+						},
+						{
+							"percent": 8,
+							"amount": 650937.4532451701
+						},
+						{
+							"percent": 10,
+							"amount": 689424.9799346817
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 495.026,
+					"at": "2018-01-07",
+					"days_since": 836,
+					"percent_down": 88.6201404369724,
+					"breakeven_multiple": 8.787454664633415
+				},
+				"cycle_low": {
+					"price": 27.96761785105276,
+					"at": "2020-03-13",
+					"percent_up": 101.42317411689201,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 4307,
+					"watchers": 447,
+					"commits_last_3_months": 49,
+					"commits_last_1_year": 627,
+					"lines_added_last_3_months": 70411,
+					"lines_added_last_1_year": 468751,
+					"lines_deleted_last_3_months": 60757,
+					"lines_deleted_last_1_year": 188912
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 6.362825376928409,
+					"percent_change_last_1_month": 26.892561236633263,
+					"percent_change_last_3_months": -9.412835374941762,
+					"percent_change_last_1_year": -17.925215738837643,
+					"percent_change_btc_last_1_week": 0.9212194784282248,
+					"percent_change_btc_last_1_month": 17.980968875271643,
+					"percent_change_btc_last_3_months": 8.865791928548596,
+					"percent_change_btc_last_1_year": -34.880358445154585,
+					"percent_change_month_to_date": 16.295008999207166,
+					"percent_change_quarter_to_date": 16.295008999207166,
+					"percent_change_year_to_date": 23.625595170767422
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -8.190031221831857,
+					"2018_usd_percent": -86.59134800888441,
+					"2017_usd_percent": 2336.9320012095145,
+					"2016_usd_percent": 2691.890936635399,
+					"2015_usd_percent": -1.056146939287386,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 4.902871098098436,
+						"last_90_days": 0.11914904492256005,
+						"last_1_year": 0.0824735826107102,
+						"last_3_years": 0.6456851931093359
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.6458266491860543,
+						"volatility_last_90_days": 0.9639928806750605,
+						"volatility_last_1_year": 0.7282915168693035,
+						"volatility_last_3_years": 1.048396439895043
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 126652.23220393504,
+					"btc_current_normalized_supply_price_usd": 53.854530974132736,
+					"btc_y2050_normalized_supply_price_usd": 60.35802415138422,
+					"asset_created_at": "2014-04-18",
+					"asset_age_days": 2196,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency",
+						"privacy"
+					]
+				},
+				"lend_rates": {
+					"bitfinex": 0.0115,
+					"poloniex": 0.0365
+				},
+				"borrow_rates": {},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 384,
+					"subscribers": 164625
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "1c077d6e-99c7-491c-b24d-1d359011cd81",
+			"symbol": "TRX",
+			"name": "TRON",
+			"slug": "tron",
+			"metrics": {
+				"market_data": {
+					"price_usd": 0.01272533850091512,
+					"price_btc": 0.0000018281647972333519,
+					"volume_last_24_hours": 1314196641.4491,
+					"real_volume_last_24_hours": 13044951.906272706,
+					"volume_last_24_hours_overstatement_multiple": 100.7436938741924,
+					"percent_change_usd_last_24_hours": 2.5934454991831424,
+					"percent_change_btc_last_24_hours": 0.5198535156413472,
+					"ohlcv_last_1_hour": {
+						"open": 0.012696243406279364,
+						"high": 0.012769094745119681,
+						"low": 0.012684632672897307,
+						"close": 0.012725338500915118,
+						"volume": 600643.1247739326
+					},
+					"ohlcv_last_24_hour": {
+						"open": 0.012525733686343157,
+						"high": 0.012780661655481012,
+						"low": 0.012324427304080825,
+						"close": 0.012725338500915118,
+						"volume": 12635756.669048514
+					},
+					"last_trade_at": "2020-04-22T09:43:47Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 864301963.5353633,
+					"y_2050_marketcap_usd": 1326199176.8819797,
+					"y_plus10_marketcap_usd": 1287078906.315675,
+					"liquid_marketcap_usd": 1267233320.8303802,
+					"volume_turnover_last_24_hours_percent": 1.02921219736495
+				},
+				"supply": {
+					"y_2050": 104145119673.45999,
+					"y_plus10": 101073043223.1,
+					"liquid": 99514588873.72,
+					"circulating": 67872784869.33282,
+					"y_2050_issued_percent": 95.5537707246785,
+					"annual_inflation_percent": 0.15660561602456502,
+					"stock_to_flow": 638.5467043807298,
+					"y_plus10_issued_percent": 98.45809100064396
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 13171740.90315926,
+					"adjusted_transaction_volume": 11319361.745982409,
+					"nvt": 69.09070491875387,
+					"adjusted_nvt": 80.14726187715296,
+					"sum_of_fees": null,
+					"median_tx_value": 108.79082960145541,
+					"median_tx_fee": null,
+					"count_of_active_addresses": 124038,
+					"count_of_tx": 1207297,
+					"count_of_payments": 121074,
+					"new_issuance": 17503.927019555787,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": 28790
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 0.012686227140375072,
+							"percent_move": -0.21753048443203457
+						},
+						{
+							"amount_usd": 1000000,
+							"clearing_price": 0.012240812064906794,
+							"percent_move": -3.7209058928888856
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.21753048443203457,
+							"marketcap_usd": 861049565.5021685
+						},
+						{
+							"amount_sold_usd": 1000000,
+							"percent_move": -3.7209058928888856,
+							"marketcap_usd": 830818003.9073524
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 2673051.9715514285
+						},
+						{
+							"percent": 0.05,
+							"amount": 18005731.843068622
+						},
+						{
+							"percent": 1,
+							"amount": 39856726.42621236
+						},
+						{
+							"percent": 2,
+							"amount": 64263779.15749194
+						},
+						{
+							"percent": 4,
+							"amount": 82457159.55001117
+						},
+						{
+							"percent": 6,
+							"amount": 95106724.60150318
+						},
+						{
+							"percent": 8,
+							"amount": 101339051.78064597
+						},
+						{
+							"percent": 10,
+							"amount": 106723684.1294319
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 33950.88705373667
+						},
+						{
+							"percent": 0.05,
+							"amount": 227778.1669198347
+						},
+						{
+							"percent": 1,
+							"amount": 501666.44712223037
+						},
+						{
+							"percent": 2,
+							"amount": 800701.3708759475
+						},
+						{
+							"percent": 4,
+							"amount": 1006416.7083265535
+						},
+						{
+							"percent": 6,
+							"amount": 1136625.2867118225
+						},
+						{
+							"percent": 8,
+							"amount": 1185339.8863500885
+						},
+						{
+							"percent": 10,
+							"amount": 1221185.258519925
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 0.300363,
+					"at": "2018-01-05",
+					"days_since": 838,
+					"percent_down": 95.78346336333887,
+					"breakeven_multiple": 23.716146358255042
+				},
+				"cycle_low": {
+					"price": 0.007768461106701158,
+					"at": "2020-03-13",
+					"percent_up": 63.029920135013604,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": 70000000,
+					"sale_start_date": "2017-08-31",
+					"sale_end_date": "2017-09-02",
+					"roi_since_sale_usd_percent": 579.8859747677955,
+					"roi_since_sale_btc_percent": 265.673009263671,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 4.13,
+					"staking_type": "Proof of Stake",
+					"staking_minimum": null,
+					"tokens_staked": 8268791847,
+					"tokens_staked_percent": 12.357788711827657,
+					"real_staking_yield_percent": 3.96718155486262
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 2368,
+					"watchers": 309,
+					"commits_last_3_months": 340,
+					"commits_last_1_year": 2131,
+					"lines_added_last_3_months": 36223,
+					"lines_added_last_1_year": 808981,
+					"lines_deleted_last_3_months": 47221,
+					"lines_deleted_last_1_year": 794518
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 4.630269753607079,
+					"percent_change_last_1_month": 11.651788536923892,
+					"percent_change_last_3_months": -21.404380730891965,
+					"percent_change_last_1_year": -47.36748845363456,
+					"percent_change_btc_last_1_week": -0.7226972349550158,
+					"percent_change_btc_last_1_month": 3.810546968771496,
+					"percent_change_btc_last_3_months": -5.545400728004733,
+					"percent_change_btc_last_1_year": -58.24039847458453,
+					"percent_change_month_to_date": 9.80579372109016,
+					"percent_change_quarter_to_date": 9.80579372109016,
+					"percent_change_year_to_date": -3.4157015721586608
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -33.46279296902021,
+					"2018_usd_percent": -62.435832970299096,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 2.7629404287878687,
+						"last_90_days": -0.5957787752729037,
+						"last_1_year": -0.34980442649256305,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.5907488346909792,
+						"volatility_last_90_days": 0.9706970099444435,
+						"volatility_last_1_year": 0.8450752422805857,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 142158.87229201564,
+					"btc_current_normalized_supply_price_usd": 46.04999039050544,
+					"btc_y2050_normalized_supply_price_usd": 67.7479464658692,
+					"asset_created_at": "2017-09-13",
+					"asset_age_days": 952,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"payment_platform"
+					]
+				},
+				"lend_rates": null,
+				"borrow_rates": null,
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "2c0fc0e2-def8-4666-b542-c68378230551",
+			"symbol": "HT",
+			"name": "Huobi Token",
+			"slug": "huobi-token",
+			"metrics": {
+				"market_data": {
+					"price_usd": 3.7365205372703336,
+					"price_btc": 0.0005368032579516209,
+					"volume_last_24_hours": 205510192.789314,
+					"real_volume_last_24_hours": null,
+					"volume_last_24_hours_overstatement_multiple": null,
+					"percent_change_usd_last_24_hours": 0.8483438507811473,
+					"percent_change_btc_last_24_hours": -1.1895736640708823,
+					"ohlcv_last_1_hour": {
+						"open": 3.754762568420418,
+						"high": 3.7637734074856755,
+						"low": 3.7327590454958948,
+						"close": 3.736520537270334,
+						"volume": 2002533.417459961
+					},
+					"ohlcv_last_24_hour": {
+						"open": 3.68633,
+						"high": 5.9597409102,
+						"low": 3.640743747875392,
+						"close": 3.760343598141888,
+						"volume": 31344759.313959964
+					},
+					"last_trade_at": "2020-04-22T09:43:42Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 827365635.0559776,
+					"y_2050_marketcap_usd": null,
+					"y_plus10_marketcap_usd": null,
+					"liquid_marketcap_usd": null,
+					"volume_turnover_last_24_hours_percent": null
+				},
+				"supply": {
+					"y_2050": null,
+					"y_plus10": null,
+					"liquid": null,
+					"circulating": 221459292.97192115,
+					"y_2050_issued_percent": null,
+					"annual_inflation_percent": null,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": null
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": null,
+					"marketcap": null,
+					"asset_bid_depth": null,
+					"usd_bid_depth": null,
+					"updated_at": "0001-01-01T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 5.97069,
+					"at": "2018-06-05",
+					"days_since": 686,
+					"percent_down": 36.821077657765834,
+					"breakeven_multiple": 1.5828063583976564
+				},
+				"cycle_low": {
+					"price": 0.8891844737118194,
+					"at": "2019-01-30",
+					"percent_up": 324.2334082430346,
+					"days_since": 448
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": null,
+					"watchers": null,
+					"commits_last_3_months": 0,
+					"commits_last_1_year": 4,
+					"lines_added_last_3_months": 0,
+					"lines_added_last_1_year": 7,
+					"lines_deleted_last_3_months": 0,
+					"lines_deleted_last_1_year": 3
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 2.6205681286817284,
+					"percent_change_last_1_month": 10.976358863249063,
+					"percent_change_last_3_months": 19.522369828401562,
+					"percent_change_last_1_year": 54.73524622296802,
+					"percent_change_btc_last_1_week": -2.6295809422699086,
+					"percent_change_btc_last_1_month": 3.1825523366932695,
+					"percent_change_btc_last_3_months": 43.63952661949691,
+					"percent_change_btc_last_1_year": 22.76978685533404,
+					"percent_change_month_to_date": 10.330772167075338,
+					"percent_change_quarter_to_date": 10.330772167075338,
+					"percent_change_year_to_date": 33.02961014836202
+				},
+				"roi_by_year": {
+					"2019_usd_percent": 144.0133899427613,
+					"2018_usd_percent": null,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 3.58996410138696,
+						"last_90_days": 1.401117111797251,
+						"last_1_year": 1.091532960458211,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.48026872817640476,
+						"volatility_last_90_days": 0.8832132872416391,
+						"volatility_last_1_year": 0.6390109732384818,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 188610.8799197771,
+					"btc_current_normalized_supply_price_usd": 45.8007795102964,
+					"btc_y2050_normalized_supply_price_usd": 89.88534862205162,
+					"asset_created_at": "2018-02-04",
+					"asset_age_days": 808,
+					"categories": [
+						"services"
+					],
+					"sectors": [
+						"exchange_platform"
+					]
+				},
+				"lend_rates": null,
+				"borrow_rates": null,
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "7c435a77-5be9-4424-b5d1-1c02b968c56f",
+			"symbol": "XLM",
+			"name": "Stellar",
+			"slug": "stellar",
+			"metrics": {
+				"market_data": {
+					"price_usd": 0.05276293247734378,
+					"price_btc": 0.0000075800720313658745,
+					"volume_last_24_hours": 491287163.376058,
+					"real_volume_last_24_hours": 10074741.011188779,
+					"volume_last_24_hours_overstatement_multiple": 48.764247421392334,
+					"percent_change_usd_last_24_hours": 6.337574031699093,
+					"percent_change_btc_last_24_hours": 4.187925096339069,
+					"ohlcv_last_1_hour": {
+						"open": 0.05248198961809059,
+						"high": 0.05287415908194655,
+						"low": 0.052419184794204245,
+						"close": 0.05276293247734378,
+						"volume": 471893.1347513755
+					},
+					"ohlcv_last_24_hour": {
+						"open": 0.050029953460622806,
+						"high": 0.05302940641386091,
+						"low": 0.04932213718371868,
+						"close": 0.05276293247734379,
+						"volume": 10120888.979599884
+					},
+					"last_trade_at": "2020-04-22T09:43:43.939Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 799543643.5458499,
+					"y_2050_marketcap_usd": 2638038634.8459296,
+					"y_plus10_marketcap_usd": 2638038634.8459296,
+					"liquid_marketcap_usd": 1777175263.3058283,
+					"volume_turnover_last_24_hours_percent": 0.5667577642051469
+				},
+				"supply": {
+					"y_2050": 50000000000,
+					"y_plus10": 50000000000,
+					"liquid": 33683647385.43,
+					"circulating": 15154130667.092108,
+					"y_2050_issued_percent": 67.36729477086,
+					"annual_inflation_percent": 18.56278767522842,
+					"stock_to_flow": 5.387121899446575,
+					"y_plus10_issued_percent": 67.36729477086
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 3586178.05542979,
+					"adjusted_transaction_volume": 3578537.610780232,
+					"nvt": 214.89395037152144,
+					"adjusted_nvt": 215.2182687690863,
+					"sum_of_fees": 1.6235499496644352,
+					"median_tx_value": 424.7013329501097,
+					"median_tx_fee": 5.253887982931636e-7,
+					"count_of_active_addresses": 36594,
+					"count_of_tx": 1662324,
+					"count_of_payments": 8444,
+					"new_issuance": 0,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": 16060
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 0.05262309064299816,
+							"percent_move": -0.2563869127044746
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.2563869127044746,
+							"marketcap_usd": 797457191.7102262
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 393276.82704274694
+						},
+						{
+							"percent": 0.05,
+							"amount": 4162499.0294093806
+						},
+						{
+							"percent": 1,
+							"amount": 7297174.483749177
+						},
+						{
+							"percent": 2,
+							"amount": 9141594.217838082
+						},
+						{
+							"percent": 4,
+							"amount": 12546263.772063302
+						},
+						{
+							"percent": 6,
+							"amount": 15645610.090694863
+						},
+						{
+							"percent": 8,
+							"amount": 17353962.635641728
+						},
+						{
+							"percent": 10,
+							"amount": 18694245.749203507
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 20727.890273083853
+						},
+						{
+							"percent": 0.05,
+							"amount": 218508.57329243075
+						},
+						{
+							"percent": 1,
+							"amount": 381137.06109726505
+						},
+						{
+							"percent": 2,
+							"amount": 472649.5739744893
+						},
+						{
+							"percent": 4,
+							"amount": 635443.4425041404
+						},
+						{
+							"percent": 6,
+							"amount": 775910.469387397
+						},
+						{
+							"percent": 8,
+							"amount": 842321.2182538675
+						},
+						{
+							"percent": 10,
+							"amount": 887649.9079010289
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 0.938144,
+					"at": "2018-01-04",
+					"days_since": 839,
+					"percent_down": 94.39969985105523,
+					"breakeven_multiple": 17.856185800834712
+				},
+				"cycle_low": {
+					"price": 0.02835287475801785,
+					"at": "2020-03-13",
+					"percent_up": 85.30353721701182,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 1,
+					"staking_type": "Other",
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": -14.813069108443255
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": 2397,
+					"watchers": 264,
+					"commits_last_3_months": 223,
+					"commits_last_1_year": 660,
+					"lines_added_last_3_months": 13906,
+					"lines_added_last_1_year": 50401,
+					"lines_deleted_last_3_months": 6596,
+					"lines_deleted_last_1_year": 20998
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 14.488542986195915,
+					"percent_change_last_1_month": 33.63289368343095,
+					"percent_change_last_3_months": -9.207517858149522,
+					"percent_change_last_1_year": -51.75489541666345,
+					"percent_change_btc_last_1_week": 8.631218976453015,
+					"percent_change_btc_last_1_month": 24.247931610239633,
+					"percent_change_btc_last_3_months": 9.112538298797707,
+					"percent_change_btc_last_1_year": -61.72144775615871,
+					"percent_change_month_to_date": 29.050517732801584,
+					"percent_change_quarter_to_date": 29.050517732801584,
+					"percent_change_year_to_date": 16.803118208285756
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -61.71298776225399,
+					"2018_usd_percent": -77.12061618589317,
+					"2017_usd_percent": 14148.59974877283,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 6.673542754069785,
+						"last_90_days": 0.045067873168763865,
+						"last_1_year": -0.5237375595672247,
+						"last_3_years": 1.1740942249891357
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.6292449808058481,
+						"volatility_last_90_days": 0.8877897020363907,
+						"volatility_last_1_year": 0.7921760614293297,
+						"volatility_last_3_years": 1.7249657636195133
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 749419.3072374744,
+					"btc_current_normalized_supply_price_usd": 58.24916171374826,
+					"btc_y2050_normalized_supply_price_usd": 357.1470305625432,
+					"asset_created_at": "2014-07-31",
+					"asset_age_days": 2092,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"smart_contract_platform"
+					]
+				},
+				"lend_rates": {
+					"celsius": 1.7500000000000002
+				},
+				"borrow_rates": {},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "e6702473-8eb4-4188-ba5b-338bf8b2398f",
+			"symbol": "DASH",
+			"name": "Dash",
+			"slug": "dash",
+			"metrics": {
+				"market_data": {
+					"price_usd": 78.2567550555703,
+					"price_btc": 0.011242586649574355,
+					"volume_last_24_hours": 832950698.276099,
+					"real_volume_last_24_hours": 13367785.275012618,
+					"volume_last_24_hours_overstatement_multiple": 62.310299061510975,
+					"percent_change_usd_last_24_hours": 6.187557803384401,
+					"percent_change_btc_last_24_hours": 4.0409414952816665,
+					"ohlcv_last_1_hour": {
+						"open": 78.19388294152077,
+						"high": 78.66483974682752,
+						"low": 78.08243336281663,
+						"close": 78.25675505557028,
+						"volume": 607510.6566544832
+					},
+					"ohlcv_last_24_hour": {
+						"open": 74.93395572556312,
+						"high": 79.35054670979244,
+						"low": 73.0732476926795,
+						"close": 78.25675505557028,
+						"volume": 13313100.336908909
+					},
+					"last_trade_at": "2020-04-22T09:43:50.879Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 740433993.7435639,
+					"y_2050_marketcap_usd": 1378096997.517917,
+					"y_plus10_marketcap_usd": 1107632616.8449852,
+					"liquid_marketcap_usd": 740008352.5825304,
+					"volume_turnover_last_24_hours_percent": 1.8072141084638862
+				},
+				"supply": {
+					"y_2050": 17600805.03,
+					"y_plus10": 14146482.989999998,
+					"liquid": 9451252.53,
+					"circulating": 9456688.74174822,
+					"y_2050_issued_percent": 53.69784230829582,
+					"annual_inflation_percent": 6.67193324904207,
+					"stock_to_flow": 14.988159543466297,
+					"y_plus10_issued_percent": 66.80990983187122
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": 17470287.802537158,
+					"adjusted_transaction_volume": 7159367.652366155,
+					"nvt": 42.829839488322335,
+					"adjusted_nvt": 115.83164939289169,
+					"sum_of_fees": 61.306686890327356,
+					"median_tx_value": 180.7470593961163,
+					"median_tx_fee": 0.0004088033807153303,
+					"count_of_active_addresses": 97343,
+					"count_of_tx": 23663,
+					"count_of_payments": 96656,
+					"new_issuance": 133325.62719529792,
+					"average_difficulty": 181323824.88820395,
+					"kilobytes_added": 17583.899,
+					"count_of_blocks_added": 548
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": [
+						{
+							"amount_usd": 100000,
+							"clearing_price": 77.88743424656832,
+							"percent_move": -0.3146515240608629
+						}
+					],
+					"marketcap": [
+						{
+							"amount_sold_usd": 100000,
+							"percent_move": -0.3146515240608629,
+							"marketcap_usd": 736557222.5631773
+						}
+					],
+					"asset_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 173.17352101866143
+						},
+						{
+							"percent": 0.05,
+							"amount": 2076.705241305808
+						},
+						{
+							"percent": 1,
+							"amount": 4416.340259195253
+						},
+						{
+							"percent": 2,
+							"amount": 6054.538950183236
+						},
+						{
+							"percent": 4,
+							"amount": 7730.329588245293
+						},
+						{
+							"percent": 6,
+							"amount": 9497.346527195255
+						},
+						{
+							"percent": 8,
+							"amount": 11200.698781784791
+						},
+						{
+							"percent": 10,
+							"amount": 12616.075148916902
+						}
+					],
+					"usd_bid_depth": [
+						{
+							"percent": 0.01,
+							"amount": 13517.084904015206
+						},
+						{
+							"percent": 0.05,
+							"amount": 161448.49687303574
+						},
+						{
+							"percent": 1,
+							"amount": 341612.52645392745
+						},
+						{
+							"percent": 2,
+							"amount": 463599.77805536386
+						},
+						{
+							"percent": 4,
+							"amount": 579836.1793838942
+						},
+						{
+							"percent": 6,
+							"amount": 697535.3214844805
+						},
+						{
+							"percent": 8,
+							"amount": 805135.5660205701
+						},
+						{
+							"percent": 10,
+							"amount": 887161.8194356671
+						}
+					],
+					"updated_at": "2020-04-22T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": 1642.22,
+					"at": "2017-12-20",
+					"days_since": 853,
+					"percent_down": 95.23116123955221,
+					"breakeven_multiple": 20.969465528880672
+				},
+				"cycle_low": {
+					"price": 36.845527287138815,
+					"at": "2020-03-13",
+					"percent_up": 112.54906540355594,
+					"days_since": 40
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": 6.49,
+					"staking_type": "Masternodes",
+					"staking_minimum": 1000,
+					"tokens_staked": 4884000,
+					"tokens_staked_percent": 53.049315600565095,
+					"real_staking_yield_percent": -0.17055400000797194
+				},
+				"mining_stats": {
+					"mining_algo": "X11",
+					"network_hash_rate": "4 PH/s",
+					"available_on_nicehash_percent": 5.8764266002333905,
+					"1_hour_attack_cost": 2727.6906429334153,
+					"24_hours_attack_cost": 65464.57543040197,
+					"attack_appeal": 11334.428237180917
+				},
+				"developer_activity": {
+					"stars": 1252,
+					"watchers": 217,
+					"commits_last_3_months": 22,
+					"commits_last_1_year": 607,
+					"lines_added_last_3_months": 483,
+					"lines_added_last_1_year": 76032,
+					"lines_deleted_last_3_months": 62,
+					"lines_deleted_last_1_year": 79492
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 11.019501610892602,
+					"percent_change_last_1_month": 10.325052581340625,
+					"percent_change_last_3_months": -23.353294758256926,
+					"percent_change_last_1_year": -33.37849510173271,
+					"percent_change_btc_last_1_week": 5.339656489502794,
+					"percent_change_btc_last_1_month": 2.576986924306224,
+					"percent_change_btc_last_3_months": -7.887565535435455,
+					"percent_change_btc_last_1_year": -47.1412741699712,
+					"percent_change_month_to_date": 18.613085477183425,
+					"percent_change_quarter_to_date": 18.613085477183425,
+					"percent_change_year_to_date": 87.9728059027016
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -49.38745774699094,
+					"2018_usd_percent": -92.41196250240907,
+					"2017_usd_percent": 8992.555652398489,
+					"2016_usd_percent": 232.30343750185952,
+					"2015_usd_percent": 71.14326756862552,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": 3.209426405055672,
+						"last_90_days": -0.39327905525041607,
+						"last_1_year": 0.03727826673858836,
+						"last_3_years": 0.404711361629207
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": 0.5647468396905773,
+						"volatility_last_90_days": 1.1164423610490422,
+						"volatility_last_1_year": 0.9978016156181104,
+						"volatility_last_3_years": 1.062364486590753
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": 148015.01715555062,
+					"btc_current_normalized_supply_price_usd": 40.362227666062566,
+					"btc_y2050_normalized_supply_price_usd": 70.5387802866115,
+					"asset_created_at": "2014-01-18",
+					"asset_age_days": 2286,
+					"categories": [
+						"currency"
+					],
+					"sectors": [
+						"currency",
+						"governance"
+					]
+				},
+				"lend_rates": {
+					"celsius": 6.5,
+					"poloniex": 0.9854999999999999
+				},
+				"borrow_rates": {},
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": 298,
+					"subscribers": 33507
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "4515ba15-2719-4183-b0ca-b9255d55b67e",
+			"symbol": "USDC",
+			"name": "USD Coin",
+			"slug": "usd-coin",
+			"metrics": {
+				"market_data": {
+					"price_usd": 1.000087476335391,
+					"price_btc": 0.00014367661486066913,
+					"volume_last_24_hours": 492302146.782109,
+					"real_volume_last_24_hours": 18384100.054677986,
+					"volume_last_24_hours_overstatement_multiple": 26.778691658438767,
+					"percent_change_usd_last_24_hours": 0.013727329742566591,
+					"percent_change_btc_last_24_hours": -2.007250246902607,
+					"ohlcv_last_1_hour": {
+						"open": 1.0000142933756644,
+						"high": 1.0004450672065477,
+						"low": 0.9999222397022011,
+						"close": 1.0000874763359795,
+						"volume": 682358.9664785602
+					},
+					"ohlcv_last_24_hour": {
+						"open": 0.9996225970598038,
+						"high": 1.0007200993633447,
+						"low": 0.9986718708789637,
+						"close": 1.000087476335391,
+						"volume": 18332213.147853408
+					},
+					"last_trade_at": "2020-04-22T09:43:07.329Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 723113421.0736947,
+					"y_2050_marketcap_usd": null,
+					"y_plus10_marketcap_usd": null,
+					"liquid_marketcap_usd": null,
+					"volume_turnover_last_24_hours_percent": null
+				},
+				"supply": {
+					"y_2050": null,
+					"y_plus10": null,
+					"liquid": null,
+					"circulating": 722910849.8348638,
+					"y_2050_issued_percent": null,
+					"annual_inflation_percent": null,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": null
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": null,
+					"marketcap": null,
+					"asset_bid_depth": null,
+					"usd_bid_depth": null,
+					"updated_at": "0001-01-01T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": null,
+					"at": null,
+					"days_since": null,
+					"percent_down": null,
+					"breakeven_multiple": null
+				},
+				"cycle_low": {
+					"price": null,
+					"at": null,
+					"percent_up": null,
+					"days_since": null
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": null,
+					"watchers": null,
+					"commits_last_3_months": null,
+					"commits_last_1_year": null,
+					"lines_added_last_3_months": null,
+					"lines_added_last_1_year": null,
+					"lines_deleted_last_3_months": null,
+					"lines_deleted_last_1_year": null
+				},
+				"roi_data": {
+					"percent_change_last_1_week": -0.04405117895438082,
+					"percent_change_last_1_month": 0.10094525943249599,
+					"percent_change_last_3_months": -0.023273410860041425,
+					"percent_change_last_1_year": -0.23644435855597498,
+					"percent_change_btc_last_1_week": -5.157876227952817,
+					"percent_change_btc_last_1_month": -6.929087158902067,
+					"percent_change_btc_last_3_months": 20.149974442846805,
+					"percent_change_btc_last_1_year": -20.8457622875303,
+					"percent_change_month_to_date": 0.009083147174356312,
+					"percent_change_quarter_to_date": 0.009083147174356312,
+					"percent_change_year_to_date": -0.3443360256531367
+				},
+				"roi_by_year": {
+					"2019_usd_percent": -3.325304806397515,
+					"2018_usd_percent": null,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": null,
+						"last_90_days": null,
+						"last_1_year": null,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": null,
+						"volatility_last_90_days": null,
+						"volatility_last_1_year": null,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": null,
+					"btc_current_normalized_supply_price_usd": null,
+					"btc_y2050_normalized_supply_price_usd": null,
+					"asset_created_at": null,
+					"asset_age_days": null,
+					"categories": null,
+					"sectors": null
+				},
+				"lend_rates": {
+					"blockfi": 8.6,
+					"celsius": 7.000000000000001,
+					"coinlist": 5.11,
+					"compound": 0.450909741648,
+					"dydx": 1.078459997078,
+					"nexo": 8,
+					"nuo": 2.0330993272871756,
+					"poloniex": 7.0809999999999995
+				},
+				"borrow_rates": {
+					"coinlist": 6.3875,
+					"compound": 3.45012475076,
+					"dydx": 3.4171608000690004,
+					"nexo": 11.9,
+					"nuo": 11.080067993354573
+				},
+				"loan_data": {
+					"originated_last_24_hours_usd": 0,
+					"outstanding_debt_usd": 8113786.94467066,
+					"repaid_last_24_hours_usd": 0,
+					"collateralized_last_24_hours_usd": 0,
+					"collateral_liquidated_last_24_hours_usd": 0
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		},
+		{
+			"id": "de533c50-6a57-4975-bb83-62862fb9af09",
+			"symbol": "CRO",
+			"name": "Crypto.com Chain",
+			"slug": "crypto-com-chain",
+			"metrics": {
+				"market_data": {
+					"price_usd": 0.04925225397029878,
+					"price_btc": 0.000007075886823696659,
+					"volume_last_24_hours": 12744106.2651295,
+					"real_volume_last_24_hours": 45833.86239947106,
+					"volume_last_24_hours_overstatement_multiple": 278.0500179988447,
+					"percent_change_usd_last_24_hours": 2.5710586851517077,
+					"percent_change_btc_last_24_hours": 0.4999484545382571,
+					"ohlcv_last_1_hour": {
+						"open": 0.04885057505867248,
+						"high": 0.049441994515672966,
+						"low": 0.04885057505867248,
+						"close": 0.04925225397029879,
+						"volume": 3797.8344491570097
+					},
+					"ohlcv_last_24_hour": {
+						"open": 0.04833736886466734,
+						"high": 0.049441994515672966,
+						"low": 0.04769788525054561,
+						"close": 0.04925225397029878,
+						"volume": 46084.30830919484
+					},
+					"last_trade_at": "2020-04-22T09:31:21.59Z"
+				},
+				"marketcap": {
+					"current_marketcap_usd": 700911300.1088271,
+					"y_2050_marketcap_usd": null,
+					"y_plus10_marketcap_usd": null,
+					"liquid_marketcap_usd": null,
+					"volume_turnover_last_24_hours_percent": null
+				},
+				"supply": {
+					"y_2050": null,
+					"y_plus10": null,
+					"liquid": null,
+					"circulating": 14231050228.3105,
+					"y_2050_issued_percent": null,
+					"annual_inflation_percent": null,
+					"stock_to_flow": null,
+					"y_plus10_issued_percent": null
+				},
+				"blockchain_stats_24_hours": {
+					"transaction_volume": null,
+					"adjusted_transaction_volume": null,
+					"nvt": null,
+					"adjusted_nvt": null,
+					"sum_of_fees": null,
+					"median_tx_value": null,
+					"median_tx_fee": null,
+					"count_of_active_addresses": null,
+					"count_of_tx": null,
+					"count_of_payments": null,
+					"new_issuance": null,
+					"average_difficulty": null,
+					"kilobytes_added": null,
+					"count_of_blocks_added": null
+				},
+				"market_data_liquidity": {
+					"clearing_prices_to_sell": null,
+					"marketcap": null,
+					"asset_bid_depth": null,
+					"usd_bid_depth": null,
+					"updated_at": "0001-01-01T00:00:00Z"
+				},
+				"all_time_high": {
+					"price": null,
+					"at": null,
+					"days_since": null,
+					"percent_down": null,
+					"breakeven_multiple": null
+				},
+				"cycle_low": {
+					"price": null,
+					"at": null,
+					"percent_up": null,
+					"days_since": null
+				},
+				"token_sale_stats": {
+					"sale_proceeds_usd": null,
+					"sale_start_date": null,
+					"sale_end_date": null,
+					"roi_since_sale_usd_percent": null,
+					"roi_since_sale_btc_percent": null,
+					"roi_since_sale_eth_percent": null
+				},
+				"staking_stats": {
+					"staking_yield_percent": null,
+					"staking_type": null,
+					"staking_minimum": null,
+					"tokens_staked": null,
+					"tokens_staked_percent": null,
+					"real_staking_yield_percent": null
+				},
+				"mining_stats": {
+					"mining_algo": null,
+					"network_hash_rate": null,
+					"available_on_nicehash_percent": null,
+					"1_hour_attack_cost": null,
+					"24_hours_attack_cost": null,
+					"attack_appeal": null
+				},
+				"developer_activity": {
+					"stars": null,
+					"watchers": null,
+					"commits_last_3_months": null,
+					"commits_last_1_year": null,
+					"lines_added_last_3_months": null,
+					"lines_added_last_1_year": null,
+					"lines_deleted_last_3_months": null,
+					"lines_deleted_last_1_year": null
+				},
+				"roi_data": {
+					"percent_change_last_1_week": 2.2280499357929315,
+					"percent_change_last_1_month": 19.1598059787777,
+					"percent_change_last_3_months": 5.3884070502389925,
+					"percent_change_last_1_year": -36.678038122579636,
+					"percent_change_btc_last_1_week": -3.002017595333845,
+					"percent_change_btc_last_1_month": 10.791280618480696,
+					"percent_change_btc_last_3_months": 26.65362075411275,
+					"percent_change_btc_last_1_year": -49.75919221564819,
+					"percent_change_month_to_date": 0.40085256940091635,
+					"percent_change_quarter_to_date": 0.40085256940091635,
+					"percent_change_year_to_date": 46.449178000103494
+				},
+				"roi_by_year": {
+					"2019_usd_percent": null,
+					"2018_usd_percent": null,
+					"2017_usd_percent": null,
+					"2016_usd_percent": null,
+					"2015_usd_percent": null,
+					"2014_usd_percent": null,
+					"2013_usd_percent": null,
+					"2012_usd_percent": null,
+					"2011_usd_percent": null
+				},
+				"risk_metrics": {
+					"sharpe_ratios": {
+						"last_30_days": null,
+						"last_90_days": null,
+						"last_1_year": null,
+						"last_3_years": null
+					},
+					"volatility_stats": {
+						"volatility_last_30_days": null,
+						"volatility_last_90_days": null,
+						"volatility_last_1_year": null,
+						"volatility_last_3_years": null
+					}
+				},
+				"misc_data": {
+					"private_market_price_usd": null,
+					"vladimir_club_cost": null,
+					"btc_current_normalized_supply_price_usd": null,
+					"btc_y2050_normalized_supply_price_usd": null,
+					"asset_created_at": null,
+					"asset_age_days": null,
+					"categories": null,
+					"sectors": null
+				},
+				"lend_rates": null,
+				"borrow_rates": null,
+				"loan_data": {
+					"originated_last_24_hours_usd": null,
+					"outstanding_debt_usd": null,
+					"repaid_last_24_hours_usd": null,
+					"collateralized_last_24_hours_usd": null,
+					"collateral_liquidated_last_24_hours_usd": null
+				},
+				"reddit": {
+					"active_user_count": null,
+					"subscribers": null
+				},
+				"alert_messages": null
+			}
+		}
+	]
+}

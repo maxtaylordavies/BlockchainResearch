@@ -50,7 +50,6 @@ def scrapePageOfBlocks(pageNum):
     # extract the data from each row of the table
     for row in rows:
         tds = row.findAll("td")
-        print(tds)
         blocks.append({
             "Height": int(tds[0].a.string),
             "Hash": tds[1].string,

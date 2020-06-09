@@ -9,7 +9,7 @@ import time
 from datetime import datetime
 
 def scrapePageOfBlocks(p, headers):
-    url = "https://uno.tokenview.com/api/blocks/uno/%d/1000" % p
+    url = "https://trx.tokenview.com/api/blocks/trx/%d/100" % p
     req = urllib.request.Request(url, headers=headers)
     response = urllib.request.urlopen(req)
     response = json.load(response)
@@ -21,19 +21,22 @@ def scrapePageOfBlocks(p, headers):
     return list(map(lambda b: {
         "Network": b["network"],
         "Height": b["block_no"],
-        "Date": datetime.fromtimestamp(b["time"]),
+        "Date": datetime.fromtimestamp(b["time"]).strftime("%Y-%m-%d %H:%M:%S"),
         "Size": b["size"],
         "Transaction count": b["txCnt"],
-        "Difficulty": float(b["miningDifficulty"]),
         "Sent value": float(b["sentValue"]),
         "Miner address": b["miner"],
+        # "Miner alias": b["minerAlias"],
         "Fee": float(b["fee"]),
-        "Reward": float(b["reward"])
+        "Reward": float(b["reward"]),
+        "Gas limit": float(b["gasLimit"]),
+        "Gas price": float(b["gasPrice"]),
+        "Gas used": float(b["gasUsed"])
     }, blocks))
 
 def scrapeBlocks():
     blocks = []
-    p = 611
+    p = 60601
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:69.0) Gecko/20100101 Firefox/69.0"
     }
@@ -46,29 +49,29 @@ def scrapeBlocks():
 
         if p == 1:
             print(blocks[0])
-        stdout.write("\r%d pages scraped" % p)
+        stdout.write(f"\r{p} pages scraped ({int(100*(p/204246))}% done")
         stdout.flush()
 
         if p % 10 == 0:
-            with open(baseDir + "/Data/OtherChains/uno/historical_blocks.csv", "a") as dest:
+            with open(baseDir + "/Data/OtherChains/tron/historical_blocks.csv", "a") as dest:
                 w = csv.DictWriter(dest, blocks[0].keys())
                 if p == 10:
                     # if this is the first 20 pages, we'll need to write the headers to the csv file, then dump the data
                     w.writeheader()
                 w.writerows(blocks)
 
-            with open(baseDir + "/Logs/uno/blocks.txt", "a") as logfile:
+            with open(baseDir + "/Logs/tron/blocks.txt", "a") as logfile:
                 logfile.write("%d pages scraped\n" % p)
 
             blocks = []
         p += 1
-        time.sleep(0.1)
+        time.sleep(0.2)
     
-    with open(baseDir + "/Data/OtherChains/uno/historical_blocks.csv", "a") as dest:
+    with open(baseDir + "/Data/OtherChains/tron/historical_blocks.csv", "a") as dest:
         w = csv.DictWriter(dest, blocks[0].keys())
         w.writerows(blocks)
 
-    with open(baseDir + "/Logs/uno/blocks.txt", "a") as logfile:
+    with open(baseDir + "/Logs/tron/blocks.txt", "a") as logfile:
         logfile.write("%d pages of blocks scraped\n" % p)
 
 

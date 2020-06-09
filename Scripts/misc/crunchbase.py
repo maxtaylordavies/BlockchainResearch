@@ -1,6 +1,6 @@
 import json
 from six.moves import urllib
-from misc.messari import json2Csv
+# from messari import json2Csv
 import sys
 
 
@@ -10,7 +10,7 @@ def main():
     blockchainCategoryId = "1fea62013b7c4c9196ec543f5eded46a"
 
     # get summaries of all organizations in category "blockchain" from the crunchbase API
-    #blockchainOrgsSummaries = getAllOrganizationsInCategory(baseApiUrl, apiKey, blockchainCategoryId)
+    blockchainOrgsSummaries = getAllOrganizationsInCategory(baseApiUrl, apiKey, blockchainCategoryId)
 
     # export summaries to JSON file
     #storeOrgsInJson(blockchainOrgsSummaries, "../Data/CrunchbaseData/BlockchainOrganizationsSummary.json")
@@ -20,7 +20,7 @@ def main():
 
     # export detailed data to JSON file
     #storeOrgsInJson(blockchainOrgsDetails, "../Data/CrunchbaseData/BlockchainOrganizationsDetails.json")
-    json2Csv("../Data/CrunchbaseData/BlockchainOrganizationsSummary.json")
+    # json2Csv("../Data/CrunchbaseData/BlockchainOrganizationsSummary.json")
 
 
 def getAllOrganizationsInCategory(baseApiUrl, key, categoryId):
