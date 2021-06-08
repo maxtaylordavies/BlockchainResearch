@@ -22,7 +22,7 @@ multidict==4.7.4
 nltk==3.4.5
 numpy==1.17.4
 pandas==0.25.3
-Pillow==7.0.0
+Pillow==8.2.0
 ply==3.11
 pyaes==1.6.1
 pyasn1==0.4.8
